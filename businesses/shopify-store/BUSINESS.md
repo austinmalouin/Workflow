@@ -70,6 +70,43 @@ Real store, freshly launched, pre-revenue. No open questions blocking work — `
 should check the live admin via browser whenever it needs current state rather than asking Austin
 to repeat it here.
 
+**SEO + TikTok organic drafts completed, 2026-07-23** (execution of the "Traffic plan approved
+2026-07-23" goal above, $0 spend):
+- Pulled real, current title/meta-description/description copy for 10 highest-traffic-potential
+  products (backpacks, camping lights, survival-kit accessories; axe/knife SKUs skipped per the
+  ad-policy note, though they're not actually restricted for organic SEO) directly from the live
+  storefront and admin, not guessed.
+- Did real keyword research (WebSearch + free keyword-list sites): confirmed real numbers where
+  available (e.g. "hiking backpack" 74,000/mo, "trekking poles" 90,500/mo via KeySearch;
+  "camping chair" 60,500/mo, "camping stove" 27,100/mo via clicks.so) and explicitly flagged where
+  exact volume wasn't retrievable via free tools (flashlight/lantern/whistle/carabiner/paracord/
+  compass long-tail terms) rather than fabricating numbers.
+- Drafted rewritten SEO title + meta description + on-page description for all 10 products in
+  `products/*-seo-revision.md` — one file per product, each with the verbatim current (broken) copy
+  quoted for comparison.
+- Drafted a 2-week, 7-video TikTok organic content plan in
+  [marketing/tiktok-organic-plan.md](marketing/tiktok-organic-plan.md), built around the real
+  constraint that there's no original photography/video yet (stock-footage list videos and
+  screen-recorded product-page walkthroughs first, in-hand demos once cheap samples are ordered).
+- **Nothing published live** — all of the above are drafts only, per the draft-and-recommend
+  operating model; no admin edits, no theme edits, no posts.
+
+**New finding, not yet actioned — fake reviews live on every individual product page, 2026-07-23**:
+separately from the sitewide testimonials section already removed, every one of the 10 product
+pages checked shows a fabricated review count (69-187 "Reviews") and an invented customer
+testimonial quote, despite the store having zero orders ever. This is the same real FTC/Shopify-
+policy risk category as the sitewide section that was already fixed, just implemented per-product
+instead (looks like the same PagePilot AI theme pattern). This is a live-storefront edit, so it
+needs Austin's go-ahead before anyone touches it — flagging here rather than fixing it as part of
+this SEO/content task.
+
+**On the "prior attempt failed on a monthly spend limit" note**: this specific task (organic SEO +
+TikTok content drafting) is $0 spend and didn't hit any spend limit — nothing about *this* task
+required raising it. Whether to raise Austin's spend limit is a real decision he should make
+directly (it's an account/financial setting, not something an agent should change unilaterally),
+and it only actually matters once Phase 2 paid spend (Google Shopping MVT, ~$600-800/month per
+traffic-options.md) is ready to start — not before.
+
 ## How the agent works today
 
 No Shopify API/MCP connector is available yet (checked 2026-07-22). Until one exists,
