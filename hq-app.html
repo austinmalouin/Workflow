@@ -1,0 +1,514 @@
+<title>Business HQ</title>
+<style>
+  :root{
+    --bg:#10141a; --surface:#161c24; --raised:#1c242e; --border:#2a3441; --border-soft:#222b36;
+    --text:#e9e5da; --muted:#8fa0ae; --faint:#5f6d7a;
+    --accent:#d9a441; --accent-ink:#10141a;
+    --ok-bg:#16301f; --ok-fg:#6fcf94; --info-bg:#16233a; --info-fg:#86aee0;
+    --warn-bg:#33270f; --warn-fg:#e0b34c; --danger-bg:#34201a; --danger-fg:#e08a6f;
+    --shadow:0 1px 2px rgba(0,0,0,.35), 0 10px 30px rgba(0,0,0,.30);
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+    --mono:ui-monospace,"SF Mono",Consolas,"Cascadia Mono",monospace;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#f2efe7; --surface:#fbfaf6; --raised:#ffffff; --border:#d9d3c4; --border-soft:#e4dfd2;
+      --text:#211f18; --muted:#6d675a; --faint:#9a937f;
+      --accent:#9a6d24; --accent-ink:#fbfaf6;
+      --ok-bg:#e2efe7; --ok-fg:#2f7a52; --info-bg:#e5edf6; --info-fg:#3f6690;
+      --warn-bg:#f4ead0; --warn-fg:#7c5a14; --danger-bg:#f5e4de; --danger-fg:#ab4a30;
+      --shadow:0 1px 2px rgba(33,31,24,.07), 0 8px 24px rgba(33,31,24,.06);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#10141a; --surface:#161c24; --raised:#1c242e; --border:#2a3441; --border-soft:#222b36;
+    --text:#e9e5da; --muted:#8fa0ae; --faint:#5f6d7a;
+    --accent:#d9a441; --accent-ink:#10141a;
+    --ok-bg:#16301f; --ok-fg:#6fcf94; --info-bg:#16233a; --info-fg:#86aee0;
+    --warn-bg:#33270f; --warn-fg:#e0b34c; --danger-bg:#34201a; --danger-fg:#e08a6f;
+    --shadow:0 1px 2px rgba(0,0,0,.35), 0 10px 30px rgba(0,0,0,.30);
+  }
+  :root[data-theme="light"]{
+    --bg:#f2efe7; --surface:#fbfaf6; --raised:#ffffff; --border:#d9d3c4; --border-soft:#e4dfd2;
+    --text:#211f18; --muted:#6d675a; --faint:#9a937f;
+    --accent:#9a6d24; --accent-ink:#fbfaf6;
+    --ok-bg:#e2efe7; --ok-fg:#2f7a52; --info-bg:#e5edf6; --info-fg:#3f6690;
+    --warn-bg:#f4ead0; --warn-fg:#7c5a14; --danger-bg:#f5e4de; --danger-fg:#ab4a30;
+    --shadow:0 1px 2px rgba(33,31,24,.07), 0 8px 24px rgba(33,31,24,.06);
+  }
+
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--bg); color:var(--text); font:15px/1.55 var(--sans);}
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+  button{font:inherit; color:inherit; background:none; border:none; cursor:pointer; padding:0}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:6px}
+
+  .app{display:flex; min-height:100vh}
+
+  /* ---------- rail ---------- */
+  .rail{
+    width:236px; flex:none; border-right:1px solid var(--border-soft);
+    padding:26px 14px 20px; display:flex; flex-direction:column; gap:4px;
+    position:sticky; top:0; height:100vh; overflow-y:auto;
+  }
+  .brand{padding:0 10px 18px}
+  .brand .k{font:600 11px/1 var(--sans); letter-spacing:.16em; color:var(--accent); text-transform:uppercase}
+  .brand h1{font:600 21px/1.15 var(--serif); margin:6px 0 0; letter-spacing:.01em}
+  .navbtn{
+    display:flex; align-items:center; gap:11px; width:100%; text-align:left;
+    padding:9px 10px; border-radius:10px; color:var(--muted);
+  }
+  .navbtn:hover{background:var(--surface); color:var(--text)}
+  .navbtn.on{background:var(--raised); color:var(--text); box-shadow:var(--shadow)}
+  .glyph{
+    flex:none; width:30px; height:30px; border-radius:9px; display:flex; align-items:center;
+    justify-content:center; font:700 12px/1 var(--mono); letter-spacing:.02em;
+    background:var(--surface); border:1px solid var(--border); color:var(--muted);
+  }
+  .navbtn.on .glyph{border-color:var(--accent); color:var(--accent)}
+  .navbtn .nm{font-weight:500; font-size:13.5px; display:block}
+  .navbtn .st{font-size:11px; color:var(--faint); display:block; margin-top:1px}
+  .navbtn kbd{
+    margin-left:auto; font:500 10.5px/1 var(--mono); color:var(--faint);
+    border:1px solid var(--border-soft); border-radius:5px; padding:2.5px 5px;
+  }
+  .rail .spacer{flex:1}
+  .rail-links{display:flex; flex-direction:column; gap:2px; padding-top:14px; border-top:1px solid var(--border-soft)}
+  .rail-links a{
+    color:var(--muted); font-size:12.5px; padding:7px 10px; border-radius:8px; display:flex; gap:8px; align-items:center;
+  }
+  .rail-links a:hover{background:var(--surface); color:var(--text); text-decoration:none}
+  .themebtn{
+    margin-top:8px; align-self:flex-start; font-size:12px; color:var(--muted);
+    padding:7px 12px; border:1px solid var(--border); border-radius:999px;
+  }
+  .themebtn:hover{color:var(--text); border-color:var(--accent)}
+
+  /* ---------- main ---------- */
+  main{flex:1; min-width:0; padding:34px clamp(20px,4.5vw,58px) 80px}
+  .page{max-width:860px; margin:0 auto}
+  section[hidden]{display:none}
+
+  .crumb{font:600 11px/1 var(--sans); letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin:0 0 10px}
+  .crumb .sep{color:var(--faint); margin:0 7px}
+  h2.title{font:600 clamp(26px,3.2vw,36px)/1.1 var(--serif); margin:0 0 6px; text-wrap:balance}
+  .sub{color:var(--muted); margin:0 0 22px; max-width:62ch}
+
+  .pill{
+    display:inline-block; font:600 11px/1 var(--sans); letter-spacing:.05em; text-transform:uppercase;
+    padding:5px 11px; border-radius:999px; vertical-align:3px; margin-left:12px;
+  }
+  .pill.ok{background:var(--ok-bg); color:var(--ok-fg)}
+  .pill.info{background:var(--info-bg); color:var(--info-fg)}
+  .pill.warn{background:var(--warn-bg); color:var(--warn-fg)}
+  .pill.danger{background:var(--danger-bg); color:var(--danger-fg)}
+
+  .stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:12px; margin:0 0 22px}
+  .stat{background:var(--surface); border:1px solid var(--border-soft); border-radius:12px; padding:13px 15px}
+  .stat .n{font:600 21px/1.15 var(--mono); font-variant-numeric:tabular-nums; display:block}
+  .stat .l{font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); margin-top:4px; display:block}
+
+  .card{
+    background:var(--surface); border:1px solid var(--border-soft); border-radius:14px;
+    box-shadow:var(--shadow); padding:20px 22px; margin:0 0 16px;
+  }
+  .card h3{font:600 12px/1 var(--sans); letter-spacing:.09em; text-transform:uppercase; color:var(--muted); margin:0 0 12px}
+  .card p{margin:0 0 10px; max-width:68ch}
+  .card p:last-child{margin-bottom:0}
+  .card strong{color:var(--text)}
+
+  ul.needs{list-style:none; margin:0; padding:0}
+  ul.needs li{
+    display:flex; gap:11px; padding:9px 0; border-bottom:1px solid var(--border-soft);
+    align-items:baseline; font-size:14px;
+  }
+  ul.needs li:last-child{border-bottom:none; padding-bottom:0}
+  ul.needs li:first-child{padding-top:0}
+  ul.needs .dot{flex:none; font:700 12px/1.4 var(--mono); color:var(--accent)}
+  ul.needs .who{margin-left:auto; flex:none; font:500 11px/1.6 var(--mono); color:var(--faint)}
+
+  table.ledger{width:100%; border-collapse:collapse; font-size:13.5px}
+  table.ledger th{
+    text-align:left; font:600 10.5px/1 var(--sans); letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); padding:0 12px 8px 0; border-bottom:1px solid var(--border);
+  }
+  table.ledger td{padding:8px 12px 8px 0; border-bottom:1px solid var(--border-soft); vertical-align:top}
+  table.ledger tr:last-child td{border-bottom:none}
+  table.ledger td.num{font-family:var(--mono); font-variant-numeric:tabular-nums; white-space:nowrap}
+  .tablewrap{overflow-x:auto}
+
+  .chips{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 12px}
+  .chip{
+    font:500 13px/1.3 var(--sans); padding:8px 13px; border-radius:999px;
+    border:1px solid var(--border); background:var(--raised); color:var(--text);
+  }
+  .chip:hover{border-color:var(--accent); color:var(--accent)}
+  .composer{display:flex; gap:9px}
+  .composer input{
+    flex:1; min-width:0; font:14px/1.4 var(--sans); color:var(--text);
+    background:var(--raised); border:1px solid var(--border); border-radius:10px; padding:10px 13px;
+  }
+  .composer input::placeholder{color:var(--faint)}
+  .composer .go{
+    font:600 13px/1 var(--sans); padding:0 16px; border-radius:10px;
+    background:var(--accent); color:var(--accent-ink);
+  }
+  .composer .go:hover{filter:brightness(1.07)}
+  .hint{font-size:12px; color:var(--faint); margin:9px 0 0}
+
+  .meta{display:flex; flex-wrap:wrap; gap:18px; font-size:12.5px; color:var(--muted); margin-top:4px}
+  .meta code{font:12px var(--mono); color:var(--muted)}
+
+  .toast{
+    position:fixed; bottom:26px; left:50%; transform:translate(-50%,14px);
+    background:var(--raised); color:var(--text); border:1px solid var(--border);
+    box-shadow:var(--shadow); border-radius:999px; padding:10px 18px; font-size:13.5px;
+    opacity:0; pointer-events:none; transition:opacity .18s ease, transform .18s ease;
+  }
+  .toast.show{opacity:1; transform:translate(-50%,0)}
+  @media (prefers-reduced-motion: reduce){ .toast{transition:none} }
+
+  @media (max-width:840px){
+    .app{flex-direction:column}
+    .rail{
+      width:100%; height:auto; position:static; flex-direction:row; align-items:center;
+      overflow-x:auto; padding:14px 16px; gap:6px; border-right:none; border-bottom:1px solid var(--border-soft);
+    }
+    .brand{padding:0 12px 0 0}
+    .brand h1{font-size:16px; white-space:nowrap}
+    .navbtn{width:auto; flex:none; padding:7px 10px}
+    .navbtn .st,.navbtn kbd{display:none}
+    .rail .spacer,.rail-links,.themebtn{display:none}
+    main{padding:26px 18px 70px}
+  }
+</style>
+
+<div class="app">
+  <aside class="rail" aria-label="Ventures">
+    <div class="brand">
+      <span class="k">Business HQ</span>
+      <h1>Austin's Desk</h1>
+    </div>
+    <button class="navbtn" data-nav="overview"><span class="glyph">HQ</span><span><span class="nm">Overview</span><span class="st">portfolio</span></span><kbd>1</kbd></button>
+    <button class="navbtn" data-nav="etsy"><span class="glyph">SL</span><span><span class="nm">SteadyLedgerPrints</span><span class="st">Etsy · active</span></span><kbd>2</kbd></button>
+    <button class="navbtn" data-nav="shopify"><span class="glyph">RW</span><span><span class="nm">RIDGEWOOD</span><span class="st">Shopify · active</span></span><kbd>3</kbd></button>
+    <button class="navbtn" data-nav="trading"><span class="glyph">TD</span><span><span class="nm">Trading Desk</span><span class="st">research only</span></span><kbd>4</kbd></button>
+    <button class="navbtn" data-nav="minecraft"><span class="glyph">MC</span><span><span class="nm">Minecraft Channel</span><span class="st">onboarding</span></span><kbd>5</kbd></button>
+    <button class="navbtn" data-nav="lore"><span class="glyph">GT</span><span><span class="nm">Lore Server</span><span class="st">onboarding</span></span><kbd>6</kbd></button>
+    <button class="navbtn" data-nav="books"><span class="glyph">FB</span><span><span class="nm">Books</span><span class="st">blocked</span></span><kbd>7</kbd></button>
+    <div class="spacer"></div>
+    <div class="rail-links">
+      <a href="https://claude.ai/code/routines" target="_blank" rel="noopener">↗ Cloud routines</a>
+      <a href="https://github.com/austinmalouin/Workflow" target="_blank" rel="noopener">↗ Repo</a>
+      <a href="https://steadyledgerprints.etsy.com" target="_blank" rel="noopener">↗ Etsy shop</a>
+      <a href="https://ridgewoodequipment.store" target="_blank" rel="noopener">↗ RIDGEWOOD</a>
+    </div>
+    <button class="themebtn" id="themebtn">Theme: auto</button>
+  </aside>
+
+  <main>
+    <!-- ================= OVERVIEW ================= -->
+    <section class="page" data-view="overview">
+      <p class="crumb">Portfolio<span class="sep">·</span>22 Jul 2026</p>
+      <h2 class="title">Six ventures, one desk.</h2>
+      <p class="sub">Every business, its head agent, and what's waiting on you — in one place. Ask anything from a venture's page; buttons copy a ready-to-paste command for the Claude Code chat, where the agents actually run.</p>
+
+      <div class="stats">
+        <div class="stat"><span class="n">6</span><span class="l">Ventures</span></div>
+        <div class="stat"><span class="n">2</span><span class="l">Storefronts live</span></div>
+        <div class="stat"><span class="n">$0</span><span class="l">Revenue to date</span></div>
+        <div class="stat"><span class="n">2</span><span class="l">Cloud routines</span></div>
+        <div class="stat"><span class="n">0</span><span class="l">Approvals pending</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Waiting on you</h3>
+        <ul class="needs">
+          <li><span class="dot">01</span><span>Pick a traffic path for RIDGEWOOD — organic-only, paid, or hybrid. The comparison is the next deliverable in chat.</span><span class="who">shopify</span></li>
+          <li><span class="dot">02</span><span>Authorize QuickBooks in your connector settings to unblock the books.</span><span class="who">books</span></li>
+          <li><span class="dot">03</span><span>Choose a Minecraft channel format (or ask for researched options).</span><span class="who">minecraft</span></li>
+          <li><span class="dot">04</span><span>Confirm the lore server's platform — Discord is assumed, not confirmed.</span><span class="who">lore</span></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Always-on automation</h3>
+        <div class="tablewrap">
+        <table class="ledger">
+          <tr><th>Routine</th><th>Cadence</th><th>Scope</th></tr>
+          <tr><td><a href="https://claude.ai/code/routines/trig_01CG1U9mLCpUFYJkwYSQW8Me" target="_blank" rel="noopener">trading-research</a></td><td class="num">Weekdays 9:24a</td><td>Scans, backtests, signal write-ups. Read-only Robinhood — no order tool exists in the routine.</td></tr>
+          <tr><td><a href="https://claude.ai/code/routines/trig_01PSuKAiNvzfua299kBZAowX" target="_blank" rel="noopener">content-research</a></td><td class="num">Mondays 9:17a</td><td>Minecraft + lore server research, scripts, calendars. Canva attached.</td></tr>
+        </table>
+        </div>
+        <p class="hint">Etsy and Shopify checks can't run in the cloud — they need your local Chrome session, so they run when the desk is open.</p>
+      </div>
+
+      <div class="card">
+        <h3>House rules</h3>
+        <p>Agents research, draft, and prepare on their own. Anything that spends money, publishes publicly, or executes a trade waits for your yes — trades are never executed by an agent at all. Full detail lives in the repo's <code style="font-family:var(--mono); font-size:13px">CLAUDE.md</code>.</p>
+      </div>
+    </section>
+
+    <!-- ================= ETSY ================= -->
+    <section class="page" data-view="etsy" hidden>
+      <p class="crumb">Etsy<span class="sep">·</span>etsy-agent</p>
+      <h2 class="title">SteadyLedgerPrints<span class="pill ok">Active</span></h2>
+      <p class="sub">Undated budget &amp; debt-payoff printables — instant-download PDFs with a genuinely underserved ADHD/neurodivergent-finance angle.</p>
+
+      <div class="stats">
+        <div class="stat"><span class="n">10<span style="font-size:13px;color:var(--muted)"> +1 draft</span></span><span class="l">Listings</span></div>
+        <div class="stat"><span class="n">0</span><span class="l">Sales</span></div>
+        <div class="stat"><span class="n">19</span><span class="l">Visits · Jul</span></div>
+        <div class="stat"><span class="n">0</span><span class="l">Search visits</span></div>
+        <div class="stat"><span class="n">1</span><span class="l">Abandoned cart</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Where it stands</h3>
+        <p><strong>The headline problem is search invisibility.</strong> Etsy search sent zero of July's 19 visits — for a shop whose whole model is being found by keyword, that makes an SEO pass on all 10 listings the highest-leverage move, ahead of making more products.</p>
+        <p>First buyer-intent signal arrived: one abandoned cart this month. Most-viewed listing is the Savings Goal Tracker (5 of 6 total listing views). An <strong>ADHD Reset Routine kit sits unpublished in drafts</strong> — worth finishing, since the ADHD line is the shop's real differentiator.</p>
+      </div>
+
+      <div class="card">
+        <h3>Ask the etsy-agent</h3>
+        <div class="chips">
+          <button class="chip" data-copy="Use the etsy-agent to check today's Etsy stats via the browser and give me an update.">Today's stats</button>
+          <button class="chip" data-copy="Use the etsy-agent to run a full SEO audit on all 10 listings and draft improved titles and tags.">SEO audit</button>
+          <button class="chip" data-copy="Use the etsy-agent to finish and prep the ADHD Reset Routine draft listing for my approval.">Finish draft kit</button>
+          <button class="chip" data-copy="Use the etsy-agent to research and draft one new ADHD-finance listing idea.">New listing idea</button>
+        </div>
+        <div class="composer">
+          <input type="text" data-agent="etsy-agent" placeholder="Ask anything about the Etsy shop…" aria-label="Ask the etsy-agent">
+          <button class="go">Copy</button>
+        </div>
+        <p class="hint">Copies a ready command — paste it into the Claude Code chat to run. Browsing is live; publishing waits for your approval.</p>
+      </div>
+
+      <p class="meta"><span>Folders: <code>businesses/etsy-shop/</code></span><span>Local check-in daily 8:47a while the desk is open</span></p>
+    </section>
+
+    <!-- ================= SHOPIFY ================= -->
+    <section class="page" data-view="shopify" hidden>
+      <p class="crumb">Shopify<span class="sep">·</span>shopify-agent</p>
+      <h2 class="title">RIDGEWOOD<span class="pill ok">Active</span></h2>
+      <p class="sub">Outdoor / camping / survival gear at ridgewoodequipment.store — 30 dropship SKUs via StorePilot, plus one real-inventory tea outlier.</p>
+
+      <div class="stats">
+        <div class="stat"><span class="n">31</span><span class="l">Products</span></div>
+        <div class="stat"><span class="n">$0</span><span class="l">Sales · 30d</span></div>
+        <div class="stat"><span class="n">14</span><span class="l">Sessions · 30d</span></div>
+        <div class="stat"><span class="n">$0</span><span class="l">Marketing spend</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Where it stands</h3>
+        <p><strong>Fake-reviews risk: resolved.</strong> The theme shipped with a fabricated "Rated 4.9/5 by 5,000+ customers" testimonial wall — a real FTC exposure for a zero-sale store. Removed and verified gone from the live site on Jul 23.</p>
+        <p><strong>The real blocker is traffic, not conversion.</strong> Fourteen sessions a month is effectively nobody; no marketing has ever run. Open decisions: pick a traffic path (comparison coming in chat), decide if the store narrows its niche, and keep-or-cut the tea SKU. Heads-up for paid ads: the axe and knife listings will trip weapons policies on Meta/Google.</p>
+      </div>
+
+      <div class="card">
+        <h3>Ask the shopify-agent</h3>
+        <div class="chips">
+          <button class="chip" data-copy="Use the shopify-agent to show me the traffic options comparison for RIDGEWOOD with real cost and effort tradeoffs.">Traffic options</button>
+          <button class="chip" data-copy="Use the shopify-agent to audit RIDGEWOOD's product pages for conversion problems and rank the fixes.">Page audit</button>
+          <button class="chip" data-copy="Use the shopify-agent to recommend whether the tea SKU stays or goes, with reasoning.">Tea SKU call</button>
+          <button class="chip" data-copy="Use the shopify-agent to propose a narrower niche focus for RIDGEWOOD grounded in real demand research.">Niche focus</button>
+        </div>
+        <div class="composer">
+          <input type="text" data-agent="shopify-agent" placeholder="Ask anything about RIDGEWOOD…" aria-label="Ask the shopify-agent">
+          <button class="go">Copy</button>
+        </div>
+        <p class="hint">Copies a ready command — paste into the Claude Code chat. Store edits go live only after your approval.</p>
+      </div>
+
+      <p class="meta"><span>Folders: <code>businesses/shopify-store/</code></span><span>Admin: <code>mp3uez-hq</code></span></p>
+    </section>
+
+    <!-- ================= TRADING ================= -->
+    <section class="page" data-view="trading" hidden>
+      <p class="crumb">Robinhood Agentic<span class="sep">·</span>trading-agent</p>
+      <h2 class="title">Trading Desk<span class="pill ok">Connected</span></h2>
+      <p class="sub">Automated research: scans, backtests, and written signals. Execution is yours alone — no agent here can place, modify, or cancel an order.</p>
+
+      <div class="stats">
+        <div class="stat"><span class="n">0</span><span class="l">Documented strategies</span></div>
+        <div class="stat"><span class="n">0</span><span class="l">Signals issued</span></div>
+        <div class="stat"><span class="n">0</span><span class="l">Agent-placed orders, ever</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Where it stands</h3>
+        <p><strong>The desk runs itself every weekday morning</strong> (9:24a cloud routine, read-only Robinhood tools enforced at the session level). Its standing orders: document a strategy before generating signals from it — the old "momentum" idea counts as unverified until it's written down and backtested against real history.</p>
+        <p>Every signal lands in <code style="font-family:var(--mono); font-size:13px">signals/</code> with entry, stop, target, sizing as a % of the account, and what would prove it wrong. You place the trade in Robinhood if you agree.</p>
+      </div>
+
+      <div class="card">
+        <h3>Ask the trading-agent</h3>
+        <div class="chips">
+          <button class="chip" data-copy="Use the trading-agent to run a market scan and write up the top 3 setups as signals.">Run a scan</button>
+          <button class="chip" data-copy="Use the trading-agent to document the momentum strategy properly and backtest it against historical data.">Backtest momentum</button>
+          <button class="chip" data-copy="Use the trading-agent to give me a read-only portfolio and P&L snapshot.">Portfolio snapshot</button>
+        </div>
+        <div class="composer">
+          <input type="text" data-agent="trading-agent" placeholder="Ask anything about the trading desk…" aria-label="Ask the trading-agent">
+          <button class="go">Copy</button>
+        </div>
+        <p class="hint">Research only. Recommendations, never executions — that line doesn't move.</p>
+      </div>
+
+      <p class="meta"><span>Folders: <code>businesses/trading-desk/</code></span><span>Cloud routine: weekdays 9:24a</span></p>
+    </section>
+
+    <!-- ================= MINECRAFT ================= -->
+    <section class="page" data-view="minecraft" hidden>
+      <p class="crumb">YouTube<span class="sep">·</span>minecraft-agent</p>
+      <h2 class="title">Minecraft Channel<span class="pill info">Onboarding</span></h2>
+      <p class="sub">A monetization-first Minecraft channel. Research and scripting automate fully; recording and uploading stay human for now.</p>
+
+      <div class="card">
+        <h3>Where it stands</h3>
+        <p><strong>Format is the open decision.</strong> The Monday cloud routine researches what's currently working in the niche and drafts options — say the word and it'll pitch 2–3 concrete directions (faceless shorts, let's-plays, modded builds) backed by real demand data instead of guesses.</p>
+        <p>Once a format is picked, the pipeline is: idea → script → thumbnail brief → complete upload package in <code style="font-family:var(--mono); font-size:13px">inbox/</code>, leaving only record-edit-upload on your side.</p>
+      </div>
+
+      <div class="card">
+        <h3>Ask the minecraft-agent</h3>
+        <div class="chips">
+          <button class="chip" data-copy="Use the minecraft-agent to research current Minecraft YouTube trends and pitch 3 channel formats with reasoning.">Pitch formats</button>
+          <button class="chip" data-copy="Use the minecraft-agent to draft a full script and upload package for one strong video idea.">Draft a video</button>
+          <button class="chip" data-copy="Use the minecraft-agent to build a realistic 4-week content calendar.">Content calendar</button>
+        </div>
+        <div class="composer">
+          <input type="text" data-agent="minecraft-agent" placeholder="Ask anything about the channel…" aria-label="Ask the minecraft-agent">
+          <button class="go">Copy</button>
+        </div>
+      </div>
+
+      <p class="meta"><span>Folders: <code>businesses/minecraft-channel/</code></span><span>Cloud routine: Mondays 9:17a</span></p>
+    </section>
+
+    <!-- ================= LORE ================= -->
+    <section class="page" data-view="lore" hidden>
+      <p class="crumb">Community<span class="sep">·</span>lore-server-agent</p>
+      <h2 class="title">GoT / Lore Server<span class="pill info">Onboarding</span></h2>
+      <p class="sub">An ASOIAF-lore community — theories, deep-dives, events — marketed into the fandom's existing gathering places.</p>
+
+      <div class="card">
+        <h3>Where it stands</h3>
+        <p><strong>Platform is assumed Discord but unconfirmed</strong> — the one detail blocking sharper work. Meanwhile the Monday routine maps where the fandom already lives (subreddits, Discords, forums), drafts discussion prompts and event ideas, and keeps a launch calendar warm in <code style="font-family:var(--mono); font-size:13px">content-calendar/</code>.</p>
+        <p>Growth drafts respect each community's self-promo rules — cross-promotion that gets the server banned isn't growth.</p>
+      </div>
+
+      <div class="card">
+        <h3>Ask the lore-server-agent</h3>
+        <div class="chips">
+          <button class="chip" data-copy="Confirm the lore server platform is Discord and use the lore-server-agent to draft a launch content calendar.">Launch calendar</button>
+          <button class="chip" data-copy="Use the lore-server-agent to find cross-promotion targets in existing ASOIAF communities with their self-promo rules noted.">Cross-promo map</button>
+          <button class="chip" data-copy="Use the lore-server-agent to draft 10 lore discussion prompts strong enough to seed a new server.">Seed prompts</button>
+        </div>
+        <div class="composer">
+          <input type="text" data-agent="lore-server-agent" placeholder="Ask anything about the lore server…" aria-label="Ask the lore-server-agent">
+          <button class="go">Copy</button>
+        </div>
+      </div>
+
+      <p class="meta"><span>Folders: <code>businesses/got-lore-server/</code></span><span>Cloud routine: Mondays 9:17a</span></p>
+    </section>
+
+    <!-- ================= BOOKS ================= -->
+    <section class="page" data-view="books" hidden>
+      <p class="crumb">QuickBooks<span class="sep">·</span>finance-agent</p>
+      <h2 class="title">Cross-Business Books<span class="pill danger">Blocked</span></h2>
+      <p class="sub">One financial picture across every venture — P&amp;L, cash flow, month-end, tax prep. Read-and-report only; it never moves money.</p>
+
+      <div class="card">
+        <h3>Where it stands</h3>
+        <p><strong>Blocked on a single step:</strong> QuickBooks needs authorizing in your claude.ai connector settings. Until then the finance-agent won't invent numbers to fill the gap — no data beats fake data. The moment it's live, it pulls real P&amp;L per venture and a cloud routine can take over the recurring rollups.</p>
+      </div>
+
+      <div class="card">
+        <h3>Ask the finance-agent</h3>
+        <div class="chips">
+          <button class="chip" data-copy="Check whether QuickBooks is authorized yet, and if so have the finance-agent pull a P&L snapshot across all businesses.">Check + snapshot</button>
+          <button class="chip" data-copy="Use the finance-agent to set up the cross-business bookkeeping structure it will fill once QuickBooks is authorized.">Prep structure</button>
+        </div>
+        <div class="composer">
+          <input type="text" data-agent="finance-agent" placeholder="Ask anything about the books…" aria-label="Ask the finance-agent">
+          <button class="go">Copy</button>
+        </div>
+      </div>
+
+      <p class="meta"><span>Authorize at <code>claude.ai/customize/connectors</code></span></p>
+    </section>
+  </main>
+</div>
+
+<div class="toast" id="toast" role="status">Copied</div>
+
+<script>
+(function(){
+  var views = document.querySelectorAll("[data-view]");
+  var navs = document.querySelectorAll("[data-nav]");
+  var order = ["overview","etsy","shopify","trading","minecraft","lore","books"];
+
+  function show(name){
+    if (order.indexOf(name) < 0) name = "overview";
+    views.forEach(function(v){ v.hidden = v.getAttribute("data-view") !== name; });
+    navs.forEach(function(b){ b.classList.toggle("on", b.getAttribute("data-nav") === name); });
+    if (("#/" + name) !== location.hash) history.replaceState(null, "", "#/" + name);
+    window.scrollTo(0, 0);
+  }
+  navs.forEach(function(b){
+    b.addEventListener("click", function(){ show(b.getAttribute("data-nav")); });
+  });
+  window.addEventListener("hashchange", function(){ show(location.hash.replace("#/","")); });
+  document.addEventListener("keydown", function(e){
+    if (e.target.tagName === "INPUT" || e.metaKey || e.ctrlKey || e.altKey) return;
+    var i = parseInt(e.key, 10) - 1;
+    if (i >= 0 && i < order.length) show(order[i]);
+  });
+  show(location.hash.replace("#/","") || "overview");
+
+  var toast = document.getElementById("toast"), toastTimer = null;
+  function ping(msg){
+    toast.textContent = msg;
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove("show"); }, 1800);
+  }
+  function copy(text, msg){
+    function done(){ ping(msg || "Copied — paste into the Claude Code chat"); }
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(done, done);
+    } else { done(); }
+  }
+  document.querySelectorAll(".chip[data-copy]").forEach(function(c){
+    c.addEventListener("click", function(){ copy(c.getAttribute("data-copy")); });
+  });
+  document.querySelectorAll(".composer").forEach(function(comp){
+    var input = comp.querySelector("input");
+    var go = comp.querySelector(".go");
+    function fire(){
+      var t = input.value.trim();
+      if (!t) return;
+      copy("Use the " + input.getAttribute("data-agent") + " to " + t);
+      input.value = "";
+    }
+    go.addEventListener("click", fire);
+    input.addEventListener("keydown", function(e){ if (e.key === "Enter") fire(); });
+  });
+
+  var root = document.documentElement;
+  var btn = document.getElementById("themebtn");
+  var modes = ["auto","dark","light"], mi = 0;
+  btn.addEventListener("click", function(){
+    mi = (mi + 1) % modes.length;
+    var m = modes[mi];
+    if (m === "auto") root.removeAttribute("data-theme");
+    else root.setAttribute("data-theme", m);
+    btn.textContent = "Theme: " + m;
+  });
+})();
+</script>

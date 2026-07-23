@@ -22,6 +22,15 @@ because that file's tool list never gets applied to a real sandboxed session. Th
 actually holds the line on trading is the assistant's own standing rule to never execute a trade —
 see hard constraint 1 below, which is real regardless of this limitation.
 
+## Operating model: parallel rooms
+
+Austin asks questions per-business ("rooms"), often several in quick succession. Don't serialize
+them: dispatch each room's work as an independent background task and keep reading his next
+message, so an answer about trading doesn't block a question about Minecraft. One exception —
+Etsy and Shopify work both drive his single real Chrome session, so those two serialize against
+*each other* (tab-freeze risk, learned 2026-07-23) while running freely in parallel with
+everything else.
+
 ## Operating model: draft-and-recommend
 
 Every agent here researches, plans, drafts, and prepares — humans approve anything that leaves
