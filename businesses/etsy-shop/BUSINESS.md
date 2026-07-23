@@ -96,6 +96,16 @@ guessed) and did keyword research on current Etsy demand in this niche. Key find
 - Nothing was changed live — all of the above is drafted for Austin's review per the
   approval-queue/draft-and-recommend model.
 
+**All 6 SEO revisions published live 2026-07-23** (Austin approved). Debt-Free Starter Kit,
+ADHD Debt Payoff Kit, No-Shame Weekly Budget Check-In, Payday Checklist, Sinking Fund Tracker, and
+Savings Goal Tracker all now carry the researched titles/tags on the live shop — "cash stuffing"
+added to the two savings listings, Payday Checklist went from 7/13 to 13/13 tags, and the
+shame-free/gentle-finance emotional-intent language is live on the ADHD listings. One deviation
+from the draft: the Savings Goal Tracker title couldn't use "&" twice (Etsy validation) — used
+"and" for the added phrase instead, keeping the pre-existing "US Letter & A4" ampersand. The ADHD
+Reset Routine draft (missing digital file, photos, wrong item type) is still unpublished — Austin
+hasn't actioned that checklist yet.
+
 ## How the agent works today
 
 No Etsy API/MCP connector is available yet (checked 2026-07-22). Until one exists, `etsy-agent`:
