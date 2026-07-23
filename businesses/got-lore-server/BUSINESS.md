@@ -102,10 +102,25 @@ backlash or a Mojang warning — keep this list visible to anyone pricing new st
 ## Current state
 
 Concept locked 2026-07-22. No server infrastructure (host, plugins, world) yet, no Discord yet,
-no players. Next concrete steps: pick final (non-trademarked) naming, choose a host and core
-plugin stack (Towny or Factions-style + a claims plugin + an economy plugin + a cosmetic-only
-store platform e.g. Tebex), stand up Discord as the support hub, and time the public launch to
-land right after the channel's launch/announcement video goes up.
+no players. Next concrete steps: pick final (non-trademarked) naming, choose a core plugin stack
+(Towny or Factions-style + a claims plugin + an economy plugin + a cosmetic-only store platform
+e.g. Tebex), stand up Discord as the support hub, and time the public launch to land right after
+the channel's launch/announcement video goes up.
+
+**Hosting decided 2026-07-23**: Apex Hosting. Real pricing pulled directly from
+apexminecrafthosting.com (not a review-site estimate) — Minecraft: Java Edition plans:
+
+| Tier | RAM | First month | Recurring | Fit |
+|---|---|---|---|---|
+| Basic | 4 GB | $11.24 | $14.99/mo | Fine for launch — near-zero population, testing the plugin stack |
+| Basic | 6 GB | $16.87 | $22.49/mo | Step-up once Houses start filling and plugins (Towny/economy/claims) add load |
+| Advanced | 8 GB | $20.99 | $27.99/mo | All modpacks/plugins, handles real concurrent player growth |
+| EX (16 GB) | 16 GB | $53.99 | $71.99/mo | Only worth it once the server has a real, sustained population |
+
+All tiers include unlimited player slots, a free subdomain, one-click plugin installer, and
+automated backups. **Recommendation: start at 4 GB** — a brand-new server has zero players at
+launch, no reason to pay for headroom that isn't needed yet; upgrade the tier once Houses are
+actually filling up rather than provisioning for hoped-for growth.
 
 ## How the agent works today
 

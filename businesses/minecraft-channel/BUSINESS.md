@@ -77,6 +77,17 @@ Not yet created. No channel, no uploaded content. Format decided (above) and a f
 launch-video script exists at `scripts/server-launch-announcement.md`, written to premiere
 alongside the server's public launch.
 
+**Voice + gear decided 2026-07-23**: voiceover-only (no face cam) — confirmed as the right call for
+this genre and lowest barrier to actually start. Austin is starting from zero on recording/editing
+gear. Recommended budget stack, real and current as of 2026-07-23:
+- **Recording**: OBS Studio — free, no watermark, records gameplay at whatever resolution the
+  machine can handle (720p on modest hardware, 1080p/1440p on stronger).
+- **Editing**: CapCut (free, beginner-friendly, good for cuts/subtitles/export) as the starting
+  point; DaVinci Resolve as a free but steeper-learning-curve upgrade once comfortable.
+- **Voiceover**: record real narration directly; AI narration tools (e.g. ElevenLabs) are a viable
+  fallback if Austin doesn't want to voice it himself, quality is genuinely close to human now.
+- Total new-software cost: **$0** — everything above is free at the tier a new channel needs.
+
 ## How the agent works today
 
 No YouTube upload/analytics connector is available yet (checked 2026-07-22). Until one exists,
