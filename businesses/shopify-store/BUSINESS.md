@@ -58,6 +58,12 @@ in a more defensible niche.
   or a conversion problem (untracked inventory badges, no reviews, generic dropship product pages
   are common culprits) — worth an actual page-by-page audit rather than assuming it's a traffic
   problem.
+- Drive real traffic — full organic-vs-paid-vs-hybrid cost/effort comparison, with researched
+  CPC/CAC figures and the Meta/Google/TikTok weapons-policy constraint on the axe/knife SKUs,
+  written up at [marketing/traffic-options.md](marketing/traffic-options.md) (2026-07-22).
+  Recommendation: organic (SEO + TikTok organic, $0, ~2-4 months to signal) starting now, paid
+  (Google Shopping first, ~$600-800/month MVT, weapon SKUs excluded from the feed) starting once
+  Phase 0 product-copy hygiene is done in 2-4 weeks — not a simultaneous multi-channel paid launch.
 - The "Agentic" sales channel being already enabled is worth understanding/using deliberately —
   confirm what it's currently configured to do.
 
