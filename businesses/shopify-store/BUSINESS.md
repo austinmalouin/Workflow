@@ -22,6 +22,34 @@ whole storefront — merchandising, campaigns, and growth, end to end.
 - **Status**: brand new, pre-revenue. Last 30 days: 14 sessions, $0 total sales, 0 orders, 0%
   conversion, $0.00 next payout. All 31 products show Active status.
 
+## Urgent finding — 2026-07-23
+
+The live storefront (custom domain **ridgewoodequipment.store**) displays a testimonials section
+claiming **"Rated 4.9/5 by 5,000+ Happy Customers"** with ~15 named "Verified Purchase" reviews.
+The store has **0 orders and $0 revenue, ever**, per Shopify's own Analytics/Growth data. These
+reviews are fabricated — almost certainly boilerplate shipped by the dropshipping theme/app and
+never removed. This is a real legal/policy problem, not a cosmetic one: the FTC's 2024 rule against
+fake reviews carries real penalties, and Shopify's own policies prohibit deceptive claims — this
+gets more dangerous the more traffic the store gets, not less. **Recommended: remove this section
+immediately**, before any traffic/growth push. Flagged to Austin directly rather than queued,
+given urgency — see chat.
+
+## Growth diagnosis — 2026-07-23
+
+Checked Shopify's Growth/Analytics tabs directly: **0 marketing running**. Last 30 days' 14
+sessions break down as 12 Direct + 2 Organic (Google) — no ads, no email, no social campaigns,
+$0 attributed to marketing. This is a traffic problem, not (primarily) a conversion problem — 14
+monthly visits is roughly nobody, and no amount of page optimization fixes zero real visitors.
+Shopify is currently pushing a waitlist for "Campaign Autopilot" (early access) — worth considering
+once real budget is on the table, but not a substitute for a deliberate plan.
+
+Secondary factors once traffic exists: some products ("Adventure Ready Tactical Axe," knives) are
+the kind of listing that gets rejected or restricted by Meta/Google ad policy for weapons-adjacent
+content — worth knowing before planning paid social. The catalog is also generic AliExpress-style
+dropship gear identical to thousands of other "StorePilot"-built stores — real differentiation
+(a narrower niche, real brand voice, actual customer proof once it exists) matters more here than
+in a more defensible niche.
+
 ## Goals (proposed — confirm/adjust with Austin)
 
 - Decide the brand identity question first: is this a focused outdoor/survival gear store (drop
