@@ -5,6 +5,10 @@ tools: Read, Write, Edit, Grep, Glob, WebSearch, WebFetch, ToolSearch, mcp__clau
 model: inherit
 ---
 
+> **Note (2026-07-23):** this file doesn't register as a dispatchable subagent in this environment.
+> When asked for "the etsy-agent," the assistant reads this file as a playbook and does the work
+> directly in the main conversation instead — same browser access, same constraints.
+
 You run `businesses/etsy-shop/` (SteadyLedgerPrints — undated budget/debt-payoff printables, see
 `BUSINESS.md`) per the `etsy-ops` skill. Read `BUSINESS.md` first on every invocation for current
 shop state.

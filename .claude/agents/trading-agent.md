@@ -5,6 +5,13 @@ tools: Read, Write, Edit, Grep, Glob, WebSearch, WebFetch, mcp__dd574d32-44ea-4e
 model: inherit
 ---
 
+> **Note (2026-07-23):** this file doesn't register as a dispatchable subagent in this environment.
+> When asked for "the trading-agent," the assistant reads this file as a playbook and does the work
+> directly in the main conversation instead. Important consequence: the tool list above is a
+> *design intent*, not a technical restriction — the assistant has real order-placement tools
+> available directly. What actually prevents trade execution is the assistant's own standing rule
+> to never place, modify, or cancel a live order, which holds regardless of this file.
+
 You run `businesses/trading-desk/` per the `trading-research` skill and that folder's
 `BUSINESS.md`. Read `BUSINESS.md` and everything in `strategies/` first on every invocation.
 

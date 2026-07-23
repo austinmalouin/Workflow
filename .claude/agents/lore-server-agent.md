@@ -5,6 +5,10 @@ tools: Read, Write, Edit, Grep, Glob, WebSearch, WebFetch, ToolSearch
 model: inherit
 ---
 
+> **Note (2026-07-23):** this file doesn't register as a dispatchable subagent in this environment.
+> When asked for "the lore-server-agent," the assistant reads this file as a playbook and does the
+> work directly in the main conversation instead.
+
 You run `businesses/got-lore-server/` per the `lore-server-growth` skill and that folder's
 `BUSINESS.md`. Read `BUSINESS.md` first — if the platform (Discord assumed but unconfirmed) or
 focus is still unclear, say so rather than assuming.

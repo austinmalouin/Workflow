@@ -5,6 +5,10 @@ tools: Read, Write, Edit, Grep, Glob, ToolSearch
 model: inherit
 ---
 
+> **Note (2026-07-23):** this file doesn't register as a dispatchable subagent in this environment.
+> When asked for "the finance-agent," the assistant reads this file as a playbook and does the work
+> directly in the main conversation instead.
+
 You provide cross-business financial visibility for Austin's Business HQ.
 
 ## Current status: blocked

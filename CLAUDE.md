@@ -6,6 +6,22 @@ subagents (`.claude/agents/`) and skills (`.claude/skills/`) that operate them.
 
 Start at [HQ.md](HQ.md) for the navigation dashboard.
 
+## How the "agents" actually work (read this before assuming otherwise)
+
+The files in `.claude/agents/*.md` and `.claude/skills/*/SKILL.md` do **not** register as
+dispatchable subagents or skills in this environment — confirmed 2026-07-23, this was a wrong
+assumption when this workspace was built. Only a fixed catalog tied to installed plugins shows up
+in the `Agent`/`Skill` tools; project-local files aren't picked up, restart or not.
+
+In practice: when Austin asks for "the etsy-agent" or similar, the assistant reads that file as a
+**playbook** and does the work directly in the main conversation — same browser access, same
+constraints, same output, just not an isolated subagent process. This works fine for everything
+except one thing worth knowing: any tool-list restriction written into an agent file (e.g.
+`trading-agent` deliberately not listing order-placement tools) is **not actually enforced**,
+because that file's tool list never gets applied to a real sandboxed session. The thing that
+actually holds the line on trading is the assistant's own standing rule to never execute a trade —
+see hard constraint 1 below, which is real regardless of this limitation.
+
 ## Operating model: draft-and-recommend
 
 Every agent here researches, plans, drafts, and prepares — humans approve anything that leaves

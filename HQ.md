@@ -38,15 +38,23 @@ weekly rollups, and deciding where your attention/budget should go next.
 
 ## How to use this
 
-Ask the main assistant to invoke an agent by name, e.g.:
+Ask the assistant to act as an agent by name, e.g.:
 
 > "Have the etsy-agent draft five new listing titles for the fall niche."
 > "Get the trading-agent to scan for momentum setups and write up the top 3."
 > "Ask the overseer for this week's priority across all five businesses."
 
-Each agent only has the tools appropriate to its job — see `.claude/agents/<name>.md` for exactly
-what it can touch. None of them can spend money, send external messages, or publish content
-without it either being a Gmail *draft* (never sent) or landing in `approvals/` for your sign-off.
+**How this actually works** (confirmed 2026-07-23): these aren't separately dispatchable
+subagents — `.claude/agents/*.md` files don't register in this environment's `Agent` tool, restart
+or not. When you name an agent, the assistant reads that file as a playbook and does the work
+directly in the same conversation, with the same real tools (browser, files, Robinhood, etc.) —
+functionally the same result, just not an isolated process. See `.claude/agents/<name>.md` for
+each one's intended scope. The one place this matters: `trading-agent`'s file lists a restricted
+tool set (no order placement) as a *design intent*, but that restriction isn't technically
+enforced without real subagent isolation — what actually prevents trade execution is the
+assistant's own standing rule to never place a trade, which holds regardless. None of the "agents"
+spend money, send external messages, or publish content without it either being a Gmail *draft*
+(never sent) or landing in `approvals/` for your sign-off.
 
 ## Approval queue
 
