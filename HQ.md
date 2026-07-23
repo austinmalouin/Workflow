@@ -4,6 +4,24 @@ Last restructured: 2026-07-22
 
 **Visual dashboard**: [claude.ai/code/artifact/1c603ab1-a189-41ca-a283-5ff643234823](https://claude.ai/code/artifact/1c603ab1-a189-41ca-a283-5ff643234823) — the actual "app" view of everything below. Ask to have it regenerated whenever venture status changes meaningfully; it's a snapshot, not a live feed.
 
+**Repo**: [github.com/austinmalouin/Workflow](https://github.com/austinmalouin/Workflow) — this workspace is now a git repo, pushed. Pull before assuming local state is current; cloud routines below commit and push their own work back here.
+
+**Permanent automation (cloud routines, run whether or not this session is open)**:
+
+| Routine | Cadence | Covers | Connector used |
+|---|---|---|---|
+| [business-hq-trading-research](https://claude.ai/code/routines/trig_01CG1U9mLCpUFYJkwYSQW8Me) | Weekdays 9:24am ET | Trading desk: scans, backtests, signals — read-only, no order-placement tool exists in this routine | Robinhood_Agentic (read-only tools only) |
+| [business-hq-content-research](https://claude.ai/code/routines/trig_01PSuKAiNvzfua299kBZAowX) | Mondays 9:17am ET | Minecraft channel + lore server: research, scripts, content calendar, thumbnail briefs | Canva |
+
+**Not yet possible in the cloud**: Etsy and Shopify checks need your actual logged-in Chrome
+(Claude-in-Chrome), which only exists locally — those stay on the local session cron below.
+Finance/QuickBooks cloud automation needs QuickBooks connected as a claude.ai connector first
+(it isn't yet) — ask to set that up once it's authorized.
+
+**Local session cron (only while this Claude Code session stays open, expires in 7 days)**:
+- Etsy shop check — daily 8:47am
+- Cross-business rollup (nudges Minecraft/lore-server/Shopify progress) — daily 6:13pm
+
 ## Ventures
 
 | Business | Folder | Agent | Status |
