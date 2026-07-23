@@ -17,9 +17,22 @@ full ownership of the storefront's growth, not just occasional help.
   Kit") — this is a real differentiator worth leaning into, not incidental.
 - **Fulfillment**: instant digital download, zero production/shipping cost per sale.
 - **Location**: North Carolina, US.
-- **Status on Etsy**: New shop, opened 2026. 10 active listings, 0 sales, 0 reviews yet.
+- **Status on Etsy**: New shop, opened 2026. 10 active listings + 1 draft not yet published
+  ("ADHD Reset Routine & No-Shame Cleaning Kit"), 0 sales, 0 reviews yet.
 - **Pricing**: everything currently at an intro 40%-off sale price, ranging $0.75 (single
   checklist) to $7.20 (Debt-Free Starter Kit bundle); original prices $1.25–$12.
+
+## Stats check — 2026-07-23 (month to date, Jul 1–23)
+
+- **19 visits, 0 orders, 0% conversion, $0.00 revenue** — no change in sales since shop opened.
+- **1 abandoned cart** this month — first real buyer-intent signal, no purchase yet.
+- Only **6 total listing views** across all visits (0.32 views/visit) — most visitors aren't
+  clicking into any listing at all. Most-viewed: Savings Goal Tracker (5 views), Debt-Free Starter
+  Kit (1 view). The other 8 listings got zero views this month.
+- **Traffic mix**: Etsy search sent **0** visits — everything came from Etsy app/other Etsy pages
+  (7), Etsy marketing/SEO (3), and direct/other traffic (8, largely Austin/testing likely). Zero
+  search visits for a shop with 10 SEO-able listings is the single most concerning number here —
+  worth an SEO/tag audit before anything else.
 
 ## Current listings (10 active)
 
