@@ -64,6 +64,38 @@ Real shop, freshly launched, pre-revenue. No open questions blocking work — `e
 re-check the live shop via browser whenever it needs current state rather than asking Austin to
 repeat it here.
 
+**SEO audit completed 2026-07-22** (per Austin's request, ahead of the zero-search-traffic
+problem). Pulled actual title/tags for all 10 active listings directly from Shop Manager (not
+guessed) and did keyword research on current Etsy demand in this niche. Key findings:
+
+- 6 of 10 listings already use all 13 available tags; **Payday Checklist Printable was only using
+  7/13** (biggest single gap found); **No-Shame Weekly Budget Check-In was at 12/13** (one empty
+  slot).
+- No listing anywhere in the shop uses "cash stuffing" — confirmed via research to be a currently
+  hot, fast-growing search term tightly matched to the Sinking Fund Tracker and Savings Goal
+  Tracker products.
+- The ADHD-specific listings (ADHD Debt Payoff Kit, No-Shame Weekly Budget Check-In) are the
+  best-optimized mechanically but were missing validated emotional-intent phrases ("shame-free,"
+  "gentle finance") that competing ranking listings in this sub-niche actually use.
+- Full research-backed revisions (new title + 13-tag set + meta description each) were drafted for
+  the 6 highest-leverage listings, prioritized by sales potential, in
+  `businesses/etsy-shop/listings/`:
+  `debt-free-starter-kit-seo-revision.md`, `adhd-debt-payoff-kit-seo-revision.md`,
+  `no-shame-weekly-budget-checkin-seo-revision.md`, `payday-checklist-seo-revision.md`,
+  `sinking-fund-tracker-seo-revision.md`, `savings-goal-tracker-seo-revision.md`. The remaining 4
+  listings (Annual Budget Overview, Monthly Bill Tracker, Debt Snowball Tracker, Weekly Budget
+  Planner) already use all 13 tags with reasonable keyword coverage and were judged lower priority
+  — not revised this round.
+- The unpublished draft ("ADHD Reset Routine & No-Shame Cleaning Kit") turned out to already have
+  a complete title/tags/description/price — contrary to the original assumption. The real blockers
+  are structural: **it's configured as a "Physical item" instead of "Digital files"** (wrong
+  shipping/returns flow), it has **no digital file attached** and **no photos/video uploaded**, and
+  its description has a **branding inconsistency** ("Solera Palms" instead of the shop's actual
+  name) that needs fixing before publish. Full pre-publish checklist in
+  `businesses/etsy-shop/listings/adhd-reset-routine-draft.md`.
+- Nothing was changed live — all of the above is drafted for Austin's review per the
+  approval-queue/draft-and-recommend model.
+
 ## How the agent works today
 
 No Etsy API/MCP connector is available yet (checked 2026-07-22). Until one exists, `etsy-agent`:
