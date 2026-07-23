@@ -22,17 +22,16 @@ whole storefront — merchandising, campaigns, and growth, end to end.
 - **Status**: brand new, pre-revenue. Last 30 days: 14 sessions, $0 total sales, 0 orders, 0%
   conversion, $0.00 next payout. All 31 products show Active status.
 
-## Urgent finding — 2026-07-23
+## Resolved — fake reviews removed, 2026-07-23
 
-The live storefront (custom domain **ridgewoodequipment.store**) displays a testimonials section
-claiming **"Rated 4.9/5 by 5,000+ Happy Customers"** with ~15 named "Verified Purchase" reviews.
-The store has **0 orders and $0 revenue, ever**, per Shopify's own Analytics/Growth data. These
-reviews are fabricated — almost certainly boilerplate shipped by the dropshipping theme/app and
-never removed. This is a real legal/policy problem, not a cosmetic one: the FTC's 2024 rule against
-fake reviews carries real penalties, and Shopify's own policies prohibit deceptive claims — this
-gets more dangerous the more traffic the store gets, not less. **Recommended: remove this section
-immediately**, before any traffic/growth push. Flagged to Austin directly rather than queued,
-given urgency — see chat.
+The live storefront (custom domain **ridgewoodequipment.store**) was displaying a testimonials
+section ("PP - Reviews," part of the PagePilot.ai theme) claiming **"Rated 4.9/5 by 5,000+ Happy
+Customers"** with ~15 fabricated "Verified Purchase" reviews, despite the store having 0 orders
+and $0 revenue ever. This was a real FTC/Shopify-policy risk, not cosmetic — fake reviews carry
+real penalties under the FTC's 2024 rule, and it only gets worse with more traffic. Removed via
+the theme editor and confirmed gone on the live site the same day, with Austin's go-ahead.
+Anyone spinning up a store via an AI page-builder app (PagePilot, StorePilot, etc.) should audit
+for this same boilerplate-social-proof pattern before launch.
 
 ## Growth diagnosis — 2026-07-23
 
