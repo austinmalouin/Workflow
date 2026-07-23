@@ -12,11 +12,10 @@ whole storefront — merchandising, campaigns, and growth, end to end.
 - **Niche**: outdoor/camping/survival adventure gear — flashlights, knives, whistles, hammocks,
   backpacks, camp lighting, cutlery/dining sets, tactical/EDC gear. 30 of 31 products are
   dropshipped through an app called **StorePilot** (inventory not tracked, vendor "StorePilot").
-- **One outlier product**: "Superbloom - Sweet Lemon Oolong Green Tea" — real vendor (August
-  Uncommon Tea), 743 units actually in stock across 3 variants. This is a genuinely different
-  supply model (real inventory) sitting inside an otherwise pure-dropship catalog — worth deciding
-  deliberately whether it belongs, since mixing outdoor gear and specialty tea under one brand is
-  an odd fit unless there's a reason (e.g. "trail tea," camp-brew angle).
+- **Tea SKU — archived 2026-07-23**: "Superbloom - Sweet Lemon Oolong Green Tea" (real vendor,
+  August Uncommon Tea, 742 units) sat oddly inside a pure outdoor/survival-gear catalog. Austin
+  decided to cut it; archived (not deleted — reversible) via Shopify admin the same day. Catalog
+  is now consistently outdoor/survival gear only.
 - **Sales channels enabled**: Online Store, Agentic (Shopify's agentic-commerce channel — already
   on), TikTok, Collective.
 - **Status**: brand new, pre-revenue. Last 30 days: 14 sessions, $0 total sales, 0 orders, 0%
@@ -49,21 +48,19 @@ dropship gear identical to thousands of other "StorePilot"-built stores — real
 (a narrower niche, real brand voice, actual customer proof once it exists) matters more here than
 in a more defensible niche.
 
-## Goals (proposed — confirm/adjust with Austin)
+## Goals
 
-- Decide the brand identity question first: is this a focused outdoor/survival gear store (drop
-  the tea SKU or spin it out separately), or intentionally broader? A 31-SKU catalog with no
-  sales yet benefits more from a tight, credible niche than breadth.
+- ~~Decide the brand identity question~~ — **decided 2026-07-23: focused outdoor/survival gear
+  store, tea SKU cut** (see above).
 - Get the first sale — 14 sessions with $0 sales over 30 days suggests either no real traffic yet
   or a conversion problem (untracked inventory badges, no reviews, generic dropship product pages
   are common culprits) — worth an actual page-by-page audit rather than assuming it's a traffic
   problem.
-- Drive real traffic — full organic-vs-paid-vs-hybrid cost/effort comparison, with researched
-  CPC/CAC figures and the Meta/Google/TikTok weapons-policy constraint on the axe/knife SKUs,
-  written up at [marketing/traffic-options.md](marketing/traffic-options.md) (2026-07-22).
-  Recommendation: organic (SEO + TikTok organic, $0, ~2-4 months to signal) starting now, paid
-  (Google Shopping first, ~$600-800/month MVT, weapon SKUs excluded from the feed) starting once
-  Phase 0 product-copy hygiene is done in 2-4 weeks — not a simultaneous multi-channel paid launch.
+- **Traffic plan approved 2026-07-23**: organic-first. Full comparison at
+  [marketing/traffic-options.md](marketing/traffic-options.md). Now executing: SEO content rewrite
+  + TikTok organic content plan starting immediately, $0 spend. Paid (Google Shopping first,
+  ~$600-800/month MVT, weapon SKUs excluded from any feed) holds until Phase 0 product-copy hygiene
+  is done in 2-4 weeks — not a simultaneous multi-channel paid launch.
 - The "Agentic" sales channel being already enabled is worth understanding/using deliberately —
   confirm what it's currently configured to do.
 
