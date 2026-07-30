@@ -700,7 +700,41 @@ is fully done, per the crash-safety lesson learned earlier in this file):**
   verified live via `find` on ridgewoodequipment.store/products/3-in-1-multifunction-camping-light —
   intro paragraph and all 4 bullets present and correct. No tooling issues this product; theme
   editor was responsive on the first tab.
-- [ ] Portable Stainless Wire Survival Saw
+- [x] **Portable Stainless Wire Survival Saw — DONE, saved, and confirmed live 2026-07-29.** Draft
+  written fresh this session in
+  `products/portable-stainless-wire-survival-saw-seo-revision.md`. Real keyword research: exact
+  volume for "wire saw"/"survival wire saw"/"pocket wire saw" not retrievable via free tools
+  (checked directly), flagged rather than invented; real demand confirmed via active competing
+  listings (Amazon's AceCamp/BCB wire saws, Walmart's "Wire Survival Saw" category, Bob Vila's 2026
+  pocket-chainsaw buying guide for the related category). Live SEO title: "Portable Stainless Wire
+  Survival Saw — Compact Pocket Wire Saw" (63 chars). Meta description: "All-steel wire saw that
+  cuts wood, plastic, bone, and rubber (not metal) - packs flat, weighs almost nothing, and fits in
+  any survival kit or pack pocket." (156 chars). Same Product information → PP - Text (intro) +
+  PP - Benefits (Text 1-4) structure. Rewrote PP - Text to "Bulky folding saws are the kind of gear
+  that gets left behind because they take up too much room. This wire saw skips that trade-off
+  entirely - it packs flat enough to disappear into a pocket or kit, but still gets real cutting
+  done when you need it." Rewrote the 4 PP - Benefits bullets to "All-steel wire construction cuts
+  wood, plastic, bone, and rubber with genuine sawing strength - not a gimmick blade", "Simple
+  pull-and-rub use - loop it around what you're cutting and work it back and forth by hand, no
+  setup or assembly required", "Packs virtually flat - light enough and thin enough to add to a
+  survival kit, glovebox, or pack pocket without noticing the weight", "Note: not for metal - this
+  saw is built for wood, plastic, bone, and rubber; it won't cut through metal, so it's a
+  backup/utility tool, not a replacement for a hacksaw" (the old copy never stated the actual
+  pull-and-rub usage method or the real not-for-metal limitation — this session added the
+  limitation explicitly as a real accuracy/expectation-setting improvement, not a downside to hide).
+  Saved via top-bar Save (confirmed "Changes saved" toast) and verified live via `find` on
+  ridgewoodequipment.store/products/portable-stainless-wire-survival-saw — intro paragraph and all
+  4 bullets present and correct.
+  **Notable this product**: the admin SEO-listing "Edit" pencil icon didn't visibly render on the
+  first couple of screenshot checks after clicking (looked like nothing happened), but the click
+  had actually worked and expanded the Page title/Meta description form below the fold each time —
+  lesson: after clicking the pencil, scroll down before concluding the click failed. Also hit the
+  known keyboard-shortcut-leak issue once: typing into the meta description field before it was
+  genuinely focused triggered Shopify's global "b" shortcut and opened an empty "Add collection" →
+  "Add blog post" chain of modals; both closed via their own Close/back navigation with nothing
+  saved (Save button stayed disabled throughout), confirmed the real product title had actually
+  saved correctly in the meantime, then redid the meta description properly (screenshot-verifying
+  only the target field was highlighted before typing) and it saved clean on retry.
 - [ ] USB Solar Camping Light
 - [ ] Adventure Cozy Puff Ultralight Blanket
 - [ ] Winter Wearable Sleeping Bag Poncho
