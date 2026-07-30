@@ -1,0 +1,1066 @@
+<!doctype html><html><head><!-- frame-runtime --><script>window.__FRAME_PREAMBLE={"capabilities":{"downloads":"downloads.BABDwU1K.js","mcp":"mcp.hoz5jxDa.js","permissions":"permissions.ByA9Fd8x.js","self":"self.D3u1zjZe.js","user":"user.Cp1-RnjB.js"},"transforms":"_transforms.DYk1Ltlh.js","comments":"_comments.DiwQajF_.js","translate":"_translate.C5leZL2A.js"}</script><script>(function(){"use strict";const Ee="modulepreload",we=function(e){return"/"+e},Se={},ee=function(t,n,l){let i=Promise.resolve();function s(f){const c=new Event("vite:preloadError",{cancelable:!0});if(c.payload=f,window.dispatchEvent(c),!c.defaultPrevented)throw f}return i.then(f=>{for(const c of f||[])c.status==="rejected"&&s(c.reason);return t().catch(s)})},te=["light","dark","system"];function ne(e){if(e===null||typeof e!="object")return!1;const t=e.__frame_init;return t!==null&&typeof t=="object"}function W(e){return e!==null&&typeof e=="object"&&e.__frame_size_poke===!0}function re(e){if(e===null||typeof e!="object")return!1;const t=e.__frame_theme;if(t===null||typeof t!="object")return!1;const n=t.theme;return typeof n=="string"&&te.includes(n)}function se(e){try{typeof reportError=="function"?reportError(e):setTimeout(()=>{throw e},0)}catch{}}const oe=Object.freeze(Object.assign(Object.create(null),{user:Object.freeze(Object.assign(Object.create(null),{id:null,isOwner:!1,canEdit:!1,name:null,avatarUrl:null,email:null}))}));function Y(e){if(window===top||e.type==="auxclick"&&e.button!==1)return;const t=e.composedPath?e.composedPath():[e.target];let n=null;for(let f=0;f<t.length;f++){const c=t[f];if(c&&c.matches&&c.matches("a[href],area[href]")){n=c;break}}if(!n&&e.target&&e.target.closest&&(n=e.target.closest("a[href],area[href]")),!n)return;const l=n.getAttribute("href");if(!l)return;let i,s;try{i=new URL(l,document.baseURI),s=new URL(document.baseURI).origin}catch{return}(i.protocol==="http:"||i.protocol==="https:")&&i.origin!==s&&(e.preventDefault(),parent.postMessage({__frame_nav:!0,url:i.href},"*"))}const K={};function D(e){if(window===top)return;const t=Date.now();t-(K[e]||0)<500||(K[e]=t,parent.postMessage({__frame_engaged:!0,kind:e},"*"))}const ie=2e3,x=["wheel","touchstart","touchmove","keydown","pointerdown"];let J=0;function ae(e){e.isTrusted&&(J=Date.now())}function ce(){addEventListener("click",Y,!0),addEventListener("auxclick",Y,!0)}function le(){for(let e=0;e<x.length;e++)addEventListener(x[e],ae,{capture:!0,passive:!0});addEventListener("scroll",e=>{e.isTrusted&&Date.now()-J<ie&&D("scroll")},{capture:!0,passive:!0}),addEventListener("pointermove",e=>{e.isTrusted&&D("pointer")},{capture:!0,passive:!0}),addEventListener("click",e=>{e.isTrusted&&D("click")},{capture:!0,passive:!0})}const I="__frame_scroll",ue=150,fe=310,de=160,me=3e4;function pe(){let e=0,t=!1,n=!1,l=!1,i=0;const s=a=>{try{sessionStorage.setItem(I,JSON.stringify({y:a}))}catch{}},f=()=>{if(t){t=!1;return}n=!0,clearTimeout(e),e=setTimeout(()=>s(scrollY),ue)};try{addEventListener("scroll",f,{passive:!0}),addEventListener("pagehide",()=>{clearTimeout(e),s(scrollY)})}catch{}const c=()=>{let a;try{a=sessionStorage.getItem(I)}catch{return null}if(a===null)return null;let _;try{_=JSON.parse(a)}catch{_=null}const m=_?.y;if(!(typeof m=="number"&&Number.isFinite(m)&&m>=0)){try{sessionStorage.removeItem(I)}catch{}return null}return m};let g=!1;const p=a=>{try{const _=scrollY;scrollTo({top:a,left:0,behavior:"instant"}),i=a,l=!0,s(a);const m=scrollY;m!==_&&(t=!0),m!==a&&!g&&(g=!0,addEventListener("load",()=>{try{if(scrollY===m){const y=c();p(y!==null?y:i)}}catch{}},{once:!0}))}catch{}},o=()=>{try{return!!location.hash}catch{return!0}};let u=!1;const d=()=>{try{if(u||innerWidth>fe||innerHeight>de)return;u=!0;const a=Date.now(),_=()=>{try{removeEventListener("resize",_)}catch{}if(Date.now()-a>me||n||o())return;const m=c();p(m!==null?m:i)};addEventListener("resize",_)}catch{}};let h=!1,b=!1;return{restore(){if(h||(h=!0,o()))return;const a=c();a!==null&&(p(a),d())},promoted(){if(b||(b=!0,o()))return;const a=c();a!==null?(p(a),d()):l&&p(i)}}}function he(e,t,n){const l=[...t.values()].filter(i=>i.targets.some(s=>s.startsWith(e+".")));return{wrap(i,s){const f=`${e}.${i}`,c=l.filter(g=>g.targets.includes(f));return c.length===0?(...g)=>{try{return s(...g)}catch(p){return Promise.reject(p)}}:(...g)=>{let p=g;for(const u of c){const d=u.module.parameters;if(d)try{p=d(p)}catch{return Promise.reject({code:"transform_error",id:u.id,scope:e,message:"parameters transform failed"})}}let o;try{o=s(...p)}catch(u){o=Promise.reject(u)}return o.then(u=>{for(let d=c.length-1;d>=0;d--){const h=c[d],b=h.module.returns;if(b)try{u=b(u)}catch{return n({id:h.id,scope:e,leg:"returns"}),u}}return u},u=>{for(let d=c.length-1;d>=0;d--){const h=c[d],b=h.module.throws;if(b)try{u=b(u)}catch{return n({id:h.id,scope:e,leg:"throws"}),Promise.reject(u)}}return Promise.reject(u)})}}}}function ge(e,t,n,l=()=>{}){const i=new Set(e.changes??[]),s=new Map;for(const f of i){const c=t[f];c&&s.set(f,c)}return{contract:e.contract,changes:i,flags:new Set(e.flags??[]),capabilities:e.capabilities??{},capBudgets:e.capBudgets??{},transforms:s,shellOrigin:n.shellOrigin,mount:n.mount,pipe:f=>he(f,s,l)}}(function(){const e=Object.defineProperty,t=globalThis,n=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let l=0;for(let i=0;i<n.length;i++){const s=n[i];try{e(t,s,{value:void 0,writable:!1,configurable:!1})}catch{try{delete t[s]}catch{}try{e(t,s,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof t[s]=="function"&&l++}if(l&&window!==top)try{parent.postMessage({__frame_rtc_lockdown_failed:l},"*")}catch{}})();const _e=1e4,ye=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function G(e){for(const t of ye)if(t.endsWith(":*"))try{const n=new URL(e);if(`${n.protocol}//${n.hostname}:*`===t)return!0}catch{}else if(e===t)return!0;return!1}const R=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),U=window.__FRAME_PREAMBLE?.transforms,z=window.__FRAME_PREAMBLE?.comments,$=window.__FRAME_PREAMBLE?.translate,T=/^[\w.-]+\.js$/,be=/^[a-z][a-z0-9_-]{0,63}$/;let V=null,j=null;function q(e,t,n){try{Object.defineProperty(e,t,{value:n,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(e,t,{value:n,writable:!1,configurable:!0,enumerable:!0})}catch{}}}let B=!1;function X(e){const t=document.documentElement;e==="light"||e==="dark"?(t.dataset.theme=e,t.style.colorScheme=e,B=!0):B&&(delete t.dataset.theme,t.style.colorScheme="",B=!1)}const A=Object.assign(Object.create(null),{mcp:Object.assign(Object.create(null),{watchTool:{handlerArg:3}})}),M=new Map;function Q(e,t){const n=M.get(e);if(!n)return;const l=Object.assign(Object.create(null),t);Object.assign(n.impl,l),n.impl.__settled=()=>Promise.reject({code:"capability_removed",message:`${e}: method not in this runtime`});const i=n.queue;n.queue=[];for(const s of i){const f=l[s.method];if(f)if(A[e]?.[s.method])try{s.resolve(f(...s.args))}catch{k(s,A[e][s.method].handlerArg,{code:"transform_error",message:`${e}.${s.method} rejected its arguments`})}else f(...s.args).then(s.resolve,s.reject);else{const c={code:"capability_removed",message:`${e}.${s.method} is not in this runtime`},g=A[e]?.[s.method];if(g){k(s,g.handlerArg,c);continue}s.reject(c)}}}function ve(e,t){const n=M.get(e);if(!n)return;n.impl.__settled=()=>Promise.reject(t);const l=n.queue;n.queue=[];for(const i of l){const s=A[e]?.[i.method];if(s){k(i,s.handlerArg,t);continue}i.reject(t)}}function N(e,t){const n=oe[e];if(!n){ve(e,t);return}Q(e,Object.fromEntries(Object.entries(n).map(([l,i])=>[l,()=>Promise.resolve(i)])))}function k(e,t,n){if(e.syncState?.dead)return;const l=e.args[t];typeof l=="function"&&queueMicrotask(()=>{if(!e.syncState?.dead)try{l({type:"error",error:n})}catch(i){se(i)}})}const F=Object.getOwnPropertyDescriptor(window,"claude");if(window!==top&&!(F&&F.writable===!1)){ce(),le();let e=null;try{e=pe()}catch{}const t=F?.value??{};q(window,"claude",t);const n=o=>{const u={impl:Object.create(null),queue:[]};M.set(o,u);const d=u.impl,h=new Proxy(d,{get:(b,a)=>{if(typeof a!="string"||a==="then"||a==="toJSON"||a==="valueOf")return;if(a==="toString")return Object.prototype.toString;const _=A[o]?.[a];return _?(...m)=>{if(typeof m[_.handlerArg]!="function")throw new TypeError(`${o}.${a} requires a handler function`);const y=d[a];if(y)return y(...m);if(d.__settled){const v={dead:!1},P={args:[...m],syncState:v};return d.__settled().catch(C=>k(P,_.handlerArg,C)),()=>{v.dead=!0}}let E=null;const S={dead:!1};return u.queue.push({method:a,args:m,resolve:v=>{E=typeof v=="function"?v:null,S.dead&&E?.()},reject:()=>{},syncState:S}),()=>{S.dead=!0,E?.()}}:(...m)=>{const y=d[a]??d.__settled;return y?y(...m):new Promise((E,S)=>{u.queue.push({method:a,args:m,resolve:E,reject:S})})}},set:()=>!1});q(t,o,h)};for(const o of Object.keys(R)){if(t[o]!==void 0){q(t,o,t[o]);continue}n(o)}let l=null,i=null,s=0;const f=o=>{o.source!==parent||!G(o.origin)||ne(o.data)&&(l=o.data.__frame_init,j=o.origin,removeEventListener("message",f),clearTimeout(s),i?.())};addEventListener("message",f),parent.postMessage({__frame_connect:!0},"*");const c=new Promise(o=>{i=o,s=setTimeout(()=>{removeEventListener("message",f),o()},_e)}),g=document.readyState==="loading"?new Promise(o=>document.addEventListener("DOMContentLoaded",()=>o(),{once:!0})):Promise.resolve();g.then(()=>{try{e?.restore()}catch{}});const p=o=>{if(!(o.source!==parent||!G(o.origin))&&W(o.data)){removeEventListener("message",p);try{e?.promoted()}catch{}}};addEventListener("message",p),c.then(async()=>{if(!l||!j){for(const r of M.keys())N(r,{code:"not_granted",message:"frame initialization did not arrive - capability unavailable"});return}X(l.theme);const o=j;let u=!1,d=!1;addEventListener("message",r=>{if(r.source!==parent||r.origin!==o)return;re(r.data)&&X(r.data.__frame_theme.theme);const w=r.data?.__fc_mode;w&&typeof w=="object"&&!u&&z&&T.test(z)&&(u=!0,h(z).then(H=>H.install?.(o,w.on===!0)).catch(()=>{}));const O=r.data?.__ft_cmd;O&&typeof O=="object"&&!d&&$&&T.test($)&&(d=!0,h($).then(H=>H.install?.(o,O)).catch(()=>{}))});const h=r=>ee(()=>import("/_runtime/"+r),void 0),b=Object.keys(l.capabilities??{});for(const r of b)Object.hasOwn(R,r)||be.test(r)&&t[r]===void 0&&(n(r),N(r,{code:"capability_disabled",message:"capability not in this runtime generation"}));const a=b.filter(r=>Object.hasOwn(R,r)).map(r=>[r,R[r]]).filter(r=>typeof r[1]=="string"&&T.test(r[1])),[_,...m]=await Promise.allSettled([U&&T.test(U)?h(U):Promise.resolve({}),...a.map(([,r])=>h(r))]),y=j;V=ge(l,_.status==="fulfilled"&&_.value?.TRANSFORMS||{},{shellOrigin:y,mount:Q},r=>parent.postMessage({__frame_cap_telemetry:r},y));const E=r=>parent.postMessage({__frame_cap_telemetry:{kind:"cap-load-error",cap:r}},y),S=V;m.forEach((r,w)=>{const O=a[w][0];if(r.status!=="fulfilled"){E(O);return}try{r.value?.install?.(S)}catch{E(O)}});for(const[r,w]of M)if(!(w.queue.length===0&&Object.keys(w.impl).length>0)){if(b.includes(r)){N(r,{code:"capability_disabled",message:"capability not available in this session"});continue}N(r,{code:"not_granted",message:"capability not available in this session"})}await g,parent.postMessage({__frame_ready:!0},j);let v=-1,P=0;const C=()=>{P=0;const r=Math.max(document.documentElement.scrollHeight,document.body?document.body.scrollHeight:0);r!==v&&(v=r,parent.postMessage({__frame_size:!0,h:r},y))},L=()=>{P||(P=setTimeout(C,200))},Z=new ResizeObserver(L);Z.observe(document.documentElement),document.body&&Z.observe(document.body),document.addEventListener("load",L,!0),document.fonts?.ready.then(L,()=>{}),addEventListener("beforeprint",()=>{v=-1,C()}),L(),addEventListener("message",r=>{if(!(r.source!==parent||r.origin!==y)&&W(r.data)){try{e?.promoted()}catch{}v=-1,L()}})})}})();</script><!-- /frame-runtime --><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}</style></head><body>
+<title>Business HQ — The Bridge</title>
+<style>
+  #app{
+    --font-sans:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+    --font-mono:ui-monospace,"SF Mono","Cascadia Code","Consolas",monospace;
+    --space:#05070E; --space2:#080D18; --hull:#0F1626; --hull2:#0B1120;
+    --glass:rgba(16,25,44,.72); --edge:rgba(120,150,210,.16); --edge2:rgba(120,150,210,.34);
+    --text:#E8EEFA; --muted:#93A2C0; --faint:#5C6C8E;
+    --accent:#5FD3FF; --hud:#74F0CE; --accent-soft:rgba(95,211,255,.12);
+    --ok:#59E6A6; --warn:#F5C650; --crit:#FF6E6E; --idle:#66748f;
+    --r-lg:20px; --r-md:14px; --r-sm:9px;
+    --ease:cubic-bezier(.22,.61,.36,1);
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  #app{
+    font-family:var(--font-sans);color:var(--text);background:var(--space);
+    min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased;line-height:1.45;position:relative
+  }
+  #app::selection{background:var(--accent);color:#04121a}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+  a{color:var(--accent);text-decoration:none}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+  /* starfield + viewport */
+  #starfield{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+  .planet{position:fixed;z-index:0;pointer-events:none;border-radius:50%;
+    right:-160px;top:-120px;width:420px;height:420px;
+    background:
+      radial-gradient(circle at 34% 30%, #26406e, #12203c 42%, #0a1122 70%, transparent 72%);
+    box-shadow:0 0 120px 20px rgba(60,110,200,.14);opacity:.8}
+  .planet::after{content:"";position:absolute;inset:0;border-radius:50%;
+    background:radial-gradient(circle at 70% 68%, rgba(120,200,255,.14), transparent 46%)}
+
+  .wrap{position:relative;z-index:2;max-width:1240px;margin:0 auto;padding:22px 26px 60px;min-height:100vh;display:flex;flex-direction:column}
+
+  /* top bar */
+  .topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+  .ident{display:flex;align-items:center;gap:13px}
+  .sigil{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;position:relative;
+    background:radial-gradient(circle at 50% 35%,#12203c,#0a1120);border:1px solid var(--edge2);box-shadow:0 0 22px -6px var(--accent)}
+  .sigil::before{content:"";position:absolute;inset:-4px;border-radius:14px;border:1px solid rgba(95,211,255,.25);animation:ping 4.5s var(--ease) infinite}
+  @keyframes ping{0%{transform:scale(.85);opacity:.7}70%,100%{transform:scale(1.25);opacity:0}}
+  .sigil span{font-size:20px}
+  .ident h1{font-size:15px;font-weight:800;letter-spacing:.02em;line-height:1}
+  .ident .sub{font-family:var(--font-mono);font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--faint);margin-top:4px}
+  .cmdk{display:flex;align-items:center;gap:9px;font-family:var(--font-mono);font-size:11px;color:var(--muted);
+    border:1px solid var(--edge);border-radius:99px;padding:8px 14px;background:var(--glass);transition:all .2s var(--ease)}
+  .cmdk:hover{border-color:var(--accent);color:var(--text)}
+  .cmdk kbd{font-family:var(--font-mono);font-size:10px;background:rgba(120,150,210,.16);border-radius:5px;padding:2px 6px;letter-spacing:.05em}
+
+  /* VIEWPORT / TODAY */
+  .viewport{margin-top:20px;border:1px solid var(--edge2);border-radius:var(--r-lg);overflow:hidden;position:relative;
+    background:linear-gradient(180deg, rgba(10,16,30,.4), rgba(8,12,22,.75));box-shadow:0 30px 80px -50px #000, inset 0 1px 0 rgba(140,180,255,.08)}
+  .viewport::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+    box-shadow:inset 0 0 90px -20px rgba(95,211,255,.14);border:1px solid rgba(95,211,255,.06)}
+  .vp-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:0}
+  .vp-left{padding:26px 28px}
+  .vp-eyebrow{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--hud);display:flex;align-items:center;gap:9px}
+  .vp-eyebrow .live{width:7px;height:7px;border-radius:50%;background:var(--hud);box-shadow:0 0 10px var(--hud);animation:blink 2.4s infinite}
+  @keyframes blink{50%{opacity:.35}}
+  .vp-h{font-size:23px;font-weight:820;letter-spacing:-.03em;margin-top:12px;text-wrap:balance;line-height:1.12}
+  .vp-h b{color:var(--accent)}
+  .vp-line{color:var(--muted);font-size:13px;margin-top:9px;max-width:46ch}
+  .vp-beacons{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+  .beacon{border:1px solid var(--edge);border-radius:var(--r-sm);padding:10px 13px;background:var(--glass);min-width:92px}
+  .beacon .b-v{font-size:20px;font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.02em;display:flex;align-items:center;gap:7px}
+  .beacon .b-l{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);margin-top:3px}
+  .vp-right{border-left:1px solid var(--edge);padding:22px 24px;background:rgba(6,10,20,.4);display:flex;flex-direction:column;gap:11px}
+  .vp-right .r-label{font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint)}
+  .prio{display:flex;gap:11px;align-items:flex-start;padding:11px 0;border-bottom:1px solid var(--edge);cursor:pointer;transition:padding .18s}
+  .prio:last-child{border-bottom:none}
+  .prio:hover{padding-left:5px}
+  .prio .p-ic{margin-top:2px;flex:none}
+  .prio .p-t{font-size:12.5px;line-height:1.35}
+  .prio .p-b{font-family:var(--font-mono);font-size:9.5px;color:var(--muted);margin-top:3px;text-transform:uppercase;letter-spacing:.06em}
+
+  /* CONSOLE / CREW */
+  .deck-label{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--faint);margin:30px 0 4px;display:flex;align-items:center;gap:10px}
+  .deck-label::before,.deck-label::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--edge),transparent)}
+  .console{position:relative;margin-top:20px;padding-bottom:26px}
+  .crew{display:flex;justify-content:center;align-items:flex-end;flex-wrap:wrap;gap:6px 4px}
+  .pod{
+    position:relative;width:150px;padding:10px 8px 0;display:flex;flex-direction:column;align-items:center;gap:9px;
+    cursor:pointer;border-radius:var(--r-md);transition:transform .25s var(--ease);
+  }
+  .pod:hover{transform:translateY(-8px)}
+  .pod:hover .astro{filter:drop-shadow(0 14px 22px rgba(0,0,0,.5)) drop-shadow(0 0 16px var(--bc))}
+  .astro{width:86px;height:110px;transition:filter .25s var(--ease);filter:drop-shadow(0 12px 18px rgba(0,0,0,.5))}
+  .pod.offline{opacity:.5;filter:grayscale(.7)}
+  .pod.offline:hover{transform:translateY(-3px)}
+  .nameplate{border:1px solid var(--edge);background:var(--glass);border-radius:99px;padding:6px 13px;text-align:center;
+    box-shadow:0 8px 18px -12px #000;backdrop-filter:blur(4px)}
+  .nameplate .np-n{font-size:11.5px;font-weight:700;letter-spacing:-.01em;line-height:1.1;white-space:nowrap}
+  .nameplate .np-s{font-family:var(--font-mono);font-size:9px;color:var(--muted);display:flex;align-items:center;gap:5px;justify-content:center;margin-top:3px}
+  .micro{font-family:var(--font-mono);font-size:9.5px;color:var(--faint);display:flex;gap:8px}
+  .micro b{color:var(--text);font-weight:600}
+  .badge-alert{position:absolute;top:6px;right:20px;background:var(--crit);color:#2a0808;font-family:var(--font-mono);font-weight:800;
+    font-size:10px;border-radius:99px;min-width:18px;height:18px;display:grid;place-items:center;padding:0 5px;box-shadow:0 0 12px var(--crit);z-index:3}
+  .dot{width:7px;height:7px;border-radius:50%;flex:none;display:inline-block}
+  .dot.ok{background:var(--ok);box-shadow:0 0 8px var(--ok)}
+  .dot.warn{background:var(--warn);box-shadow:0 0 8px var(--warn)}
+  .dot.crit{background:var(--crit);box-shadow:0 0 8px var(--crit)}
+  .dot.idle{background:var(--idle)}
+  .console-base{margin:0 auto;max-width:940px;height:22px;border-radius:0 0 60% 60%/0 0 100% 100%;
+    background:linear-gradient(180deg,var(--hull),var(--hull2));border:1px solid var(--edge);border-top:none;
+    box-shadow:0 24px 50px -30px var(--accent), inset 0 2px 8px rgba(95,211,255,.06);margin-top:-6px}
+  .add-pod{width:150px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;cursor:pointer;color:var(--faint);padding-top:10px}
+  .add-pod .plus{width:66px;height:66px;border-radius:50%;border:1.5px dashed var(--edge2);display:grid;place-items:center;font-size:26px;font-weight:300;transition:all .2s var(--ease)}
+  .add-pod:hover{color:var(--accent)}
+  .add-pod:hover .plus{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-6px)}
+  .add-pod .ap-l{font-size:11px;font-weight:600}
+
+  /* STATION OVERLAY */
+  .scrim{position:fixed;inset:0;background:rgba(3,5,11,.66);backdrop-filter:blur(4px);z-index:40;opacity:0;pointer-events:none;transition:opacity .3s}
+  .scrim.open{opacity:1;pointer-events:auto}
+  .station{position:fixed;top:0;right:0;height:100vh;width:min(740px,96vw);z-index:50;display:flex;flex-direction:column;
+    background:linear-gradient(180deg,var(--space2),var(--space));border-left:1px solid var(--edge2);
+    box-shadow:-50px 0 120px -50px #000;transform:translateX(102%);transition:transform .4s var(--ease)}
+  .station.open{transform:translateX(0)}
+  .st-head{padding:22px 24px 18px;border-bottom:1px solid var(--edge);position:relative;
+    background:linear-gradient(180deg,color-mix(in srgb,var(--bc) 14%,transparent),transparent)}
+  .st-head .close{position:absolute;top:18px;right:18px;width:34px;height:34px;border-radius:9px;border:1px solid var(--edge);
+    display:grid;place-items:center;font-size:15px;color:var(--muted);background:var(--glass);transition:all .2s}
+  .st-head .close:hover{border-color:var(--crit);color:var(--crit)}
+  .st-id{display:flex;gap:14px;align-items:center}
+  .st-av{width:70px;height:88px;flex:none}
+  .st-title{font-size:20px;font-weight:820;letter-spacing:-.025em}
+  .st-meta{font-family:var(--font-mono);font-size:10.5px;color:var(--muted);margin-top:6px;display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+  .st-tag{font-size:12.5px;color:var(--muted);margin-top:13px;line-height:1.5;max-width:60ch}
+  .st-links{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}
+  .st-link{font-family:var(--font-mono);font-size:10.5px;padding:6px 11px;border-radius:99px;border:1px solid var(--edge);background:var(--glass);
+    display:flex;align-items:center;gap:6px;color:var(--muted);transition:all .18s}
+  .st-link:hover{border-color:var(--accent);color:var(--accent)}
+
+  .st-body{overflow-y:auto;padding:20px 24px 168px;display:flex;flex-direction:column;gap:24px;flex:1}
+  .sec-label{font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:11px;display:flex;align-items:center;gap:9px}
+  .sec-label .refresh{margin-left:auto;font-family:var(--font-mono);font-size:9.5px;letter-spacing:.08em;color:var(--accent);border:1px solid var(--edge);border-radius:99px;padding:4px 10px;transition:all .18s}
+  .sec-label .refresh:hover{background:var(--accent);color:#04121a;border-color:var(--accent)}
+  .sec-label::after{content:"";flex:1;height:1px;background:var(--edge)}
+
+  .roster{display:flex;gap:9px;flex-wrap:wrap}
+  .member{border:1px solid var(--edge);background:var(--glass);border-radius:var(--r-sm);padding:8px 12px;display:flex;align-items:center;gap:10px;transition:all .18s;min-width:150px}
+  .member:hover{border-color:var(--accent)}
+  .member[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:0 0 20px -8px var(--accent)}
+  .member .mm{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;font-family:var(--font-mono);font-size:11px;font-weight:700;color:#04121a;flex:none;
+    background:linear-gradient(150deg,var(--bc),color-mix(in srgb,var(--bc) 55%,#000))}
+  .member .m-role{font-size:12px;font-weight:650;line-height:1.1}
+  .member .m-tag{font-family:var(--font-mono);font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:2px}
+
+  .gauges{display:grid;grid-template-columns:repeat(auto-fit,minmax(94px,1fr));gap:10px}
+  .gauge{border:1px solid var(--edge);border-radius:var(--r-sm);padding:12px 13px;background:var(--glass);position:relative;overflow:hidden}
+  .gauge::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--bc)}
+  .gauge .g-v{font-size:18px;font-weight:780;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+  .gauge .g-l{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);margin-top:3px}
+
+  .log{display:flex;flex-direction:column}
+  .log-item{display:flex;gap:12px;padding:9px 0;border-bottom:1px solid var(--edge);font-size:12.5px}
+  .log-item:last-child{border-bottom:none}
+  .log-item .li-d{margin-top:6px}
+
+  .auth{border:1px solid var(--edge);border-left:3px solid var(--warn);border-radius:var(--r-sm);padding:12px 14px;background:var(--glass);display:flex;flex-direction:column;gap:9px;margin-bottom:9px}
+  .auth .au-t{font-size:12.5px;line-height:1.4}
+  .auth .au-a{display:flex;gap:8px}
+  .a-btn{font-family:var(--font-mono);font-size:11px;padding:6px 12px;border-radius:7px;border:1px solid var(--edge2);transition:all .18s}
+  .a-btn.yes:hover{border-color:var(--ok);color:var(--ok);background:color-mix(in srgb,var(--ok) 12%,transparent)}
+  .a-btn.hold:hover{border-color:var(--muted);color:var(--muted)}
+  .none{font-size:12.5px;color:var(--muted);font-style:italic}
+
+  .qa-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+  .qa{text-align:left;border:1px solid var(--edge);background:var(--glass);border-radius:var(--r-sm);padding:11px 13px;font-size:12.5px;font-weight:560;line-height:1.3;display:flex;align-items:center;gap:9px;transition:all .18s var(--ease)}
+  .qa:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-2px)}
+  .qa .qa-ic{font-family:var(--font-mono);color:var(--accent);font-weight:700;flex:none}
+
+  .notes{width:100%;background:var(--glass);border:1px solid var(--edge);border-radius:var(--r-sm);color:var(--text);
+    font-family:inherit;font-size:12.5px;padding:12px;min-height:74px;resize:vertical;line-height:1.5}
+  .notes:focus{outline:none;border-color:var(--accent)}
+  .notes-save{font-family:var(--font-mono);font-size:9.5px;color:var(--faint);margin-top:6px;text-align:right}
+
+  .warnbar{border:1px solid var(--edge);border-left:3px solid var(--crit);background:color-mix(in srgb,var(--crit) 8%,var(--glass));
+    border-radius:var(--r-sm);padding:11px 13px;font-size:12px;display:flex;gap:10px;align-items:flex-start}
+  .warnbar b{color:var(--crit)}
+
+  /* transmit / cockpit */
+  .transmit{position:absolute;left:0;right:0;bottom:0;padding:15px 22px 18px;border-top:1px solid var(--edge2);
+    background:linear-gradient(180deg,transparent,var(--space) 24%);backdrop-filter:blur(7px)}
+  .who{font-family:var(--font-mono);font-size:10px;color:var(--muted);margin-bottom:8px;display:flex;align-items:center;gap:7px}
+  .who b{color:var(--accent)}
+  .composer{display:flex;gap:10px;align-items:flex-end}
+  .composer textarea{flex:1;resize:none;background:var(--glass);border:1px solid var(--edge2);border-radius:var(--r-sm);color:var(--text);
+    font-family:inherit;font-size:13px;padding:11px 13px;line-height:1.4;min-height:46px;max-height:120px}
+  .composer textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 22px -8px var(--accent)}
+  .composer textarea::placeholder{color:var(--faint)}
+  .send{background:linear-gradient(150deg,var(--accent),#4aa8ff);color:#04121a;font-weight:800;font-size:12.5px;padding:12px 16px;border-radius:var(--r-sm);
+    white-space:nowrap;box-shadow:0 0 22px -8px var(--accent);transition:transform .16s,filter .16s;display:flex;align-items:center;gap:7px}
+  .send:hover{transform:translateY(-1px);filter:brightness(1.07)}
+  .forge-out{margin-top:12px;border:1px solid var(--edge2);border-radius:var(--r-sm);background:var(--glass);overflow:hidden;display:none;animation:rise .3s var(--ease)}
+  .forge-out.show{display:block}
+  @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+  .fo-head{display:flex;justify-content:space-between;align-items:center;padding:9px 13px;border-bottom:1px solid var(--edge);
+    font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .forge-out pre{margin:0;padding:13px;font-family:var(--font-mono);font-size:11.5px;line-height:1.55;color:var(--text);white-space:pre-wrap;max-height:140px;overflow-y:auto}
+  .copybtn{font-family:var(--font-mono);font-size:10.5px;padding:5px 11px;border-radius:6px;border:1px solid var(--edge2);color:var(--accent);transition:all .18s}
+  .copybtn:hover{background:var(--accent);color:#04121a}
+  .copybtn.done{border-color:var(--ok);color:var(--ok)}
+
+  /* command palette */
+  .palette-scrim{position:fixed;inset:0;background:rgba(3,5,11,.6);backdrop-filter:blur(5px);z-index:60;display:none;align-items:flex-start;justify-content:center;padding-top:12vh}
+  .palette-scrim.open{display:flex}
+  .palette{width:min(560px,92vw);background:linear-gradient(180deg,var(--space2),var(--hull2));border:1px solid var(--edge2);border-radius:var(--r-md);
+    box-shadow:0 40px 100px -40px #000,0 0 40px -20px var(--accent);overflow:hidden}
+  .palette input{width:100%;background:transparent;border:none;border-bottom:1px solid var(--edge);color:var(--text);font-family:inherit;font-size:15px;padding:16px 18px}
+  .palette input:focus{outline:none}
+  .pal-list{max-height:340px;overflow-y:auto;padding:8px}
+  .pal-item{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:var(--r-sm);cursor:pointer;font-size:13px}
+  .pal-item[aria-selected="true"],.pal-item:hover{background:var(--accent-soft)}
+  .pal-item .pi-badge{width:24px;height:24px;border-radius:7px;display:grid;place-items:center;font-family:var(--font-mono);font-size:10px;font-weight:700;color:#04121a;flex:none;
+    background:linear-gradient(150deg,var(--bc),color-mix(in srgb,var(--bc) 55%,#000))}
+  .pal-item .pi-k{font-family:var(--font-mono);font-size:9px;color:var(--faint);text-transform:uppercase;letter-spacing:.08em;margin-left:auto}
+  .pal-item .pi-t b{color:var(--text)}
+  .pal-empty{padding:20px;text-align:center;color:var(--muted);font-size:12.5px}
+
+  .toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,20px);z-index:80;background:var(--hull);border:1px solid var(--edge2);border-radius:99px;
+    padding:11px 20px;font-size:12.5px;font-weight:600;box-shadow:0 20px 50px -20px #000;opacity:0;pointer-events:none;transition:all .3s var(--ease);display:flex;align-items:center;gap:9px}
+  .toast.show{opacity:1;transform:translate(-50%,0)}
+
+  /* ---- scene richness ---- */
+  .nebula{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.6;
+    background:
+      radial-gradient(680px 420px at 12% 78%, rgba(96,120,224,.16), transparent 62%),
+      radial-gradient(560px 380px at 88% 30%, rgba(60,200,190,.10), transparent 60%),
+      radial-gradient(900px 500px at 50% 120%, rgba(120,80,200,.12), transparent 60%)}
+  .hull-frame{position:fixed;inset:0;z-index:1;pointer-events:none}
+  .hull-frame .corner{position:absolute;width:64px;height:64px;border:2px solid rgba(95,211,255,.22)}
+  .hull-frame .tl{top:14px;left:14px;border-right:none;border-bottom:none;border-radius:14px 0 0 0}
+  .hull-frame .tr{top:14px;right:14px;border-left:none;border-bottom:none;border-radius:0 14px 0 0}
+  .hull-frame .bl{bottom:14px;left:14px;border-right:none;border-top:none;border-radius:0 0 0 14px}
+  .hull-frame .br{bottom:14px;right:14px;border-left:none;border-top:none;border-radius:0 0 14px 0}
+  .hull-frame .rivet{position:absolute;width:5px;height:5px;border-radius:50%;background:rgba(95,211,255,.4);box-shadow:0 0 8px rgba(95,211,255,.5)}
+  .hull-frame .r1{top:20px;left:88px}.hull-frame .r2{top:20px;right:88px}
+  .hull-frame .r3{bottom:20px;left:88px}.hull-frame .r4{bottom:20px;right:88px}
+
+  .pod .astro{animation:float 4.4s ease-in-out infinite}
+  .pod:nth-child(2n) .astro{animation-duration:5s;animation-delay:-1.1s}
+  .pod:nth-child(3n) .astro{animation-duration:4.8s;animation-delay:-.6s}
+  .pod:nth-child(4n) .astro{animation-duration:5.3s;animation-delay:-1.8s}
+  @keyframes float{0%,100%{transform:translateY(0) rotate(-1.2deg)}50%{transform:translateY(-8px) rotate(1.2deg)}}
+  .astro .glint{animation:glint 6s ease-in-out infinite}
+  @keyframes glint{0%,60%,100%{opacity:.55}30%{opacity:.9}}
+  .astro .chestlt{animation:chest 3.2s ease-in-out infinite}
+  @keyframes chest{50%{opacity:.25}}
+
+  /* ---- add-business / edit modal ---- */
+  .modal-scrim{position:fixed;inset:0;z-index:65;background:rgba(3,5,11,.66);backdrop-filter:blur(5px);display:none;align-items:center;justify-content:center;padding:20px}
+  .modal-scrim.open{display:flex}
+  .modal{width:min(560px,94vw);max-height:88vh;overflow-y:auto;background:linear-gradient(180deg,var(--space2),var(--hull2));
+    border:1px solid var(--edge2);border-radius:var(--r-md);box-shadow:0 40px 100px -40px #000,0 0 50px -24px var(--accent)}
+  .modal-h{padding:20px 22px 0}
+  .modal-h .mh-t{font-size:18px;font-weight:820;letter-spacing:-.02em}
+  .modal-h .mh-s{font-size:12px;color:var(--muted);margin-top:5px}
+  .modal-b{padding:18px 22px 22px;display:flex;flex-direction:column;gap:17px}
+  .field label{font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:8px}
+  .field input[type=text]{width:100%;background:var(--glass);border:1px solid var(--edge2);border-radius:var(--r-sm);color:var(--text);font-family:inherit;font-size:14px;padding:11px 13px}
+  .field input:focus{outline:none;border-color:var(--accent)}
+  .swatches{display:flex;gap:9px;flex-wrap:wrap}
+  .swatch{width:34px;height:34px;border-radius:10px;cursor:pointer;border:2px solid transparent;transition:transform .15s}
+  .swatch:hover{transform:scale(1.1)}
+  .swatch[aria-pressed="true"]{border-color:#fff;box-shadow:0 0 0 2px var(--space),0 0 16px -2px currentColor}
+  .emojis{display:flex;gap:7px;flex-wrap:wrap}
+  .emoji-opt{width:38px;height:38px;border-radius:10px;border:1px solid var(--edge);background:var(--glass);font-size:19px;cursor:pointer;transition:all .15s}
+  .emoji-opt:hover{border-color:var(--accent)}
+  .emoji-opt[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);transform:scale(1.06)}
+  .rolechips{display:flex;gap:8px;flex-wrap:wrap}
+  .rolechip{font-size:12px;padding:8px 12px;border-radius:99px;border:1px solid var(--edge2);background:var(--glass);cursor:pointer;transition:all .15s}
+  .rolechip[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--text)}
+  .role-add{display:flex;gap:8px;margin-top:9px}
+  .role-add input{flex:1}
+  .role-add button{font-size:12px;padding:0 14px;border-radius:var(--r-sm);border:1px solid var(--edge2);color:var(--accent)}
+  .modal-preview{display:flex;align-items:center;gap:13px;padding:13px;border:1px solid var(--edge);border-radius:var(--r-sm);background:var(--glass)}
+  .modal-preview .mp-av{width:44px;height:56px;flex:none}
+  .modal-foot{display:flex;justify-content:space-between;gap:10px;align-items:center}
+  .modal-foot .ghost{font-size:12.5px;color:var(--muted)}
+  .modal-foot .primary{background:linear-gradient(150deg,var(--accent),#4aa8ff);color:#04121a;font-weight:800;font-size:13px;padding:11px 20px;border-radius:var(--r-sm)}
+  .modal-foot .primary:disabled{opacity:.4;cursor:not-allowed}
+  .st-del{font-family:var(--font-mono);font-size:10px;color:var(--faint);border:1px solid var(--edge);border-radius:99px;padding:5px 11px;margin-left:8px;transition:all .18s}
+  .st-del:hover{border-color:var(--crit);color:var(--crit)}
+  .last-sync{margin-left:auto;font-family:var(--font-mono);font-size:9px;letter-spacing:.05em;color:var(--faint);text-transform:none}
+  .m-last{font-family:var(--font-mono);font-size:9px;color:var(--faint);margin-top:3px;line-height:1.2}
+  .prio-tag{font-family:var(--font-mono);font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:99px;border:1px solid var(--edge2);margin-left:8px}
+  .prio-tag.high{color:var(--crit);border-color:color-mix(in srgb,var(--crit) 50%,transparent)}
+  .prio-tag.med{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 50%,transparent)}
+
+  /* ---- boot sequence ---- */
+  .boot{position:fixed;inset:0;z-index:90;background:radial-gradient(circle at 50% 42%,#0a1424,#04060d 70%);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;transition:opacity .6s ease}
+  .boot.done{opacity:0;pointer-events:none}
+  .boot-logo{font-family:var(--font-mono);letter-spacing:.42em;font-size:12px;color:var(--accent);text-transform:uppercase;
+    animation:bootlogo 1.4s var(--ease)}
+  @keyframes bootlogo{from{opacity:0;letter-spacing:.9em}to{opacity:1}}
+  .boot-title{font-size:27px;font-weight:850;letter-spacing:-.02em;text-align:center}
+  .boot-bar{width:min(320px,70vw);height:3px;border-radius:2px;background:rgba(120,150,210,.18);overflow:hidden;margin-top:4px}
+  .boot-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--hud));box-shadow:0 0 12px var(--accent);animation:bootbar 2s var(--ease) forwards}
+  @keyframes bootbar{to{width:100%}}
+  .boot-log{font-family:var(--font-mono);font-size:10.5px;color:var(--muted);height:15px;letter-spacing:.05em}
+  .boot-skip{position:absolute;bottom:26px;font-family:var(--font-mono);font-size:10px;color:var(--faint)}
+  #app.booting .pod{opacity:0;animation:podfade .7s var(--ease) forwards}
+  #app.booting .pod:nth-child(1){animation-delay:1.5s}
+  #app.booting .pod:nth-child(2){animation-delay:1.62s}
+  #app.booting .pod:nth-child(3){animation-delay:1.74s}
+  #app.booting .pod:nth-child(4){animation-delay:1.86s}
+  #app.booting .pod:nth-child(5){animation-delay:1.98s}
+  #app.booting .pod:nth-child(6){animation-delay:2.1s}
+  #app.booting .pod:nth-child(7){animation-delay:2.22s}
+  #app.booting .pod:nth-child(n+8){animation-delay:2.34s}
+  @keyframes podfade{from{opacity:0;transform:translateY(var(--lift,0)) scale(.85)}to{opacity:1}}
+  .pod[draggable="true"]{cursor:grab}
+  .pod.dragging{opacity:.4}
+  .pod.drop-into .nameplate{border-color:var(--accent);box-shadow:0 0 20px -6px var(--accent)}
+
+  @media (prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;transition-duration:.08s!important}}
+  @media (max-width:820px){
+    .vp-grid{grid-template-columns:1fr}
+    .vp-right{border-left:none;border-top:1px solid var(--edge)}
+    .console-base{display:none}
+  }
+</style>
+
+<div id="app">
+  <canvas id="starfield"></canvas>
+  <div class="nebula"></div>
+  <div class="planet"></div>
+  <div class="hull-frame" aria-hidden="true">
+    <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+    <span class="rivet r1"></span><span class="rivet r2"></span><span class="rivet r3"></span><span class="rivet r4"></span>
+  </div>
+
+  <div class="boot" id="boot">
+    <div class="boot-logo">◇ Business HQ</div>
+    <div class="boot-title">Bridge systems online</div>
+    <div class="boot-bar"><i></i></div>
+    <div class="boot-log" id="bootLog">initializing…</div>
+    <div class="boot-skip">click anywhere to skip</div>
+  </div>
+
+  <div class="wrap">
+    <header class="topbar">
+      <div class="ident">
+        <div class="sigil"><span>🛰️</span></div>
+        <div>
+          <h1>BUSINESS HQ</h1>
+          <div class="sub">Bridge · Cmd Deck</div>
+        </div>
+      </div>
+      <button class="cmdk" id="cmdkBtn">⌕ Jump to a station or command <kbd>⌘K</kbd></button>
+    </header>
+
+    <!-- VIEWPORT / TODAY -->
+    <section class="viewport">
+      <div class="vp-grid">
+        <div class="vp-left">
+          <div class="vp-eyebrow"><span class="live"></span>Mission status · Today</div>
+          <h2 class="vp-h" id="vpH">Nine stations aboard. <b>One of them pays this month.</b></h2>
+          <p class="vp-line">This is your bridge. Every business is a crew member at a station — click one to check in, read the gauges, and put them to work.</p>
+          <div class="vp-beacons" id="beacons"></div>
+        </div>
+        <div class="vp-right">
+          <div class="r-label">Needs the captain</div>
+          <div id="prioList"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="deck-label">The crew · click a station</div>
+
+    <!-- CONSOLE -->
+    <div class="console">
+      <div class="crew" id="crew"></div>
+      <div class="console-base"></div>
+    </div>
+  </div>
+
+  <div class="scrim" id="scrim"></div>
+  <div class="station" id="station" aria-hidden="true"></div>
+
+  <div class="palette-scrim" id="palScrim">
+    <div class="palette" role="dialog" aria-label="Command bar">
+      <input id="palInput" placeholder="Search stations, work, approvals, notes…" autocomplete="off" spellcheck="false">
+      <div class="pal-list" id="palList"></div>
+    </div>
+  </div>
+
+  <div class="modal-scrim" id="modalScrim">
+    <div class="modal" role="dialog" aria-label="Add a business">
+      <div class="modal-h">
+        <div class="mh-t">Bring a new business aboard</div>
+        <div class="mh-s">Name it, give it a look, and pick its crew. It'll be saved on your device and appear at its own station.</div>
+      </div>
+      <div class="modal-b">
+        <div class="field"><label>Business name</label><input type="text" id="mName" placeholder="e.g. Print-on-Demand Store" maxlength="40"></div>
+        <div class="field"><label>Visor colour</label><div class="swatches" id="mSwatches"></div></div>
+        <div class="field"><label>Mission patch</label><div class="emojis" id="mEmojis"></div></div>
+        <div class="field">
+          <label>Crew (pick the specialists)</label>
+          <div class="rolechips" id="mRoles"></div>
+          <div class="role-add"><input type="text" id="mRoleNew" placeholder="Add a custom role…" maxlength="28"><button id="mRoleAdd">Add</button></div>
+        </div>
+        <div class="modal-preview"><div class="mp-av" id="mPrev"></div><div><div style="font-weight:700;font-size:13px" id="mPrevName">New Business</div><div class="m-last" id="mPrevCrew">0 crew selected</div></div></div>
+        <div class="modal-foot">
+          <button class="ghost" id="mCancel">Cancel</button>
+          <button class="primary" id="mSave" disabled>Bring aboard →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  const $=(s,r)=>(r||document).querySelector(s);
+  const app=$("#app");
+
+  /* ---------------- DATA (from the BUSINESS.md files) ---------------- */
+  const DEPTS=[
+    {id:"automation",name:"Automation Studio",short:"Automation",color:"#A78BFA",mono:"AS",emoji:"⚙️",
+     status:"Onboarding · The cash engine",dot:"warn",agent:"automation-agent",role:"Studio Lead",
+     tagline:"AI automation consulting for local NC trades. The one venture that pays this month instead of compounding for months.",
+     micro:[["$500","audit"],["0","clients"]],
+     links:[["Playbook","https://claude.ai/code"]],
+     folder:"businesses/automation-studio",
+     gauges:[["0","Clients"],["$500","Audit price"],["$1.5–3k","Build"],["10+","Hrs/wk"],["$0","Revenue"]],
+     team:[{role:"Studio Lead",tag:"Lead",key:"the consulting business end-to-end"},
+       {role:"Outreach",tag:"Specialist",key:"scripts, follow-up cadence, the target list"},
+       {role:"Offer & Pricing",tag:"Specialist",key:"the audit→build→retainer ladder"},
+       {role:"Audit Writer",tag:"Specialist",key:"turning discovery calls into paid reports"},
+       {role:"Solution Architect",tag:"Specialist",key:"what to actually build for each client"},
+       {role:"Case Studies",tag:"Specialist",key:"proof assets from shipped work"}],
+     log:[["ok","Founded — niche, offer ladder, and pricing set from live rate research"],
+       ["ok","Outreach playbook drafted (validation calls → paid audit → follow-up)"],
+       ["idle","Flagship offer chosen: missed-call text-back for trades"]],
+     auth:[["Build the 20-business target list, then run 10 validation conversations — this is the next real step and only you can do it."]],
+     warn:"Sales is the bottleneck here, not delivery. You can already build this — month one is about getting a yes, and will be mostly unpaid outreach. That's expected.",
+     qa:["Help me build the 20-business target list",
+       "Turn my validation call notes into a paid audit report",
+       "Write the missed-call text-back build scope and quote",
+       "Draft a case study from my first shipped project"]},
+
+    {id:"etsy",name:"Etsy · Steady Ledger",short:"Etsy",color:"#E0A458",mono:"SL",emoji:"🧾",
+     status:"Live · Pre-revenue",dot:"warn",agent:"etsy-agent",role:"Shop Operator",
+     tagline:"SteadyLedgerPrints — printable budget & debt-payoff planners with a differentiated ADHD/neurodivergent angle.",
+     micro:[["10","listings"],["20","visits"]],
+     links:[["Etsy shop","https://steadyledgerprints.etsy.com"],["Shop Manager","https://www.etsy.com/your/shops/me/dashboard"]],
+     folder:"businesses/etsy-shop",
+     gauges:[["10","Listings"],["20","Visits · MTD"],["0","Orders"],["$0.00","Revenue"],["0%","Conversion"]],
+     team:[{role:"Shop Operator",tag:"Lead",key:"the shop end-to-end"},
+       {role:"SEO & Tags",tag:"Specialist",key:"titles, 13-tag sets, search traffic"},
+       {role:"Listing Copywriter",tag:"Specialist",key:"listing copy, hooks, descriptions"},
+       {role:"Pricing Analyst",tag:"Specialist",key:"pricing, bundles, sale strategy"},
+       {role:"Seasonal Campaigns",tag:"Specialist",key:"promo calendar & seasonal pushes"}],
+     log:[["ok","Pushed ADHD-framed openings live on all 8 remaining listings — every listing now both tags AND speaks to the ADHD angle"],
+       ["ok","Your ADHD angle was missing from 8 of 10 listings — swapped dead 'instant download' for 'adhd friendly' shop-wide. Now 10/10, live."],
+       ["ok","Fixed the 2 titles Etsy's own algorithm flagged as keyword-stuffed — kept 'cash stuffing' that Etsy wanted to drop. Live."]],
+     auth:[["ADHD tag + description consistency pass is done shop-wide. Worth deciding: Annual Budget Overview is the weakest ADHD fit — keep leaning in, or drop that tag from just that one listing?"]],
+     qa:["Decide whether Annual Budget Overview keeps the adhd friendly tag",
+       "Attach the 3 files + publish the ADHD Reset Routine listing",
+       "Draft 5 new ADHD/neurodivergent-finance listing titles",
+       "Plan a back-to-school / fall budgeting campaign"]},
+
+    {id:"shopify",name:"Shopify · RIDGEWOOD",short:"Shopify",color:"#4FA37A",mono:"RW",emoji:"⛺",
+     status:"Live · Pre-revenue · Copy overhaul complete",dot:"warn",agent:"shopify-agent",role:"Store Operator",
+     tagline:"Outdoor / camping / survival gear. 30 of 31 SKUs dropshipped via StorePilot. All 10 priority products' SEO + on-page copy rewritten and live — next bottleneck is traffic, not content.",
+     micro:[["31","products"],["14","sessions"]],
+     links:[["Storefront","https://ridgewoodequipment.store"],["Shopify admin","https://admin.shopify.com/store/mp3uez-hq"]],
+     folder:"businesses/shopify-store",
+     gauges:[["31","Products"],["14","Sessions · 30d"],["0","Orders"],["$0.00","Revenue"],["10/10","Copy done"]],
+     team:[{role:"Store Operator",tag:"Lead",key:"the storefront end-to-end"},
+       {role:"SEO Content",tag:"Done",key:"product SEO, meta, on-page copy — all 10 complete"},
+       {role:"Merchandiser",tag:"Specialist",key:"collections, product pages, offers"},
+       {role:"TikTok Organic",tag:"Specialist",key:"short-form scripts, $0-spend growth"},
+       {role:"Paid Ads",tag:"On hold",key:"Google Shopping test, later phase"},
+       {role:"Compliance",tag:"Specialist",key:"FTC / Shopify policy, ad-policy SKUs"}],
+     log:[["ok","On-page description rewrite CONFIRMED COMPLETE for all 10 products, 2026-07-28 — SEO title/meta, fake-review removal, and bullet/benefits copy all done and live-verified"],
+       ["ok","Fake single-quote review widget ('Zoe F.' style) resolved — confirmed gone across the catalog"],
+       ["ok","Confirmed live: all 10 products' SEO title + meta description match the drafted copy"],
+       ["ok","Theme editor confirmed reliably usable (slow, not stuck) across multiple sessions"]],
+     auth:[["The $0-spend organic content push (SEO + on-page copy) is now fully done. Real traffic is still 14 sessions/30 days with $0 marketing running — next call is TikTok organic content, or starting the Google Shopping test (~$600-800/mo, weapon SKUs excluded). Which first?"]],
+     qa:["Draft this week's 7 TikTok scripts (no original footage yet)",
+       "Plan a Google Shopping test — exclude weapon-adjacent SKUs",
+       "Set up a collections/merchandising pass now that copy is solid",
+       "Revisit the store 2 weeks out — did the organic push move sessions/sales at all?"]},
+
+    {id:"solera",name:"Flight Path Disc Co.",short:"Flight Path",color:"#4FC3E0",mono:"FP",emoji:"🥏",
+     status:"Build-out · Niche + name decided, supplier outreach drafted",dot:"idle",agent:"shopify-agent",role:"Store Operator",
+     tagline:"Second Shopify account (folder still named \"solera\"). Surf shop ruled out; disc golf accessories chosen over the top-ranked espresso option. Angle: accessory-comparison content + POD apparel, not a disc-catalog play.",
+     micro:[["Disc golf","niche"],["2","suppliers researched"]],
+     links:[["BUSINESS.md (research + plan)","https://github.com/austinmalouin/Workflow/blob/main/businesses/solera/BUSINESS.md"],["Shopify admin","https://admin.shopify.com"]],
+     folder:"businesses/solera",
+     gauges:[["0","Products"],["2","Suppliers researched"],["1","Brand name locked"],["$0","Spend"]],
+     team:[{role:"Store Operator",tag:"Lead",key:"the storefront end-to-end (playbook, not yet assigned)"},
+       {role:"Sourcing",tag:"Specialist",key:"MVP Disc Sports, Disc Golf Deals USA, Printify/Printful"},
+       {role:"Content Strategist",tag:"Specialist",key:"accessory-comparison content, the Minecraft-channel playbook applied here"},
+       {role:"Brand & Naming",tag:"Done",key:"Flight Path Disc Co. — picked 2026-07-24"}],
+     log:[["ok","Brand name locked in: Flight Path Disc Co. (2026-07-24)"],
+       ["ok","Supplier research done: MVP Disc Sports + Disc Golf Deals USA both reachable with a lightweight name/email inquiry, no EIN/resale cert needed just to ask — draft outreach emails ready, not sent"],
+       ["warn","Disc Golf Deals USA's own 'Wholesale Signup' page promises an application form that isn't actually present on the live page — direct phone/email contact needed instead"],
+       ["ok","Decision made: disc golf accessories chosen over home-espresso (top pick) and surf (ruled out)"],
+       ["ok","Ad-policy rechecked for 2026 — still clean, nothing new found"]],
+     auth:[["Draft outreach emails to MVP Disc Sports and Disc Golf Deals USA are ready (see marketing/supplier-outreach-research.md) — say the word and I'll send them. Real wholesale account activation will likely also need a business structure decision (sole prop vs LLC) + EIN + state resale certificate — none of which I can produce for you."]],
+     qa:["Send the drafted supplier outreach emails",
+       "Check flightpathdisc.com (or similar) domain availability",
+       "Draft the initial 5-10 SKU product list",
+       "Draft the first accessory-comparison content calendar"]},
+
+    {id:"trading",name:"Trading Desk",short:"Trading",color:"#2DD4A7",mono:"TD",emoji:"📈",
+     status:"Research only · No live orders",dot:"ok",agent:"trading-agent",role:"Desk Analyst",
+     tagline:"Robinhood Agentic oversight — scanning, backtesting, and written signals. Never execution.",
+     micro:[["$575","account"],["1","live signal"]],
+     links:[["Robinhood","https://robinhood.com"]],
+     folder:"businesses/trading-desk",
+     gauges:[["$575.07","Account"],["$59.28","Cash"],["~2.09%/yr","Best CAGR"],["1","Live signals"],["0","Positions"]],
+     team:[{role:"Desk Analyst",tag:"Lead",key:"strategy oversight & write-ups"},
+       {role:"Scanner",tag:"Specialist",key:"momentum / setup scans"},
+       {role:"Backtester",tag:"Specialist",key:"backtests with real cost modeling"},
+       {role:"Signal Writer",tag:"Specialist",key:"trade-idea write-ups (recommendation only)"},
+       {role:"Risk Reviewer",tag:"Specialist",key:"position sizing, drawdown, sanity checks"}],
+     log:[["ok","First live signal: QQQ, 2026-07-28 — 6 straight down days, RSI(2)=3.5, still well above SMA200"],
+       ["ok","Live signal generation turned on for the combined strategy — checked today for real, nothing qualified"],
+       ["warn","Reality check accepted: Austin knows 2.09%/yr on $580 is ≈$12/yr, wants to start now anyway, can't add capital for weeks"]],
+     auth:[["QQQ signal is up in signals/2026-07-28-QQQ.md — entry ~next open, stop -6%, size ~$57.51. You already hold a separate legacy QQQ lot at a much higher cost ($709.83) from before this research; this would be an additional position, not a management action on that lot. Read it and place it yourself in Robinhood if you want it — nothing happens unless you do."]],
+     warn:"This desk never places, modifies, or cancels an order. Ever, no matter what permission is given in chat. It stops at a written recommendation — you place the trade yourself in Robinhood.",
+     qa:["Walk me through the QQQ signal in plain terms",
+       "Review current positions and realized P&L",
+       "Check if tomorrow's scan produced another signal",
+       "Talk through adding capital when it's available"]},
+
+    {id:"minecraft",name:"Minecraft Channel",short:"Minecraft",color:"#7CB342",mono:"MC",emoji:"🎬",
+     status:"Onboarding · Pre-launch",dot:"idle",agent:"minecraft-agent",role:"Channel Producer",
+     tagline:"'Houses of the Throne' serialized YouTube series — funnels players to the CraftHaven server.",
+     micro:[["0","subs"],["Locked","format"]],
+     links:[["YouTube Studio","https://studio.youtube.com"]],
+     folder:"businesses/minecraft-channel",
+     gauges:[["0","Subscribers"],["0","Videos"],["0 / 4k","Watch hrs"],["Locked","Format"]],
+     team:[{role:"Channel Producer",tag:"Lead",key:"the channel & release strategy"},
+       {role:"Scriptwriter",tag:"Specialist",key:"episode scripts & narrative arcs"},
+       {role:"Thumbnail Briefer",tag:"Specialist",key:"Canva thumbnail briefs"},
+       {role:"SEO / Titles",tag:"Specialist",key:"titles, tags, discovery"},
+       {role:"Content Calendar",tag:"Specialist",key:"the upload schedule"}],
+     log:[["ok","Format locked: serialized 'Houses of the Throne' faction-war series"],
+       ["ok","Launch announcement script drafted"],
+       ["idle","Gear stack decided: OBS + CapCut, voiceover-only, $0 cost"]],
+     auth:[["Channel still needs a name before it can be opened."]],
+     qa:["Draft 3 House-founding episode outlines",
+       "Write the launch video title + thumbnail brief",
+       "Plan the first 30 days of uploads",
+       "Brainstorm 10 IP-safe, GoT-adjacent channel names"]},
+
+    {id:"crafthaven",name:"CraftHaven",short:"CraftHaven",color:"#C0453D",mono:"CH",emoji:"🏰",
+     status:"Onboarding · Name locked",dot:"idle",agent:"crafthaven-agent",role:"Server Steward",
+     tagline:"Joinable medieval / GoT-adjacent Minecraft server — player Houses vie for a contested Throne.",
+     micro:[["0","players"],["Apex","host"]],
+     links:[["Apex Hosting","https://apexminecrafthosting.com"]],
+     folder:"businesses/crafthaven",
+     gauges:[["0","Players"],["Apex 4GB","Host"],["Not set","Discord"],["Pending","Launch"]],
+     team:[{role:"Server Steward",tag:"Lead",key:"the server as a business"},
+       {role:"Lore & Houses",tag:"Specialist",key:"House framework, original naming"},
+       {role:"Rules & Moderation",tag:"Specialist",key:"server rules & moderation policy"},
+       {role:"Monetization",tag:"Specialist",key:"EULA-safe cosmetic revenue stack"},
+       {role:"Events Calendar",tag:"Specialist",key:"war windows, elections, build contests"},
+       {role:"Cross-promo",tag:"Specialist",key:"sync with the YouTube channel"}],
+     log:[["ok","Server name locked: CraftHaven (checked clear of any live competing server)"],
+       ["ok","Hosting decided: Apex 4 GB ($14.99/mo recurring)"],
+       ["ok","EULA-compliant cosmetic-only monetization stack drafted"],
+       ["idle","Concept locked: player-run Houses + seasonal Throne contest"]],
+     auth:[["Approve the Throne-mechanic name + 5 starter House names/sigils in marketing/house-naming-proposal.md (server name CraftHaven is already locked)."]],
+     qa:["Approve the Throne-mechanic name and House names/sigils",
+       "Write server rules v1",
+       "Price the cosmetic rank tiers (EULA-compliant only)",
+       "Plan launch events synced to the channel's launch video"]},
+
+    {id:"talent",name:"Acting & Modeling",short:"Talent",color:"#E0629B",mono:"AM",emoji:"🎭",
+     status:"Onboarding · Modeling-led",dot:"warn",agent:"talent-agent",role:"Talent Manager",
+     tagline:"You, as the product. Modeling-led with acting second, out of Wilmington — one of the few US cities outside LA/NYC/ATL with a standing studio.",
+     micro:[["0","assets"],["0","subs"]],
+     links:[["NC Film Office","https://www.filmnc.com/current-productions"],["Backstage · Wilmington","https://www.backstage.com/casting/open-casting-calls/wilmington-nc/"]],
+     folder:"businesses/acting-modeling",
+     gauges:[["0","Reps"],["0","Bookings"],["1","Tearsheet set"],["0/8","Assets built"],["$0","Earned"]],
+     team:[{role:"Talent Manager",tag:"Lead",key:"career roadmap, comp card, contracts, rates"},
+       {role:"Casting Scout",tag:"Specialist",key:"finds real gigs — and kills the fake ones"},
+       {role:"Brand & Presence",tag:"Specialist",key:"Instagram as a working portfolio"},
+       {role:"Portfolio",tag:"Specialist",key:"digitals, headshots, comp card, resume"},
+       {role:"Agency Submissions",tag:"Specialist",key:"packages to regional agencies"}],
+     log:[["ok","Venture founded — modeling-led, Wilmington market researched, 3 agents + talent-ops skill built"],
+       ["ok","4 regional agency targets surfaced (Runway to Success, QuickBook, Talent One, BBB list) — none vetted or contacted yet"],
+       ["warn","Nothing submittable yet: no stats sheet, no digitals, no headshots, no comp card, no resume"],
+       ["idle","Flair Magazine editorial is the strongest current asset — still needs uploading to portfolio/"]],
+     auth:[["Two things only you can do, and everything else is blocked on them: upload the Flair Magazine shots to portfolio/tearsheets/, and fill in the stats sheet (height, measurements, shoe, hair/eyes, availability). Ready to do that?"]],
+     warn:"Scams are the #1 threat to new talent, not competition. You never pay an agency to represent you — real ones take commission on work they book. Signing fees, mandatory in-house photographers, and paid 'training' as a condition of signing all mean walk away.",
+     qa:["Vet the 4 regional agencies and draft my submission emails",
+       "Build my talent resume and comp card layout from my stats",
+       "Give me the digitals shot list I can do at home for free",
+       "Sweep this week's Wilmington casting calls and background work"]},
+
+    {id:"finance",name:"Finance",short:"Finance",color:"#8493AC",mono:"$",emoji:"📊",
+     status:"Offline · QuickBooks not authorized",dot:"crit",agent:"finance-agent",role:"Bookkeeper",offline:true,
+     tagline:"Cross-business bookkeeping & cash-flow visibility. Comes online once QuickBooks is authorized as a connector.",
+     micro:[["—","—"]],
+     links:[["QuickBooks","https://quickbooks.intuit.com"]],
+     folder:"businesses",
+     gauges:[["—","P&L"],["—","Cash"],["—","Runway"],["—","Month-end"]],
+     team:[{role:"Bookkeeper",tag:"Lead",key:"the books across all ventures"},
+       {role:"Cash-flow",tag:"Specialist",key:"cash position & runway"},
+       {role:"Tax Prep",tag:"Specialist",key:"tax organization & month-end"}],
+     log:[["crit","Offline — QuickBooks connector not yet authorized"]],
+     auth:[["Authorize QuickBooks in your connector settings to bring this crew online."]],
+     warn:"This crew is offline until you authorize the QuickBooks connector. Everything else about it is ready to go.",
+     qa:["Show me the cross-business P&L once connected",
+       "Prep a month-end close checklist",
+       "Organize expenses for tax season",
+       "Build a simple cash-flow view across ventures"]}
+  ];
+  const OVERSEER={id:"overseer",name:"Overseer · Captain",short:"Overseer",color:"#6C7CE0",mono:"OS",emoji:"🧠",
+     status:"Cross-business",dot:"ok",agent:"overseer",role:"Chief of Staff",
+     tagline:"Sits above every venture — prioritization, weekly rollups, and where your attention goes next.",
+     micro:[["9","ventures"]],
+     links:[["HQ repo","https://github.com/austinmalouin/Workflow"]],
+     folder:".",
+     gauges:[["9","Ventures"],["3","Live"],["5","Onboarding"],["1","Offline"]],
+     team:[{role:"Chief of Staff",tag:"Lead",key:"cross-business prioritization"},
+       {role:"Weekly Rollup",tag:"Specialist",key:"status digest across all ventures"},
+       {role:"Stale-work Watch",tag:"Specialist",key:"catches businesses going quiet"}],
+     log:[["ok","Acting & Modeling station brought aboard for real — folder, BUSINESS.md, 3 agents and the talent-ops skill now exist in the repo, not just in your browser"],
+       ["warn","Portfolio gap named: all 7 existing ventures are asset plays at $0 — none pay this month"],
+       ["ok","Automation Studio founded as the cash engine — consulting for local NC trades, $100+/hr"],
+       ["ok","RIDGEWOOD: full copy overhaul done — all 10 products' SEO + on-page description rewritten and live. Next bottleneck is traffic, not content."],
+       ["idle","Trading: mean-reversion v1 (68% win) beats momentum, still not live-ready"],
+       ["ok","Flight Path Disc Co. (disc golf, formerly \"Solera\"): brand name locked, 2 suppliers researched, outreach drafted (not sent)"]],
+     auth:[["Automation Studio is now the priority venture until it has a paying client — it funds everything else. Confirm you want attention shifted there."]],
+     qa:["What's the single #1 priority across all businesses this week?",
+       "Where should my time and budget go next?",
+       "Which businesses have gone stale — what needs a nudge?",
+       "Give me the full daily briefing"]};
+  const ALL={overseer:OVERSEER}; DEPTS.forEach(d=>ALL[d.id]=d);
+
+  /* per-specialist latest work (honest, from the files) */
+  const LASTWORK={
+    "etsy:SEO & Tags":"Pushed 6 listings to 13/13 tags",
+    "etsy:Listing Copywriter":"Drafted ADHD-niche revisions",
+    "etsy:Pricing Analyst":"Intro 40%-off sale live",
+    "shopify:Compliance":"Fake single-quote widget checked, found gone on 3 products",
+    "shopify:SEO Content":"All 10 SEO fields confirmed live; on-page copy done for 1 of 10",
+    "shopify:TikTok Organic":"7-video 2-week plan drafted",
+    "talent:Talent Manager":"Venture founded, Wilmington market researched",
+    "talent:Casting Scout":"4 agency targets surfaced, none vetted yet",
+    "talent:Portfolio":"Blocked on your stats sheet + Flair images",
+    "talent:Brand & Presence":"Instagram not yet audited",
+    "talent:Agency Submissions":"0 sent — nothing submittable yet",
+    "trading:Backtester":"Mean-reversion v1 → 68.1% win, most promising",
+    "trading:Signal Writer":"0 live signals (bar not met)",
+    "minecraft:Scriptwriter":"Launch announcement drafted",
+    "automation:Outreach":"Validation + follow-up scripts drafted",
+    "automation:Offer & Pricing":"Ladder set: $500 → $1.5–3k → $200–500/mo",
+    "automation:Solution Architect":"Flagship: missed-call text-back",
+    "automation:Studio Lead":"Niche locked: local NC trades",
+    "crafthaven:Monetization":"EULA-safe rank tiers drafted",
+    "crafthaven:Server Steward":"Server name locked: CraftHaven"
+  };
+  function priOf(txt){return /fake review|trademark|FTC|HBO/i.test(txt)?"high":/edge before any live|spend limit|authoriz/i.test(txt)?"med":"med";}
+
+  /* custom businesses (saved on device) */
+  const CKEY="hqbridge-custom-depts";
+  function loadCustom(){try{const a=JSON.parse(localStorage.getItem(CKEY)||"[]");a.forEach(d=>{if(!ALL[d.id]){DEPTS.push(d);ALL[d.id]=d;}});}catch(e){}}
+  function saveCustom(){try{localStorage.setItem(CKEY,JSON.stringify(DEPTS.filter(d=>d.custom)));}catch(e){}}
+  function slugify(s){return s.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,24)||"biz"+(++astroSeq);}
+
+  /* crew order (saved on device) */
+  const OKEY="hqbridge-order";let dragId=null;
+  function saveOrder(){try{localStorage.setItem(OKEY,JSON.stringify(DEPTS.map(d=>d.id)));}catch(e){}}
+  function applyOrder(){try{const o=JSON.parse(localStorage.getItem(OKEY)||"[]");if(!o.length)return;
+    DEPTS.sort((a,b)=>{let i=o.indexOf(a.id),j=o.indexOf(b.id);if(i<0)i=999;if(j<0)j=999;return i-j;});}catch(e){}}
+  function reorder(fromId,toId){
+    if(fromId===toId)return;
+    const fi=DEPTS.findIndex(d=>d.id===fromId),ti=DEPTS.findIndex(d=>d.id===toId);
+    if(fi<0||ti<0)return;
+    const[m]=DEPTS.splice(fi,1);DEPTS.splice(DEPTS.findIndex(d=>d.id===toId),0,m);
+    saveOrder();renderCrew();
+  }
+
+  /* ---------------- astronaut avatar ---------------- */
+  let astroSeq=0;
+  function astro(color){
+    const gid="visg"+(++astroSeq);
+    return `<svg class="astro" viewBox="0 0 100 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs><radialGradient id="${gid}" cx="38%" cy="30%" r="80%">
+        <stop offset="0%" stop-color="#fff" stop-opacity=".55"/>
+        <stop offset="42%" stop-color="${color}"/>
+        <stop offset="100%" stop-color="${color}" stop-opacity=".7"/>
+      </radialGradient></defs>
+      <ellipse class="ashadow" cx="50" cy="122" rx="28" ry="5.5" fill="#000" opacity=".28"/>
+      <rect x="24" y="52" width="52" height="44" rx="16" fill="#c3cede"/>
+      <rect x="17" y="59" width="16" height="36" rx="8" fill="#e9eef6"/>
+      <rect x="67" y="59" width="16" height="36" rx="8" fill="#e9eef6"/>
+      <circle cx="25" cy="93" r="5.5" fill="#dfe6f0"/><circle cx="75" cy="93" r="5.5" fill="#dfe6f0"/>
+      <path d="M28 58 q22 -12 44 0 l4 44 q-24 12 -52 0 z" fill="#f2f5fb"/>
+      <path d="M28 58 q22 -12 44 0 l1.5 16 q-23 -9 -47 0 z" fill="#dde5f0" opacity=".7"/>
+      <rect x="38" y="84" width="24" height="15" rx="4" fill="#20304c"/>
+      <rect x="42" y="88" width="7" height="3" rx="1.5" fill="${color}"/>
+      <circle class="chestlt" cx="55" cy="89.5" r="2" fill="#59E6A6"/>
+      <rect x="40" y="70" width="20" height="8" rx="4" fill="${color}" opacity=".9"/>
+      <circle cx="50" cy="40" r="31" fill="#f5f8fc"/>
+      <circle cx="50" cy="40" r="31" fill="none" stroke="${color}" stroke-width="2.5" opacity=".9"/>
+      <path d="M30 36 q20 -15 40 0 q3 17 -4 24 q-16 9 -32 0 q-7 -7 -4 -24 z" fill="url(#${gid})"/>
+      <path d="M31 30 q19 -11 38 2" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" opacity=".5"/>
+      <ellipse class="glint" cx="40" cy="33" rx="5" ry="8" fill="#fff" opacity=".6"/>
+    </svg>`;
+  }
+
+  /* ---------------- starfield ---------------- */
+  const sf=$("#starfield"),sx=sf.getContext("2d");let stars=[];
+  function initStars(){
+    const dpr=Math.min(window.devicePixelRatio||1,2);
+    sf.width=innerWidth*dpr;sf.height=innerHeight*dpr;sf.style.width=innerWidth+"px";sf.style.height=innerHeight+"px";
+    sx.setTransform(dpr,0,0,dpr,0,0);
+    stars=Array.from({length:150},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:Math.random()*1.3+.2,
+      a:Math.random()*.6+.2,tw:Math.random()*.02+.004,ph:Math.random()*6.28,sp:Math.random()*.06+.01}));
+  }
+  let reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+  let shoot=[],nextShoot=1200;
+  function drawStars(t){
+    sx.clearRect(0,0,innerWidth,innerHeight);
+    for(const s of stars){
+      const tw=reduce?s.a:s.a+Math.sin(t*s.tw+s.ph)*.28;
+      sx.globalAlpha=Math.max(.05,Math.min(1,tw));
+      sx.fillStyle= s.r>1?"#bcd4ff":"#eaf1ff";
+      sx.beginPath();sx.arc(s.x,s.y,s.r,0,7);sx.fill();
+      if(!reduce){s.y+=s.sp;if(s.y>innerHeight){s.y=0;s.x=Math.random()*innerWidth;}}
+    }
+    sx.globalAlpha=1;
+    if(!reduce){
+      if(t>nextShoot){nextShoot=t+5000+Math.random()*7000;
+        shoot.push({x:Math.random()*innerWidth*.7,y:Math.random()*innerHeight*.4,len:120+Math.random()*90,life:0});}
+      for(let i=shoot.length-1;i>=0;i--){const m=shoot[i];m.life+=1;const p=m.life/60;
+        const x=m.x+p*260,y=m.y+p*150;const g=sx.createLinearGradient(x,y,x-m.len*(1-p*.3),y-m.len*.6*(1-p*.3));
+        g.addColorStop(0,"rgba(180,215,255,"+(1-p)+")");g.addColorStop(1,"rgba(180,215,255,0)");
+        sx.strokeStyle=g;sx.lineWidth=1.6;sx.beginPath();sx.moveTo(x,y);sx.lineTo(x-m.len*(1-p*.3),y-m.len*.6*(1-p*.3));sx.stroke();
+        if(m.life>60)shoot.splice(i,1);}
+    }
+    if(!reduce)requestAnimationFrame(drawStars);
+  }
+  initStars();requestAnimationFrame(drawStars);if(reduce)drawStars(0);
+  addEventListener("resize",()=>{initStars();if(reduce)drawStars(0);});
+
+  /* ---------------- today / beacons ---------------- */
+  function waitingCount(){return DEPTS.reduce((n,d)=>n+(d.auth?d.auth.length:0),0);}
+  function renderToday(){
+    const live=DEPTS.filter(d=>d.status.startsWith("Live")).length;
+    const onb=DEPTS.filter(d=>d.status.startsWith("Onboarding")).length;
+    $("#beacons").innerHTML=[
+      [live,"Live",'ok'],[onb,"Onboarding",'idle'],[waitingCount(),"Awaiting you",'warn'],[1,"Offline",'crit']
+    ].map(b=>`<div class="beacon"><div class="b-v"><span class="dot ${b[2]}"></span>${b[0]}</div><div class="b-l">${b[1]}</div></div>`).join("");
+    const prios=[
+      {ic:"crit",t:"Build the 20-business list, then run 10 validation calls — the only step that turns this into income",b:"Automation · start here",id:"automation"},
+      {ic:"warn",t:"Acting & Modeling is live in the repo — upload your Flair shots and fill the stats sheet to unblock everything else",b:"Talent · start here",id:"talent"},
+      {ic:"warn",t:"Flight Path Disc Co.: send the drafted supplier outreach (MVP, Disc Golf Deals USA)?",b:"Flight Path · decision",id:"solera"},
+      {ic:"warn",t:"Mean-reversion v1 is promising (68% win) but thin — refine further, or pick a new test?",b:"Trading · decision",id:"trading"},
+      {ic:"warn",t:"RIDGEWOOD copy overhaul is done — pick next: TikTok organic push, or start the Google Shopping test?",b:"Shopify · decision",id:"shopify"}
+    ];
+    $("#prioList").innerHTML=prios.map(p=>`<div class="prio" data-id="${p.id}">
+      <span class="dot ${p.ic} p-ic"></span>
+      <div><div class="p-t">${p.t}</div><div class="p-b">${p.b}</div></div></div>`).join("");
+    $("#prioList").querySelectorAll(".prio").forEach(el=>el.addEventListener("click",()=>openStation(el.dataset.id)));
+  }
+
+  /* ---------------- crew console ---------------- */
+  function renderCrew(){
+    const crew=$("#crew");
+    // captain first (center-ish), then ventures
+    const order=[OVERSEER,...DEPTS];
+    const n=order.length;
+    crew.innerHTML=order.map((d,i)=>{
+      const t=(i/(n-1))*2-1; const lift=Math.round(t*t*40); // parabolic console arc
+      const alerts=d.auth?d.auth.length:0; const drag=d.id!=="overseer";
+      return `<div class="pod ${d.offline?'offline':''}" draggable="${drag}" style="--bc:${d.color};--lift:${lift}px;transform:translateY(${lift}px)" data-id="${d.id}" role="button" tabindex="0" aria-label="Open ${d.name}"${drag?' title="Click to open · drag to reorder"':''}>
+        ${alerts?`<span class="badge-alert" title="${alerts} awaiting you">${alerts}</span>`:""}
+        ${astro(d.color)}
+        <div class="nameplate">
+          <div class="np-n">${d.emoji?d.emoji+" ":""}${d.short}</div>
+          <div class="np-s"><span class="dot ${d.dot}"></span>${d.role}</div>
+        </div>
+        <div class="micro">${d.micro.map(m=>`<span><b>${m[0]}</b> ${m[1]}</span>`).join("")}</div>
+      </div>`;
+    }).join("") + `<div class="add-pod" id="addPod" role="button" tabindex="0"><div class="plus">+</div><div class="ap-l">Add a business</div></div>`;
+    crew.querySelectorAll(".pod").forEach(p=>{
+      let dragged=false;
+      p.addEventListener("click",()=>{if(!dragged)openStation(p.dataset.id);});
+      p.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openStation(p.dataset.id);}});
+      if(p.getAttribute("draggable")==="true"){
+        p.addEventListener("dragstart",e=>{dragId=p.dataset.id;dragged=true;p.classList.add("dragging");e.dataTransfer.effectAllowed="move";});
+        p.addEventListener("dragend",()=>{p.classList.remove("dragging");setTimeout(()=>dragged=false,60);crew.querySelectorAll(".drop-into").forEach(x=>x.classList.remove("drop-into"));});
+        p.addEventListener("dragover",e=>{if(dragId&&dragId!==p.dataset.id&&p.dataset.id!=="overseer"){e.preventDefault();p.classList.add("drop-into");}});
+        p.addEventListener("dragleave",()=>p.classList.remove("drop-into"));
+        p.addEventListener("drop",e=>{e.preventDefault();p.classList.remove("drop-into");if(dragId&&p.dataset.id!=="overseer")reorder(dragId,p.dataset.id);dragId=null;});
+      }
+    });
+    const ap=$("#addPod");
+    ap.addEventListener("click",openModal);
+    ap.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openModal();}});
+  }
+
+  /* ---------------- station ---------------- */
+  let activeDept=null,activeMember=0;
+  function openStation(id){
+    const d=ALL[id];if(!d)return;activeDept=d;activeMember=0;
+    const st=$("#station");st.style.setProperty("--bc",d.color);
+    const noteKey="hqbridge-notes-"+d.id;
+    const savedNote=(()=>{try{return localStorage.getItem(noteKey)||""}catch(e){return""}})();
+    st.innerHTML=`
+      <div class="st-head">
+        <button class="close" id="closeSt" aria-label="Close">✕</button>
+        <div class="st-id">
+          <div class="st-av">${astro(d.color)}</div>
+          <div>
+            <div class="st-title">${d.emoji?d.emoji+" ":""}${d.name}</div>
+            <div class="st-meta"><span class="dot ${d.dot}"></span>${d.status} · <span>${d.team.length} agents</span> · <span>${d.agent}</span>${d.custom?`<button class="st-del" id="delBtn">✕ remove</button>`:""}</div>
+          </div>
+        </div>
+        <p class="st-tag">${d.tagline}</p>
+        <div class="st-links">
+          ${d.links.map(l=>`<a class="st-link" href="${l[1]}" target="_blank" rel="noopener">↗ ${l[0]}</a>`).join("")}
+          <button class="st-link" data-copy="${d.folder}">⧉ ${d.folder}</button>
+        </div>
+      </div>
+      <div class="st-body">
+        ${d.warn?`<div class="warnbar"><span>⚠</span><div><b>Standing rule.</b> ${d.warn}</div></div>`:""}
+
+        <div>
+          <div class="sec-label">The crew · click one to direct your question</div>
+          <div class="roster" id="roster">
+            ${d.team.map((m,i)=>{const lw=LASTWORK[d.id+":"+m.role];return `<button class="member" data-i="${i}" aria-pressed="${i===0}">
+              <span class="mm">${m.role.split(" ").map(w=>w[0]).slice(0,2).join("")}</span>
+              <span><span class="m-role">${m.role}</span><span class="m-tag">${m.tag}</span>${lw?`<span class="m-last">↳ ${lw}</span>`:""}</span></button>`;}).join("")}
+          </div>
+        </div>
+
+        <div>
+          <div class="sec-label">Gauges<span class="last-sync">synced from your files</span><button class="refresh" id="refreshBtn">⟳ Refresh</button></div>
+          <div class="gauges">${d.gauges.map(g=>`<div class="gauge"><div class="g-v">${g[0]}</div><div class="g-l">${g[1]}</div></div>`).join("")}</div>
+        </div>
+
+        <div>
+          <div class="sec-label">Mission log</div>
+          <div class="log">${d.log.map(f=>`<div class="log-item"><span class="dot ${f[0]} li-d"></span><span>${f[1]}</span></div>`).join("")}</div>
+        </div>
+
+        <div>
+          <div class="sec-label">Awaiting authorization</div>
+          ${d.auth&&d.auth.length? d.auth.map(a=>{const pr=priOf(a[0]);return `<div class="auth"><div class="au-t">${a[0]}<span class="prio-tag ${pr}">${pr}</span></div>
+            <div class="au-a"><button class="a-btn yes" data-forge="Let's proceed with this: ${a[0].replace(/"/g,"'")}">Authorize →</button>
+            <button class="a-btn hold">Hold</button></div></div>`;}).join("")
+          :`<div class="none">Nothing awaiting your sign-off. ✦</div>`}
+        </div>
+
+        <div>
+          <div class="sec-label">Console commands</div>
+          <div class="qa-grid">${d.qa.map(q=>`<button class="qa" data-q="${q.replace(/"/g,"&quot;")}"><span class="qa-ic">›</span>${q}</button>`).join("")}</div>
+        </div>
+
+        <div>
+          <div class="sec-label">Captain's log · private notes</div>
+          <textarea class="notes" id="notes" placeholder="Notes for this business — saved on your device.">${savedNote.replace(/</g,"&lt;")}</textarea>
+          <div class="notes-save" id="noteSave">${savedNote?"Saved":""}</div>
+        </div>
+      </div>
+
+      <div class="transmit">
+        <div class="who">Transmitting to <b id="whoName">${d.team[0].role}</b> — ${d.team[0].key}</div>
+        <div class="composer">
+          <textarea id="ask" rows="1" placeholder="Ask ${d.team[0].role.toLowerCase()} to do something…"></textarea>
+          <button class="send" id="sendBtn">⚡ Forge</button>
+        </div>
+        <div class="forge-out" id="forgeOut">
+          <div class="fo-head"><span>Ready-to-run prompt</span><button class="copybtn" id="copyBtn">Copy</button></div>
+          <pre id="forgePre"></pre>
+        </div>
+      </div>`;
+
+    $("#closeSt").addEventListener("click",closeStation);
+    const ta=$("#ask",st);
+    ta.addEventListener("input",()=>{ta.style.height="auto";ta.style.height=Math.min(ta.scrollHeight,120)+"px";});
+    ta.addEventListener("keydown",e=>{if((e.metaKey||e.ctrlKey)&&e.key==="Enter")forge();});
+    $("#roster",st).querySelectorAll(".member").forEach(b=>b.addEventListener("click",()=>{
+      activeMember=+b.dataset.i;
+      $("#roster",st).querySelectorAll(".member").forEach(x=>x.setAttribute("aria-pressed",x===b));
+      const m=d.team[activeMember];
+      ta.setAttribute("placeholder",`Ask ${m.role.toLowerCase()} to do something…`);
+      $(".who",st).innerHTML=`Transmitting to <b>${m.role}</b> — ${m.key}`;
+    }));
+    st.querySelectorAll(".qa").forEach(q=>q.addEventListener("click",()=>{ta.value=q.dataset.q;ta.dispatchEvent(new Event("input"));forge();ta.focus();}));
+    st.querySelectorAll("[data-forge]").forEach(b=>b.addEventListener("click",()=>{ta.value=b.dataset.forge;ta.dispatchEvent(new Event("input"));forge();}));
+    st.querySelectorAll("[data-copy]").forEach(b=>b.addEventListener("click",()=>{copy(b.dataset.copy,"Folder path copied");}));
+    $("#refreshBtn",st).addEventListener("click",()=>{
+      const m=d.team[0];const labels=d.gauges.map(g=>g[1]).join(", ");
+      ta.value=`As the ${m.role} on ${d.name} (${d.agent}), open the live source and pull our current numbers (${labels}). Report what changed since the last check. Draft-and-recommend only — no changes without my go-ahead.`;
+      ta.dispatchEvent(new Event("input"));forge();
+      toast("Refresh forged — run it and I'll update the gauges");
+    });
+    $("#sendBtn",st).addEventListener("click",forge);
+    const del=$("#delBtn",st);
+    if(del)del.addEventListener("click",()=>{
+      const i=DEPTS.findIndex(x=>x.id===d.id);
+      if(i>=0){DEPTS.splice(i,1);delete ALL[d.id];saveCustom();try{localStorage.removeItem("hqbridge-notes-"+d.id);}catch(e){}}
+      closeStation();renderToday();renderCrew();toast(d.short+" stood down");
+    });
+    // notes
+    const notes=$("#notes",st);let nt;
+    notes.addEventListener("input",()=>{clearTimeout(nt);nt=setTimeout(()=>{try{localStorage.setItem(noteKey,notes.value);$("#noteSave",st).textContent="Saved ✓";}catch(e){$("#noteSave",st).textContent="(couldn't save)";}},350);});
+
+    $("#scrim").classList.add("open");st.classList.add("open");st.setAttribute("aria-hidden","false");
+  }
+
+  function forge(){
+    const st=$("#station"),d=activeDept;if(!d)return;
+    const ta=$("#ask",st),q=(ta.value||"").trim();if(!q){ta.focus();return;}
+    const m=d.team[activeMember];
+    const kpi=d.gauges.map(g=>`${g[1]} ${g[0]}`).join(" · ");
+    const prompt=`Act as the ${m.role} on the ${d.name} team (${d.agent}).
+Scope: ${m.key}. Business: ${d.tagline}
+Current state: ${d.status} — ${kpi}.
+
+My request: ${q}
+
+Follow the draft-and-recommend model: research and draft only. Nothing is published, sent, or executed without my explicit go-ahead in this conversation.`;
+    $("#forgePre",st).textContent=prompt;
+    $("#forgeOut",st).classList.add("show");
+    const cb=$("#copyBtn",st);cb.textContent="Copy";cb.classList.remove("done");
+    cb.onclick=()=>copy(prompt,"Prompt copied — paste it to me in Claude Code",()=>{cb.textContent="Copied ✓";cb.classList.add("done");});
+    $("#forgeOut",st).scrollIntoView({behavior:"smooth",block:"nearest"});
+  }
+  function closeStation(){$("#scrim").classList.remove("open");const st=$("#station");st.classList.remove("open");st.setAttribute("aria-hidden","true");activeDept=null;}
+  $("#scrim").addEventListener("click",closeStation);
+
+  /* ---------------- clipboard + toast ---------------- */
+  function copy(t,msg,cb){
+    const done=()=>{toast(msg);cb&&cb();};
+    if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t).then(done,()=>fb(t,done));else fb(t,done);
+  }
+  function fb(t,cb){const a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();try{document.execCommand("copy");cb&&cb();}catch(e){}document.body.removeChild(a);}
+  let toastT;function toast(msg){const t=$("#toast");t.textContent="✓ "+msg;t.classList.add("show");clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove("show"),2600);}
+
+  /* ---------------- command palette ---------------- */
+  const palScrim=$("#palScrim"),palInput=$("#palInput"),palList=$("#palList");let palItems=[],palSel=0;
+  function buildPalItems(q){
+    q=(q||"").toLowerCase();const items=[];
+    [OVERSEER,...DEPTS].forEach(d=>{
+      const b={id:d.id,color:d.color,mono:d.mono};
+      items.push({...b,type:"open",t:`<b>${d.short}</b> station`,k:"Open",s:d.short+" "+d.name+" station"});
+      (d.qa||[]).forEach(a=>items.push({...b,type:"qa",q:a,t:`${a} <span style="color:var(--faint)">· ${d.short}</span>`,k:"Command",s:a+" "+d.short}));
+      (d.team||[]).forEach(m=>items.push({...b,type:"open",t:`${m.role} <span style="color:var(--faint)">· ${d.short}</span>`,k:"Crew",s:m.role+" "+m.key+" "+d.short}));
+      (d.log||[]).forEach(f=>items.push({...b,type:"open",t:`${f[1]} <span style="color:var(--faint)">· ${d.short}</span>`,k:"Log",s:f[1]+" "+d.short}));
+      (d.auth||[]).forEach(a=>items.push({...b,type:"open",t:`${a[0]} <span style="color:var(--faint)">· ${d.short}</span>`,k:"Awaiting",s:a[0]+" "+d.short}));
+      let note="";try{note=localStorage.getItem("hqbridge-notes-"+d.id)||"";}catch(e){}
+      if(note.trim())items.push({...b,type:"open",t:`“${note.slice(0,56).replace(/</g,"&lt;")}${note.length>56?"…":""}” <span style="color:var(--faint)">· ${d.short} note</span>`,k:"Note",s:note+" "+d.short+" note"});
+    });
+    if(!q)return items.filter(it=>it.k==="Open"||it.k==="Command");
+    return items.filter(it=>it.s.toLowerCase().includes(q));
+  }
+  function renderPal(){
+    palList.innerHTML=palItems.length?palItems.map((it,i)=>`<div class="pal-item" data-i="${i}" aria-selected="${i===palSel}" style="--bc:${it.color}">
+      <span class="pi-badge">${it.mono}</span><span class="pi-t">${it.t}</span><span class="pi-k">${it.k}</span></div>`).join("")
+      :`<div class="pal-empty">No matches.</div>`;
+    palList.querySelectorAll(".pal-item").forEach(el=>el.addEventListener("click",()=>runPal(+el.dataset.i)));
+  }
+  function runPal(i){const it=palItems[i];if(!it)return;closePal();
+    if(it.type==="open")openStation(it.id);
+    else{openStation(it.id);setTimeout(()=>{const ta=$("#ask");if(ta){ta.value=it.q;ta.dispatchEvent(new Event("input"));forge();}},420);}
+  }
+  function openPal(){palScrim.classList.add("open");palInput.value="";palSel=0;palItems=buildPalItems("");renderPal();palInput.focus();}
+  function closePal(){palScrim.classList.remove("open");}
+  palInput.addEventListener("input",()=>{palItems=buildPalItems(palInput.value);palSel=0;renderPal();});
+  palInput.addEventListener("keydown",e=>{
+    if(e.key==="ArrowDown"){e.preventDefault();palSel=Math.min(palSel+1,palItems.length-1);renderPal();scrollSel();}
+    else if(e.key==="ArrowUp"){e.preventDefault();palSel=Math.max(palSel-1,0);renderPal();scrollSel();}
+    else if(e.key==="Enter"){e.preventDefault();runPal(palSel);}
+    else if(e.key==="Escape")closePal();
+  });
+  function scrollSel(){const el=palList.querySelector(`[data-i="${palSel}"]`);if(el)el.scrollIntoView({block:"nearest"});}
+  palScrim.addEventListener("click",e=>{if(e.target===palScrim)closePal();});
+  $("#cmdkBtn").addEventListener("click",openPal);
+  document.addEventListener("keydown",e=>{
+    if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){e.preventDefault();palScrim.classList.contains("open")?closePal():openPal();}
+    else if(e.key==="/"&&!/INPUT|TEXTAREA/.test(document.activeElement.tagName)&&!palScrim.classList.contains("open")){e.preventDefault();openPal();}
+    else if(e.key==="Escape"){closePal();closeStation();}
+  });
+
+  /* ---------------- add-business modal ---------------- */
+  const PALETTE=["#E0A458","#4FA37A","#2DD4A7","#7CB342","#C0453D","#6C7CE0","#E0607A","#5FD3FF","#C98BEA","#E8B84B"];
+  const EMOJIS=["🚀","🛒","🧢","🎨","🍰","🐾","💡","🎧","📷","🧵","🏋️","🌿","🎮","💍"];
+  const ROLE_PRESETS=["Operator","SEO","Copywriter","Merchandiser","Ads","Social","Email","Analyst","Support","Designer","Community"];
+  const mScrim=$("#modalScrim");
+  let mColor=PALETTE[7],mEmoji=EMOJIS[0],mRoles=new Set(["Operator"]);
+  function monoFrom(name){const w=(name||"").trim().split(/\s+/).filter(Boolean);return ((w[0]||"N")[0]+((w[1]||w[0]||"B")[0]||"")).toUpperCase();}
+  function renderModalPickers(){
+    $("#mSwatches").innerHTML=PALETTE.map(c=>`<button class="swatch" style="background:${c};color:${c}" data-c="${c}" aria-pressed="${c===mColor}"></button>`).join("");
+    $("#mEmojis").innerHTML=EMOJIS.map(e=>`<button class="emoji-opt" data-e="${e}" aria-pressed="${e===mEmoji}">${e}</button>`).join("");
+    $("#mRoles").innerHTML=ROLE_PRESETS.map(r=>`<button class="rolechip" data-r="${r}" aria-pressed="${mRoles.has(r)}">${r}</button>`).join("");
+    $("#mSwatches").querySelectorAll(".swatch").forEach(b=>b.addEventListener("click",()=>{mColor=b.dataset.c;renderModalPickers();updatePrev();}));
+    $("#mEmojis").querySelectorAll(".emoji-opt").forEach(b=>b.addEventListener("click",()=>{mEmoji=b.dataset.e;renderModalPickers();updatePrev();}));
+    $("#mRoles").querySelectorAll(".rolechip").forEach(b=>b.addEventListener("click",()=>{const r=b.dataset.r;mRoles.has(r)?mRoles.delete(r):mRoles.add(r);renderModalPickers();updatePrev();}));
+  }
+  function updatePrev(){
+    const name=$("#mName").value.trim()||"New Business";
+    $("#mPrev").innerHTML=astro(mColor);
+    $("#mPrevName").textContent=mEmoji+" "+name;
+    $("#mPrevCrew").textContent=(mRoles.size||0)+" crew: "+([...mRoles].join(", ")||"none yet");
+    $("#mSave").disabled=!($("#mName").value.trim()&&mRoles.size);
+  }
+  function openModal(){
+    mColor=PALETTE[(Math.floor(astroSeq)%PALETTE.length)];mEmoji=EMOJIS[0];mRoles=new Set(["Operator"]);
+    $("#mName").value="";$("#mRoleNew").value="";
+    renderModalPickers();updatePrev();mScrim.classList.add("open");setTimeout(()=>$("#mName").focus(),40);
+  }
+  function closeModal(){mScrim.classList.remove("open");}
+  $("#mName").addEventListener("input",updatePrev);
+  $("#mCancel").addEventListener("click",closeModal);
+  $("#mRoleAdd").addEventListener("click",()=>{const v=$("#mRoleNew").value.trim();if(v){mRoles.add(v);ROLE_PRESETS.includes(v)||ROLE_PRESETS.push(v);$("#mRoleNew").value="";renderModalPickers();updatePrev();}});
+  $("#mRoleNew").addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();$("#mRoleAdd").click();}});
+  mScrim.addEventListener("click",e=>{if(e.target===mScrim)closeModal();});
+  $("#mSave").addEventListener("click",()=>{
+    const name=$("#mName").value.trim();if(!name||!mRoles.size)return;
+    let id=slugify(name);while(ALL[id])id+="-"+(++astroSeq);
+    const roles=[...mRoles];
+    const dept={custom:true,id,name,short:name.length>16?name.slice(0,15)+"…":name,color:mColor,mono:monoFrom(name),emoji:mEmoji,
+      status:"New · Onboarding",dot:"idle",agent:id+"-agent",role:roles[0],
+      tagline:name+" — a new venture aboard the fleet. Tell its crew what you want built.",
+      micro:[["new","aboard"]],links:[],folder:"businesses/"+id,
+      gauges:[["—","Status"],["0","Days live"],["—","Revenue"],["—","Goal"]],
+      team:roles.map((r,i)=>({role:r,tag:i===0?"Lead":"Specialist",key:i===0?"the venture end-to-end":r.toLowerCase()+" for this business"})),
+      log:[["idle","Brought aboard — no work logged yet"]],
+      auth:[],
+      qa:["Draft a 90-day launch plan for "+name,"Research the market and top 3 competitors","Set the first concrete milestone","Write the brand positioning in one paragraph"]};
+    DEPTS.push(dept);ALL[id]=dept;saveCustom();renderToday();renderCrew();closeModal();
+    toast(name+" is aboard");setTimeout(()=>openStation(id),260);
+  });
+  document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal();});
+
+  /* ---------------- boot + init ---------------- */
+  loadCustom();applyOrder();renderToday();renderCrew();
+  (function boot(){
+    const b=$("#boot");if(!b)return;
+    if(reduce){b.classList.add("done");setTimeout(()=>{if(b.parentNode)b.parentNode.removeChild(b);},40);return;}
+    app.classList.add("booting");
+    const steps=["initializing navigation core…","waking crew stations…","syncing venture telemetry…",DEPTS.length+" crew reporting for duty ✓"];
+    let i=0;const log=$("#bootLog");
+    const iv=setInterval(()=>{if(log)log.textContent=steps[i++]||steps[steps.length-1];if(i>=steps.length)clearInterval(iv);},470);
+    let ended=false;
+    const end=()=>{if(ended)return;ended=true;clearInterval(iv);b.classList.add("done");app.classList.remove("booting");
+      setTimeout(()=>{if(b.parentNode)b.parentNode.removeChild(b);},650);document.removeEventListener("click",end);};
+    setTimeout(end,2200);
+    document.addEventListener("click",end);
+  })();
+})();
+</script>
+
+</body></html>

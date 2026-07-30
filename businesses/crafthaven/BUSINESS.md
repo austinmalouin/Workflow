@@ -1,6 +1,6 @@
-# Medieval/GoT-Themed Minecraft Server
+# CraftHaven — Medieval/GoT-Themed Minecraft Server
 
-**Agent**: `lore-server-agent` | **Skill**: `lore-server-growth` | **Status**: onboarding (concept locked 2026-07-22)
+**Agent**: `crafthaven-agent` | **Skill**: `crafthaven-growth` | **Status**: onboarding (concept locked 2026-07-22, server name locked 2026-07-23)
 
 ## What this is
 
@@ -26,7 +26,7 @@ terms — "Seven Kingdoms," "Iron Throne," "House Stark" etc. reskinned to origi
 This avoids a takedown risk to a revenue-generating product. Final naming is Austin's call; this
 is a flagged risk, not a blocker.
 
-## Concept (see full reasoning + monetization plan in `../../.claude/skills/lore-server-growth/SKILL.md`
+## Concept (see full reasoning + monetization plan in `../../.claude/skills/crafthaven-growth/SKILL.md`
 and the research notes below)
 
 **Format**: a persistent medieval-fantasy survival server built around **player-run Houses**
@@ -122,10 +122,18 @@ automated backups. **Recommendation: start at 4 GB** — a brand-new server has 
 launch, no reason to pay for headroom that isn't needed yet; upgrade the tier once Houses are
 actually filling up rather than provisioning for hoped-for growth.
 
+**Naming decided 2026-07-23**: server name is **CraftHaven** (Austin's pick, overriding the
+naming-proposal doc's "Sundered Realm" recommendation). Checked for conflicts via WebSearch before
+locking it in: the name has been reused by several small/inactive servers over the years (a 2016-17
+PvP/factions listing, a crafthaven.net SMP listing currently showing 0 players online and
+"offline") but no live server with real brand recognition or an active player base — judged clear
+enough to proceed. Throne-mechanic name and 5 starter House names/sigils still open in
+`marketing/house-naming-proposal.md`, not yet used anywhere live.
+
 ## How the agent works today
 
 No Minecraft server-hosting or Discord bot connector is available yet (checked 2026-07-22). Until
-one exists, `lore-server-agent` works by:
+one exists, `crafthaven-agent` works by:
 - Researching the medieval/faction-server landscape and monetization norms (WebSearch), keeping
   this file current as the concept firms up
 - Drafting the server's lore/House framework, rules, and store item list into `marketing/`

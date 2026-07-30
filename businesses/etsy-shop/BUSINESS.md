@@ -103,9 +103,170 @@ Savings Goal Tracker all now carry the researched titles/tags on the live shop �
 added to the two savings listings, Payday Checklist went from 7/13 to 13/13 tags, and the
 shame-free/gentle-finance emotional-intent language is live on the ADHD listings. One deviation
 from the draft: the Savings Goal Tracker title couldn't use "&" twice (Etsy validation) — used
-"and" for the added phrase instead, keeping the pre-existing "US Letter & A4" ampersand. The ADHD
-Reset Routine draft (missing digital file, photos, wrong item type) is still unpublished — Austin
-hasn't actioned that checklist yet.
+"and" for the added phrase instead, keeping the pre-existing "US Letter & A4" ampersand.
+
+**ADHD Reset Routine draft — 2 of 4 pre-publish blockers fixed, 2026-07-23**: Austin actioned the
+checklist above. Verified live via Shop Manager first (all four blockers still present, unchanged
+since Jul 22). With explicit go-ahead:
+- Item type switched from "Physical item" to "Digital files" in Shop Manager, saved as draft.
+- Description's "Solera Palms" branding typo fixed to "Part of the Steady Ledger Co. collection —
+  pairs perfectly with our ADHD budget & debt trackers."
+- Both confirmed live in the (still-unpublished) draft after saving — draft count unchanged at 1,
+  nothing published.
+Still open: no digital PDF file or mockup photos/video exist for this listing anywhere — Austin
+chose "design from scratch" for these, so full page-by-page product content (3 reset cards, 5
+room-by-room sheets, a brain dump page) plus a Canva mockup/video brief has been drafted in
+[adhd-reset-routine-content-draft.md](listings/adhd-reset-routine-content-draft.md).
+
+## Search-visibility work applied live — 2026-07-23
+
+Austin asked for "as much automated stuff as possible… anything to boost my views and sales" while
+he handles the manual file-attach himself. Everything below was **applied live** to the shop (all
+reversible; before/after recorded here).
+
+**1. Etsy's own search-visibility dashboard was flagging a real problem.** Checked
+`Shop Manager → Etsy search visibility` directly: "1 factor risks lowering your search visibility —
+2 listings have new title recommendations." Etsy's algorithm had flagged two titles as
+keyword-stuffed/unclear. This is the highest-signal input available (it's Etsy telling us what its
+own ranking thinks), and it had never been actioned.
+
+- **Debt-Free Starter Kit** — accepted Etsy's suggestion as-is. It only stripped low-value filler
+  ("Printable", "Undated", "Instant Download", "Bundle") while keeping the real keywords.
+  - Before: `Debt-Free Starter Kit | Printable Budget Planner, Debt Snowball & Savings Tracker Bundle | Undated PDF Instant Download`
+  - After: `Debt-Free Starter Kit | Budget Planner, Debt Snowball, Savings Tracker (PDF Download)`
+- **Savings Goal Tracker** — did **not** accept Etsy's suggestion verbatim. Etsy wanted to drop
+  "Cash Stuffing," which is a deliberately-added, genuinely-searched term from the earlier keyword
+  research (see the 6-listing SEO revision work). Edited the recommendation instead to keep Etsy's
+  shorter/clearer structure *and* retain the keyword.
+  - Before: `Savings Goal Tracker | Visual Savings Challenge and Cash Stuffing PDF Instant Download | US Letter & A4`
+  - Etsy proposed: `Savings Goal Tracker | Visual Savings Challenge PDF (US Letter)` ← drops "cash stuffing"
+  - Published: `Savings Goal Tracker | Cash Stuffing & Savings Challenge PDF (US Letter)`
+- Both published via Etsy's own flow; verified live afterward.
+
+**Worth internalizing for future sessions:** Etsy's title recommendations optimize for *buyer
+clarity*, and it will happily strip a high-intent keyword to get there. Don't bulk-accept them —
+accept the structure, hand-edit to keep researched keywords. The edit box in that flow allows it.
+
+**2. Shop sections created and all 10 listings assigned.** The shop had **zero** sections — every
+listing was unsectioned, so the storefront had no browsable navigation and Etsy had one less
+relevance signal. Created 4 keyword-bearing sections and assigned all 10 active listings:
+- **ADHD & Neurodivergent (2)** — ADHD Debt Payoff Kit, No-Shame Weekly Budget Check-In
+- **Debt Payoff Trackers (2)** — Debt-Free Starter Kit, Debt Snowball Tracker
+- **Budget Planners (4)** — Payday Checklist, Annual Budget Overview, Monthly Bill Tracker,
+  Weekly Budget Planner
+- **Savings & Sinking Funds (2)** — Savings Goal Tracker, Sinking Fund Tracker
+- No Section: **0**. (The ADHD Reset Routine draft is still unsectioned — assign it to
+  "ADHD & Neurodivergent" when it publishes.)
+
+**Etsy admin quirks learned (save future time):**
+- In the listings bulk editor, **scrolling clears your checkbox selection.** Select and act without
+  scrolling in between. The reliable pattern: filter the list down (search box, or the sidebar
+  Sections filter) until the whole group fits on screen → click select-all → Editing options →
+  Change section.
+- The sidebar Sections filter set to "No Section" is the fastest way to find unassigned listings.
+- `form_input` on the section dropdown needs the numeric section **value**, not the label, when the
+  label contains an ampersand. Section IDs: ADHD & Neurodivergent `59591046`, Debt Payoff Trackers
+  `59607435`, Budget Planners `59591076`, Savings & Sinking Funds `59607455`.
+
+**3. Attributes turned out to be a dead end — correcting an earlier assumption.** The previous
+note here flagged "fill in listing attributes" as the next win, based on Etsy's generic advice that
+attributes are "an important factor in helping items appear in relevant Etsy searches." Checked the
+actual listing editor: for this category (**Personal Finance Templates**, digital), the Attributes
+section contains **only Tags** — there are no structured attribute dropdowns (no Occasion, Style,
+Color, Holiday, etc.). Etsy's generic guidance doesn't apply to this category. Nothing to fill.
+Don't re-add this to the backlog.
+
+**4. The real gap, found instead: the shop's own differentiator was missing from 80% of the
+catalog.** Pulled every listing's tag set directly (fetched each listing-editor page and parsed the
+embedded tag JSON — much faster than opening 10 editors by hand). Result: only **2 of 10** listings
+carried any ADHD/neurodivergent tag. The other 8 were competing purely on the most saturated terms
+on Etsy — "instant download" (all 10), "budget tracker" (8), "financial planner", "personal
+finance", "printable tracker", "undated planner". A zero-sale shop cannot rank for those; meanwhile
+the low-competition, fast-growing, genuinely-differentiated ADHD terms were sitting unused.
+
+Fixed via Etsy's bulk tag editor, section by section (the sections built earlier made this clean —
+each section maps to a tag group). Two passes per section, because the bulk dialog only does one
+operation at a time:
+- Pass 1: **Remove "instant download"** (frees a slot; all 8 were at 13/13)
+- Pass 2: **Add "adhd friendly"**
+
+Verified live afterward via the listings-page tag filter: **"adhd friendly" went 2 → 10**,
+**"instant download" went 10 → 2** (the 2 remaining are the two originally-ADHD listings, untouched).
+
+**Etsy bulk-tag-editor quirks (save future time):**
+- The Add/Remove dropdown is a **native `<select>` styled to look custom** — `form_input` and JS
+  `querySelector('select')` don't find it in the dialog. Click it, then press **Down** (Remove) or
+  **Up** (Add).
+- **Switching mode clears the queued tag.** You cannot stage an add and a remove together — apply
+  the remove, re-select, then do the add.
+- Same selection-fragility as before: **no `find` calls between selecting and acting**, and the
+  first select-all click right after a page load often doesn't register — click, screenshot to
+  confirm the count chip, then proceed.
+
+**5. Closing the consistency gap — 8 description rewrites drafted AND published live, 2026-07-23.**
+The tag work above left 8 listings tagged `adhd friendly` with descriptions that never mentioned
+ADHD — a conversion leak and a tag-stuffing look. Drafted fixes for all 8 in
+[adhd-description-rewrites.md](listings/adhd-description-rewrites.md), then applied and published
+all 8 with Austin's go-ahead. Verified live afterward by re-fetching each listing's description —
+all 8 now mention ADHD in the opening. Payday Checklist, Annual Budget Overview, Sinking Fund
+Tracker, Debt-Free Starter Kit, Monthly Bill Tracker, Savings Goal Tracker, Debt Snowball Tracker,
+Weekly Budget Planner. Every listing on the shop now both tags and speaks to the ADHD angle.
+
+**Mechanics used**: per listing, triple-click on the opening paragraph in the description textarea
+selects exactly that paragraph (stops at the real `\n\n`, not just the wrapped visual line) —
+reliable for swapping just the hook without touching *What's included*/*How it works*/*Details*
+below it. Two of the eight listings (Sinking Fund Tracker, Debt Snowball Tracker, Weekly Budget
+Planner) use ALL CAPS section headers ("WHAT'S INCLUDED" not "What's included") — matched that
+per-listing instead of a single template, so the inserted "Why it works" block doesn't look like a
+different hand wrote it. First edit lost the blank line before the next section (typed text ending
+without a trailing newline collapsed into the following heading) — fixed by ending each typed block
+with a trailing blank line; verified via screenshot before publishing each one, not just after.
+
+Key finding that changed the approach: the existing descriptions are **already good** — consistent
+structure (hook → *What's included* → *How it works* → *Details*), concrete, no fluff. A wholesale
+rewrite would have destroyed working copy. So each edit is surgical: **replace the opening hook**
+with an ADHD/executive-function-led one, and **insert a `Why it works for ADHD brains:` block**
+after it. Everything below stays untouched. Voice modeled on the ADHD Debt Payoff Kit, which
+already nails it.
+
+Honest calls recorded in that file: strongest fit is Payday Checklist / Debt Snowball / Savings
+Goal / Monthly Bill Tracker (genuinely ADHD-native — short horizon, visual progress, early wins).
+**Weakest is Annual Budget Overview** — a 12-month planning page is the least ADHD-native product
+in the shop; if any listing should drop the `adhd friendly` tag instead of leaning in, it's that
+one. No therapeutic/medical/diagnostic claims anywhere — the copy only describes *design choices*.
+
+**Also still untouched:** the optional price/sale-framing consistency item, and the 15 free listing
+credits sitting unused (relevant if new listings get created).
+
+**Content draft reviewed, 2026-07-23**: checked the mockup/video brief directly against the real
+shop, not just assumption — opened the live shop grid and the ADHD Debt Payoff Kit listing's
+actual photos. The original brief's guess ("soft pastels, rounded corners, bursting-star
+checkboxes") didn't match reality; corrected it to the shop's real, consistent system: deep
+forest-green header band, warm cream background, bold serif/slab headline, mustard-gold divider
+line, plain black-outline square checkboxes.
+
+**Canva briefed, 2026-07-23**: with Austin's go-ahead, generated three editable Canva drafts from
+the reviewed content (10-page PDF `DAHQQdTPRhY`, cover photo `DAHQQRz1bTw`, "What's Included" photo
+`DAHQQWAAUzU`).
+
+**Finalized, exported & delivered — 2026-07-23 (Austin: "nudge the cover spacing then do everything
+else, no questions asked").** Reviewing the generated designs caught real defects, all fixed:
+- The PDF's first pass (`design_type: document`) had let Canva's AI paraphrase the checklist into
+  generic marketing prose and leave "[Your Name Here]" placeholders. Fixed by regenerating the exact
+  copy with `design_type: doc` + `verbatim: true` and merging that verbatim text back into the
+  styled 10-page layout; placeholders removed; cover title/subtitle/byline spacing nudged so nothing
+  overlaps. All 10 pages now verbatim-correct.
+- The "What's Included" photo had garbled text ("pr tudz prompts") + a duplicate row — corrected.
+- All three exported (10-page US-Letter PDF + 2 PNGs), saved in-repo at
+  `listings/adhd-reset-routine-assets/`, and **sent to Austin directly**.
+
+**One genuine blocker, not a judgment call:** the browser file-upload tool only accepts files the
+*user* shared with the session; agent-generated files are refused from every local path tried
+(scratchpad, repo, session outputs). So the literal "attach to the Etsy draft" step can't be done by
+the agent — Austin drags the PDF into "Digital files" and the 2 PNGs into "Photo and video" (a
+~1-minute drag-and-drop). **Video** still needs a manual screen recording (Canva can't generate it).
+Nothing was published; the draft remains a draft, publish-ready on Austin's say-so once the 3 files
+are attached.
 
 ## How the agent works today
 

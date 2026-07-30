@@ -5,10 +5,10 @@
 ## What this is
 
 A new, automated-as-possible Minecraft YouTube channel, built to make money (ad revenue,
-sponsorships, and/or affiliate) **and to drive players into `businesses/got-lore-server/`**, a
+sponsorships, and/or affiliate) **and to drive players into `businesses/crafthaven/`**, a
 monetized medieval/GoT-adjacent Minecraft server. The two businesses are one funnel: this channel's
 content exists to make people want to join that server, and events on that server become this
-channel's content. Read `../got-lore-server/BUSINESS.md` alongside this file — decisions here
+channel's content. Read `../crafthaven/BUSINESS.md` alongside this file — decisions here
 assume that server exists as the destination.
 
 ## Format decision (locked 2026-07-22)
@@ -61,7 +61,7 @@ Verified via WebSearch (2026-07-22), not assumed:
    narrative solving server cold-start, not a guaranteed win.
 5. **IP caution**: "Game of Thrones" is an actively enforced HBO trademark. Plan to market as
    GoT-*adjacent*/*inspired* ("if you love Game of Thrones...") while using original names for the
-   server, houses, and throne mechanic — see the naming note in `../got-lore-server/BUSINESS.md`.
+   server, houses, and throne mechanic — see the naming note in `../crafthaven/BUSINESS.md`.
 
 ## Goals
 
@@ -87,6 +87,10 @@ gear. Recommended budget stack, real and current as of 2026-07-23:
 - **Voiceover**: record real narration directly; AI narration tools (e.g. ElevenLabs) are a viable
   fallback if Austin doesn't want to voice it himself, quality is genuinely close to human now.
 - Total new-software cost: **$0** — everything above is free at the tier a new channel needs.
+
+**Content calendar drafted 2026-07-23**: first concrete upload schedule (Episodes 0-4 + shorts,
+targeted against the server launch date) in `content-calendar/launch-arc-schedule.md` — the
+folder was an empty stub before this.
 
 ## How the agent works today
 

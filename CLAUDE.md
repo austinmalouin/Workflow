@@ -44,6 +44,25 @@ the building or touches money. Concretely:
 - Anything requiring real money, new accounts, or public posting goes through
   `approvals/` (see [approvals/README.md](approvals/README.md)) or gets asked about directly.
 
+## Standing rule: sync the Bridge at the end of every substantive session
+
+The HQ dashboard is a published Artifact ("The Bridge", source: `hq-brain.html` at the workspace
+root, URL: https://claude.ai/code/artifact/fe9b1927-a3ab-4b04-ba2e-c2781ca4a8b9 — always update
+in place, never mint a new URL). It cannot update itself, so any session that materially changes
+a business's state (new backtest, new draft, a decision made, a blocker cleared) **must end by
+syncing the Bridge before wrapping up**, without Austin having to ask:
+
+1. Update that venture's entry in `hq-brain.html` — gauges, mission log, the "awaiting
+   authorization" question (it should always reflect the *current* open decision, never one
+   already answered), and the console-command quick actions (the concrete next steps).
+2. Update the Overseer's cross-business log/priorities if the change is significant.
+3. Republish via the Artifact tool to the same URL.
+4. Keep `BUSINESS.md` and the Bridge telling the same story — BUSINESS.md remains the source of
+   truth; the Bridge is its dashboard view.
+
+The point: when Austin opens the Bridge, the forged prompts should always ask the next *new*
+question, not re-ask one a prior session already resolved.
+
 ## Hard constraints (do not relax these when adding agents/skills)
 
 1. No agent places live trades, transfers funds, or executes purchases. Ever.

@@ -6,7 +6,7 @@ industry benchmarks for comparably-sized/niched channels, not this channel's act
 
 ## Read this first: how this relates to the server's own plan
 
-`businesses/got-lore-server/BUSINESS.md` already has a full EULA-compliant monetization plan for
+`businesses/crafthaven/BUSINESS.md` already has a full EULA-compliant monetization plan for
 **the Minecraft server itself**: cosmetic rank tiers, cosmetic crate keys, claim convenience,
 a supporter tier, and sponsorships once traffic exists. That plan is the source of truth for
 server-side monetization — this document does not duplicate it.
@@ -75,7 +75,7 @@ the earliest realistic window, not day one.
 **Who actually fits a medieval-Minecraft-server narrative channel:**
 
 - **Server hosting companies** — direct fit, and Apex Hosting (already the server's own host per
-  `got-lore-server/BUSINESS.md`) runs both a creator sponsorship track ("Team Apex," which includes
+  `crafthaven/BUSINESS.md`) runs both a creator sponsorship track ("Team Apex," which includes
   a complimentary server) and a standard affiliate program (see section 3). Worth applying to Team
   Apex specifically once there's a body of episodes to show, since Apex already hosts the actual
   server being featured — this is the single most natural sponsor fit available and doubles as
@@ -166,7 +166,7 @@ buttons" ask if not designed carefully.
 (1,000 subs / 4,000 watch hours) — the lower 500-sub "expanded" tier unlocks Super Thanks but not
 memberships. Up to six price tiers, $0.99-$49.99/month.
 
-**The got-lore-server plan already lists** a "server-name-adjacent merch / Patreon-style supporter
+**The crafthaven plan already lists** a "server-name-adjacent merch / Patreon-style supporter
 tier tied to the YouTube channel (early video access, Discord supporter role, name in credits)" as
 its item #4 — i.e., the server plan *already assumes* the fan-funding relationship lives on the
 channel side, not as a separate server-only Patreon. That means the right design is:
@@ -176,7 +176,7 @@ channel side, not as a separate server-only Patreon. That means the right design
   supporter role and small in-game cosmetic-only perk equivalent to what a paying rank would get
   (server-side) + name in credits. This satisfies the server plan's item #4 without Austin having
   to build and maintain a second Patreon page.
-- Before YPP eligibility, the *in-game* cosmetic rank tiers (got-lore-server plan item #1) already
+- Before YPP eligibility, the *in-game* cosmetic rank tiers (crafthaven plan item #1) already
   give players a way to pay for cosmetic status — that's sufficient early fan-funding; don't rush a
   redundant Patreon page before the channel even qualifies for memberships.
 - Keep the server's cosmetic rank purchase and the channel membership perk **visibly different
@@ -246,14 +246,14 @@ subscriber base in the low tens of thousands, not before.
 
 ## 9. Community-building — Discord as the retention engine underneath all of the above
 
-Per `got-lore-server/BUSINESS.md`, Discord is already planned as the server's support/community
+Per `crafthaven/BUSINESS.md`, Discord is already planned as the server's support/community
 hub (announcements, ban appeals, and — relevant here — where store/rank purchases get supported).
 For the channel side, Discord should be treated as the connective tissue between every revenue
 stream above, not a separate initiative:
 
 - It's where newsletter sign-ups and channel-membership perks (Discord supporter role, per section
   5) actually get delivered and feel tangible between video releases.
-- It's where server-event raw material surfaces for the next episode (per got-lore-server's "the
+- It's where server-event raw material surfaces for the next episode (per crafthaven's "the
   server *is* the writers' room" framing) — meaning Discord engagement directly feeds the content
   pipeline, not just monetization.
 - It's the natural distribution point for lore drops that later become newsletter content and
@@ -271,7 +271,7 @@ stream above, not a separate initiative:
 |---|---|---|
 | **0 — Pre-launch** | 0 subs, launch arc in production | Discord stood up as the hub (already planned server-side); Apex affiliate link ready to drop in every video description from video #1 (zero cost, zero minimum, immediate) |
 | **1 — Launch arc live** | 0 → ~500 subs | Nothing paid yet. Focus entirely on the launch arc + founding episodes. Apply for YouTube's expanded/early-access tier at 500 subs once eligible (unlocks Super Thanks) |
-| **2 — Early series** | 500 → 1,000 subs / 4,000 watch hours | Hit full YPP eligibility — flip on ad revenue (expect it to be small, a few dollars to low tens per video). Server-side cosmetic rank tiers (already in got-lore-server plan) are the primary real fan-funding at this stage, not a channel product |
+| **2 — Early series** | 500 → 1,000 subs / 4,000 watch hours | Hit full YPP eligibility — flip on ad revenue (expect it to be small, a few dollars to low tens per video). Server-side cosmetic rank tiers (already in crafthaven plan) are the primary real fan-funding at this stage, not a channel product |
 | **3 — Consistent cadence, real views** | Several months of regular uploads, low thousands of views/video | Start Apex "Team Apex" sponsorship outreach (natural first sponsor, doubles as hosting-cost offset); stand up the Beehiiv newsletter once there's a launch arc's worth of lore + first server events to recap |
 | **4 — Nano-to-micro creator** | 1K–10K subs, stable/engaged views | First digital product: House lineage/succession chart or lore compendium PDF, once the world timeline is developed enough to chart; broaden sponsorship outreach to gaming-peripheral/creator-tool sponsors as filler alongside Apex |
 | **5 — Micro creator, real community** | 10K+ subs, YPP-eligible for memberships | Launch the single combined channel-membership / server-supporter product (section 5) — one purchase, perks spanning both businesses; add gear affiliate links (Amazon/Razer/Elgato) as passive description-box income |

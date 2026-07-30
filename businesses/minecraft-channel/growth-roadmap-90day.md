@@ -389,7 +389,7 @@ active Discord members by Week 9):
    format against itself.
 6. **Revisit monetization-adjacent revenue in parallel, not instead.** If ad revenue timelines
    (5-9 months, per the milestone math above) feel too slow, the server side's cosmetic-store
-   revenue (per `../got-lore-server/BUSINESS.md`) and a Patreon-style supporter tier can start
+   revenue (per `../crafthaven/BUSINESS.md`) and a Patreon-style supporter tier can start
    generating small amounts before YouTube Partner Program eligibility — these run in parallel with
    the growth roadmap, not as a replacement for it.
 

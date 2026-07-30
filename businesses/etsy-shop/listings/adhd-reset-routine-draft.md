@@ -64,12 +64,39 @@ different, and more structural. Details below.
 
 ## Recommended pre-publish checklist for Austin
 
-1. Change Item Details → category/type from "Physical item" to "Digital files."
-2. Upload the actual PDF file (once digital mode is enabled).
-3. Add at least 1-2 mockup photos (and ideally a video, matching sibling listings).
-4. Fix the description's "Solera Palms" reference to the correct shop name.
-5. Optional: restructure price to a sale/original pair consistent with the rest of the shop.
+1. ~~Change Item Details → category/type from "Physical item" to "Digital files."~~ **Done,
+   2026-07-23** — changed in Shop Manager and saved as draft, with Austin's go-ahead. Confirmed
+   live in the draft (still unpublished): "Digital files • 2020 - 2026."
+2. Upload the actual PDF file — **finalized & exported, delivered to Austin; only the literal
+   attach step is blocked, 2026-07-23.** The first generation (`design_type: document`) had lost
+   the real content to AI paraphrasing and left placeholder text; fixed by regenerating the exact
+   copy with `design_type: doc` + `verbatim: true`, then merging that verbatim text back into the
+   styled 10-page design (ID `DAHQQdTPRhY`, [edit](https://www.canva.com/d/v7T8Q6qLs3hFWAT) ·
+   [view](https://www.canva.com/d/LHivfhBqurAs46H)). All 10 pages now carry the approved checklist
+   content verbatim, placeholder text removed, and the cover's title/subtitle/byline spacing was
+   nudged so nothing overlaps. Exported to a 10-page US-Letter PDF, saved at
+   `listings/adhd-reset-routine-assets/adhd-reset-routine.pdf` and sent to Austin directly.
+   **Not attached to the listing:** the browser file-upload tool only accepts files the *user*
+   shared with the session (dragged-in attachments / connected folders) — agent-generated files are
+   refused regardless of local path (scratchpad, repo, and outputs folders all rejected). So Austin
+   drags the PDF into the draft's "Digital files" box himself (1 min).
+3. Add mockup photos (and ideally a video) — **2 photos finalized & exported, delivered; attach
+   blocked same as #2, 2026-07-23.** Cover photo (ID `DAHQQRz1bTw`) needed no changes. "What's
+   Included" photo (ID `DAHQQWAAUzU`) had garbled text ("pr tudz prompts") + a duplicate row on
+   review; text corrected and committed (Austin OK'd accepting a minor row-overlap to nudge later).
+   Both exported to PNG at `listings/adhd-reset-routine-assets/listing-photo-1-cover.png` and
+   `listing-photo-2-whats-included.png`, saved in-repo and sent to Austin — he drags them into
+   "Photo and video." **Video still not covered** — Canva's generator has no video type, so the
+   scroll-through video needs a separate manual screen recording.
+4. ~~Fix the description's "Solera Palms" reference to the correct shop name.~~ **Done, 2026-07-23**
+   — description now reads "Part of the Steady Ledger Co. collection — pairs perfectly with our
+   ADHD budget & debt trackers." Saved as draft, confirmed live in the editor.
+5. Optional: restructure price to a sale/original pair consistent with the rest of the shop — not
+   actioned, still just a suggestion.
 6. Then it's ready for Austin to hit Publish himself — no further copy work needed.
 
-This file is prep/audit only; per the etsy-ops skill and approval-queue convention, nothing was
-changed live and the draft was not published.
+**Current status, 2026-07-23:** #1 and #4 done live in the draft; #2 and #3 fully produced,
+exported, saved in `listings/adhd-reset-routine-assets/`, and sent to Austin — the only remaining
+work is the manual file-attach (blocked for the agent by the upload sandbox) plus the optional
+video and price framing. Nothing has been published; the draft is still a draft. Once Austin drags
+the 3 files in, the listing is publish-ready on his say-so.

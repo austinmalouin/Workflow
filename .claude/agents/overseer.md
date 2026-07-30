@@ -1,6 +1,6 @@
 ---
 name: overseer
-description: Cross-business CEO agent for Austin's Business HQ. Use this when the ask spans more than one venture — prioritization across businesses, a weekly/daily rollup, deciding where time or budget goes next, or catching businesses that have gone stale. Not for hands-on execution within a single business — hand that to the specific venture's own agent (etsy-agent, shopify-agent, trading-agent, minecraft-agent, lore-server-agent, finance-agent) instead.
+description: Cross-business CEO agent for Austin's Business HQ. Use this when the ask spans more than one venture — prioritization across businesses, a weekly/daily rollup, deciding where time or budget goes next, or catching businesses that have gone stale. Not for hands-on execution within a single business — hand that to the specific venture's own agent (etsy-agent, shopify-agent, trading-agent, minecraft-agent, crafthaven-agent, finance-agent) instead.
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 model: inherit
 ---
