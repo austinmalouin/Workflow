@@ -118,6 +118,55 @@ chose "design from scratch" for these, so full page-by-page product content (3 r
 room-by-room sheets, a brain dump page) plus a Canva mockup/video brief has been drafted in
 [adhd-reset-routine-content-draft.md](listings/adhd-reset-routine-content-draft.md).
 
+## Traffic diagnosis + Etsy Ads correction — 2026-07-29
+
+Austin asked for an honest status check after 3-4 weeks with no revenue. Pulled real numbers
+rather than guessing:
+
+- **Last 30 days: 20 visits, 0 orders, $0 revenue. Last 7 days: 0 visits.** Only 7 total listing
+  views across all 10 listings combined — not enough traffic yet to judge conversion on anything.
+- **Etsy's own on-platform search sent 0 visits all month.** Traffic-source breakdown: Etsy app &
+  other Etsy pages 7, Etsy search 0, Etsy marketing & SEO 3, Direct & other 8, all social 0.
+- One real buyer-intent signal: **Savings Goal Tracker** got 1 favorite + 1 abandoned cart — it's
+  also the listing with by far the most views (6 of the shop's 7 total). Worth treating as the
+  shop's best lead.
+
+**Correction to a claim made earlier in this same session**: I told Austin Etsy Ads had "never
+been run." That was wrong — checked Shop Manager → Marketing → Etsy Ads directly and found a live
+campaign already running: **540 impressions, 7 clicks, $1.11 spent, 0 orders, ROAS 0 over the last
+30 days.** Per-listing breakdown matters here:
+- Savings Goal Tracker: 276 views, 6 clicks, 2.2% CTR, $0.98 spent — carrying almost the entire ad
+  campaign's engagement, consistent with the organic favorite/cart signal above.
+- Debt-Free Starter Kit: 34 views, 1 click, 2.9% CTR, $0.13 spent.
+- **Monthly Bill Tracker: 123 views, 0 clicks.** Second-most-shown listing in the whole campaign
+  and nobody clicks it — that's a thumbnail/title appeal problem specific to that listing, not a
+  budget or targeting problem. Worth revisiting that listing's cover image before spending more ad
+  budget showing it to people who scroll past.
+- Every other listing: single-digit-to-low-double-digit impressions, 0 clicks — not enough data
+  yet to conclude anything about them individually.
+
+**Real diagnosis**: this is a pure discovery/traffic problem, not a conversion or listing-quality
+problem — the SEO/tag/section/description work done earlier this week was necessary groundwork,
+but there isn't remotely enough traffic yet to judge whether it's working. Etsy's new-shop ranking
+ramp-up commonly takes 2-3 months before organic search traffic materializes, so 3-4 weeks isn't
+unusual by Etsy's own standards, even though zero organic search visits is a stark number to see
+directly.
+
+**Recommended next moves, in priority order** (Austin chose "Pinterest + Etsy Ads research" over
+"dig into the near-miss listing" when asked):
+1. **Pinterest** — $0 cost, best-fit free channel for this product category. Full launch plan
+   (board structure, priority order, ready-to-post pin title/description copy for all 10 listings)
+   drafted in [marketing/pinterest-launch-plan.md](marketing/pinterest-launch-plan.md). Nothing
+   posted — needs Austin to connect a Pinterest account first (an account/OAuth action that's his
+   to do, not the agent's, per the standing integration-connection rule).
+2. **Etsy Ads** is already running, so the real decision isn't "start or not," it's "keep the tiny
+   current budget, scale it up now that Savings Goal Tracker has a proven signal, or turn it off
+   until organic groundwork has more time to work." Not decided — Austin's call, flagged on the
+   Bridge.
+3. Not yet done: a closer look at Monthly Bill Tracker's cover photo (the 123-views/0-clicks
+   listing) — deferred when Austin picked Pinterest + Ads research over this option, still worth
+   doing.
+
 ## Search-visibility work applied live — 2026-07-23
 
 Austin asked for "as much automated stuff as possible… anything to boost my views and sales" while

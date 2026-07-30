@@ -52,10 +52,16 @@ today" pattern for its comparison-format videos.
 
 ## Video 1 (Week 1, Day 1-2) — "Do you actually need a mini marker disc?"
 
+> ⛔ **DO NOT FILM THE SCRIPT BELOW — IT STATES THE RULE INCORRECTLY.** Checked against PDGA Rule
+> 802.06/802.05 on 2026-07-29: a thrown disc's position **already legally marks the lie**, so a mini
+> is **not required** at all. The draft below claims the opposite. Corrected, verified, shootable
+> version lives in [first-video-shooting-script.md](first-video-shooting-script.md) — use that.
+> The rough script is kept here only as a record of what was wrong.
+
 **Format**: Rules-explainer, text-over-graphics or talking-head. Hooks on a genuine beginner
 question rather than a product pitch.
 
-### Concept / rough script (~30 sec)
+### Concept / rough script (~30 sec) — ⛔ SUPERSEDED, factually wrong, see warning above
 
 > "If you've ever played disc golf with someone who whips out a tiny disc before they pick up
 > their putter — that's a mini marker, and it's not just for show.

@@ -1,9 +1,29 @@
 # Shopify Store — Flight Path Disc Co. (formerly "Solera")
 
+> ## ⚠️ NAME REOPENED 2026-07-29 — "Flight Path" has real collisions
+>
+> The domain + trademark check that `BUSINESS.md` required before outreach was finally run
+> (2026-07-29) and it **failed**. Full detail in
+> [marketing/name-domain-trademark-check.md](marketing/name-domain-trademark-check.md). Summary:
+>
+> - **Flightpath Disc Golf** — a 501(c)(3) in Redding, CA (`flightpathdiscgolf.org`) selling
+>   disc golf **apparel and towels**, i.e. two of our own planned product lines. **And its corporate
+>   sponsors include MVP Disc Sports** — supplier target #1. Emailing MVP as "Flight Path Disc Co."
+>   would introduce us as a soundalike of a brand they already sponsor.
+> - **`flightpathdiscs.com`** (plural) is already registered — currently a WordPress "Coming Soon"
+>   placeholder. That's the domain a customer would guess first.
+> - **The Flight Paths Disc Golf Podcast** already occupies the disc-golf-content lane, which is our
+>   entire pillar #1.
+> - **FLIGHTPATH** is a live registered US trademark (Reg. 5544935) in **Class 028** — the same class
+>   disc golf hardgoods fall in. Goods are golf tees, so not a certain bar, but not a clean search.
+>
+> **Consequence: supplier outreach and domain purchase are both ON HOLD** until a name is settled.
+> Content work is *not* blocked and has proceeded (see the content section below).
+
 **Status: name decided 2026-07-24 — Flight Path Disc Co.** (Austin's pick, a variant of the
-"Flight Path" direction after "Chains & Grip" read a little off). Account/folder still referred to
-as "Solera" internally (original working label) — rename folder/admin references opportunistically,
-not urgently.
+"Flight Path" direction after "Chains & Grip" read a little off) — **but reopened 2026-07-29, see the
+warning above.** Account/folder still referred to as "Solera" internally (original working label) —
+rename folder/admin references opportunistically, not urgently.
 
 **Status: niche decided 2026-07-23 — Austin has chosen disc golf accessories (the #2 option from
 Part 2 research below) over the top recommendation (home espresso accessories) and over the
@@ -350,6 +370,20 @@ name.
   `marketing/accessory-content-calendar-weeks1-3.md`: 7 platform-agnostic (TikTok/Shorts/Reels)
   buying-guide/comparison pieces across 3 weeks, built to grow an audience ahead of the store
   launching (same content-first model as the Minecraft channel).
+- ~~Check domain availability + run a basic trademark check~~ — **done 2026-07-29, and it failed**:
+  see [marketing/name-domain-trademark-check.md](marketing/name-domain-trademark-check.md). Four
+  "Flight Path" collisions in disc golf, one of them sponsored by MVP Disc Sports. Name needs to
+  change; outreach and domain purchase on hold until it does.
+- ~~Decide business structure / resale certificate path~~ — **researched 2026-07-29**, same file.
+  Recommendation: **sole prop now + free NCDOR sales-tax registration + Form E-595E** (that's the
+  actual wholesale unlock, costs $0); defer the LLC ($125 + $200/yr, NC's annual fee is high) until
+  there's revenue. Austin's call, and worth one CPA conversation.
+- ~~Pick and script the first content piece~~ — **done 2026-07-29**, see
+  [marketing/first-video-shooting-script.md](marketing/first-video-shooting-script.md): Video 1
+  ("do you actually need a mini marker disc?"), TikTok-primary with free cross-post to Shorts/Reels.
+  **Found and fixed a factual error**: the calendar's draft script stated the PDGA lie-marking rule
+  backwards (claimed a mini is required; it isn't — a thrown disc already marks the lie per PDGA
+  802.05). Corrected against the PDGA primary source and the bad draft is now marked DO-NOT-FILM.
 - Repeat RIDGEWOOD's early diligence pattern before building anything — check for sourcing options
   via a legitimate dropship/POD app (see Part 3 Sourcing table), confirm no fake-review or
   fabricated-social-proof boilerplate gets shipped with whatever theme/app is used, and do real
