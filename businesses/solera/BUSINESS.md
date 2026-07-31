@@ -1,28 +1,42 @@
-# Shopify Store — Flight Path Disc Co. (formerly "Solera")
+# Shopify Store — Chain Music Co. (formerly "Flight Path Disc Co.", formerly "Solera")
 
-> ## ⚠️ NAME REOPENED 2026-07-29 — "Flight Path" has real collisions
+> ## ✅ NAME RE-DECIDED 2026-07-30 — Chain Music Co.
 >
-> The domain + trademark check that `BUSINESS.md` required before outreach was finally run
-> (2026-07-29) and it **failed**. Full detail in
-> [marketing/name-domain-trademark-check.md](marketing/name-domain-trademark-check.md). Summary:
+> "Flight Path Disc Co." failed its collision check on 2026-07-29 (see history below). Austin chose
+> a fresh, collision-checked name on 2026-07-30: **Chain Music Co.** — real disc golf slang for the
+> sound of a disc hitting the chains, the best moment in the sport. Full candidate research in
+> [marketing/name-candidates-round2.md](marketing/name-candidates-round2.md). Niche search came back
+> clean (nothing in disc golf uses the term) and `chainmusic.com` / `chainmusicco.com` show no DNS
+> record — but **neither claim is a confirmed clearance**, see the lock-in sequence below.
 >
-> - **Flightpath Disc Golf** — a 501(c)(3) in Redding, CA (`flightpathdiscgolf.org`) selling
->   disc golf **apparel and towels**, i.e. two of our own planned product lines. **And its corporate
->   sponsors include MVP Disc Sports** — supplier target #1. Emailing MVP as "Flight Path Disc Co."
->   would introduce us as a soundalike of a brand they already sponsor.
-> - **`flightpathdiscs.com`** (plural) is already registered — currently a WordPress "Coming Soon"
->   placeholder. That's the domain a customer would guess first.
-> - **The Flight Paths Disc Golf Podcast** already occupies the disc-golf-content lane, which is our
->   entire pillar #1.
-> - **FLIGHTPATH** is a live registered US trademark (Reg. 5544935) in **Class 028** — the same class
->   disc golf hardgoods fall in. Goods are golf tees, so not a certain bar, but not a clean search.
+> **Lock-in sequence Austin is running himself, one step at a time, this workspace pings between
+> steps:**
+> 1. **WHOIS the domain at a registrar** — confirm `chainmusic.com` or `chainmusicco.com` is actually
+>    purchasable, not just DNS-silent.
+> 2. **Grab the TikTok handle** (the chosen launch platform) plus YouTube and Instagram, once WHOIS
+>    clears.
+> 3. **Pay for a real trademark clearance search** (a flat-fee attorney search, commonly a few
+>    hundred dollars) before any apparel gets printed or supplier outreach names the brand.
 >
-> **Consequence: supplier outreach and domain purchase are both ON HOLD** until a name is settled.
-> Content work is *not* blocked and has proceeded (see the content section below).
+> **Supplier outreach to MVP Disc Sports and Disc Golf Deals USA is ON HOLD until step 3 confirms
+> clear** — Austin's explicit call, made after the Flight Path mistake, to not repeat sending outreach
+> under a name that hasn't survived a real clearance search. Content work is not blocked and has
+> proceeded (see the content section below).
+>
+> <details><summary>History: the "Flight Path Disc Co." collision (2026-07-24 → 2026-07-29)</summary>
+>
+> Flight Path Disc Co. was picked 2026-07-24 and failed its domain/trademark check on 2026-07-29 —
+> full detail in [marketing/name-domain-trademark-check.md](marketing/name-domain-trademark-check.md).
+> Summary: **Flightpath Disc Golf**, a 501(c)(3) in Redding CA, sells disc golf apparel and towels
+> (two of our own planned product lines) and **is sponsored by MVP Disc Sports** — our own supplier
+> target #1. `flightpathdiscs.com` was already registered; a "Flight Paths" podcast already occupied
+> our content lane; FLIGHTPATH is a live US trademark in Class 028, the same class as disc golf
+> hardgoods. Lesson carried forward into the sequence above: run WHOIS + handle + clearance search
+> *before* locking a name or drafting outreach under it, not after.
+> </details>
 
-**Status: name decided 2026-07-24 — Flight Path Disc Co.** (Austin's pick, a variant of the
-"Flight Path" direction after "Chains & Grip" read a little off) — **but reopened 2026-07-29, see the
-warning above.** Account/folder still referred to as "Solera" internally (original working label) —
+**Status: name re-decided 2026-07-30 — Chain Music Co.**, pending the lock-in sequence above.
+Account/folder still referred to as "Solera" internally (original working label) —
 rename folder/admin references opportunistically, not urgently.
 
 **Status: niche decided 2026-07-23 — Austin has chosen disc golf accessories (the #2 option from
@@ -384,12 +398,23 @@ name.
   **Found and fixed a factual error**: the calendar's draft script stated the PDGA lie-marking rule
   backwards (claimed a mini is required; it isn't — a thrown disc already marks the lie per PDGA
   802.05). Corrected against the PDGA primary source and the bad draft is now marked DO-NOT-FILM.
+- ~~Research fresh, collision-checked name candidates~~ — **done 2026-07-29**, see
+  [marketing/name-candidates-round2.md](marketing/name-candidates-round2.md). Three survivors out of
+  12 checked; Hyzer/Ace Run/Parked/Chains & Grip all killed by real existing-business collisions.
+- ~~Pick the new name~~ — **decided 2026-07-30: Chain Music Co.** Austin also chose the lock-in
+  sequence (WHOIS → handle → paid clearance search, pinged step by step) and confirmed supplier
+  outreach stays on hold until the clearance search comes back clean.
+- **Open — Austin's action, in sequence**: (1) WHOIS `chainmusic.com`/`chainmusicco.com` at a
+  registrar to confirm real availability; (2) grab the TikTok/YouTube/Instagram handle once WHOIS
+  clears; (3) pay for a real attorney trademark clearance search before any apparel or outreach
+  commits to the name. This workspace pings between each step rather than doing all three at once,
+  per Austin's instruction.
 - Repeat RIDGEWOOD's early diligence pattern before building anything — check for sourcing options
   via a legitimate dropship/POD app (see Part 3 Sourcing table), confirm no fake-review or
   fabricated-social-proof boilerplate gets shipped with whatever theme/app is used, and do real
   keyword research (not assumed) before writing product copy.
-- No Shopify setup, sourcing signup, or spend until Austin gives the specific go-aheads flagged in
-  Part 3 (supplier dealer accounts, domain purchase, brand name lock-in).
+- No Shopify setup, sourcing signup, or spend until Austin gives the specific go-aheads flagged
+  above, and no supplier outreach until the Chain Music Co. clearance search is confirmed clean.
 
 ## Current state
 
@@ -406,18 +431,19 @@ signup. Planning has now moved a step further (2026-07-28): a draft 8-SKU starte
 (`marketing/accessory-content-calendar-weeks1-3.md`) are both done — pure drafting, nothing sourced,
 printed, filmed, or posted.
 
-**Next concrete action, Austin's call**: (1) ~~pick the final brand name~~ — **done 2026-07-24:
-Flight Path Disc Co.** — check domain availability and run a basic trademark check before outreach
-goes out under this name; (2) decide on a business structure (sole prop vs. LLC) and get an
-EIN/state resale certificate if he wants a real wholesale account rather than just an initial
-inquiry — neither can be produced by this workspace; (3) once a domain/entity decision is made,
-send (or authorize sending) the supplier outreach drafts already sitting in
-`marketing/supplier-outreach-research.md` so real per-unit costs can replace the estimated price
-ranges in `products/initial-sku-list.md`; (4) pick which of the 7 content-calendar pieces to film
-first and which platform(s) to launch on — account creation/verification for TikTok/YouTube/
-Instagram remains Austin's action per the workspace's standing rule on new integrations. No account
-configuration, no products live, no theme, no domain, no supplier accounts, no outreach sent, and no
-video filmed/posted yet — all still open, several needing Austin's direct go-ahead as flagged above.
+**Next concrete action, Austin's call**: (1) ~~pick the final brand name~~ — **done 2026-07-24, then
+reopened 2026-07-29 after failing its check, then re-decided 2026-07-30: Chain Music Co.** —
+Austin is now running the WHOIS → handle → clearance-search sequence himself, one step at a time;
+(2) decide on a business structure (sole prop vs. LLC) — **researched 2026-07-29, recommendation is
+sole prop + free NCDOR registration**, Austin's call to actually file; (3) once the clearance search
+confirms Chain Music Co. clean, rewrite and send the supplier outreach drafts (currently written
+under the old "Flight Path" name in `marketing/supplier-outreach-research.md` — need a rename pass
+before sending) so real per-unit costs can replace the estimated price ranges in
+`products/initial-sku-list.md`; (4) ~~pick which content piece to film first and which platform~~ —
+**done 2026-07-29: Video 1, TikTok-primary** — account creation/verification remains Austin's action
+per the workspace's standing rule on new integrations. No account configuration, no products live,
+no theme, no domain, no supplier accounts, no outreach sent, and no video filmed/posted yet — all
+still open, several needing Austin's direct go-ahead as flagged above.
 
 ## Working folders
 
