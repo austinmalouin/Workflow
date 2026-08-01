@@ -128,6 +128,20 @@ Founded 2026-07-26. No clients, no outreach sent, no offer published. Niche chos
 and pricing set, flagship automation identified. Next concrete step is the 20-business list and
 10 validation conversations — see `outreach/` for the scripts, which are drafted and ready.
 
+**2026-08-01 — the target-list blocker is now a fillable worksheet**:
+[outreach/target-list-worksheet.md](outreach/target-list-worksheet.md). ~30 minutes, costs nothing.
+It's a memory-jogger rather than a directory, deliberately: research into Wilmington trades turned up
+Blaze Air (40+ yrs), Odyssey Mechanical, and O'Brien Service — **all too large and all cold**, which
+is the wrong first target. Warm-and-small beats cold-and-big badly for a first client. The worksheet
+also flags what's probably the strongest asset available: **the Figure Eight Island Yacht Club
+network** — members and vendors there own exactly the kind of businesses this offer is built for, and
+Austin already has a legitimate reason to be talking to them.
+
+**Also recorded 2026-08-01**: this is now the *second* track, running alongside
+[businesses/remote-income](../remote-income/BUSINESS.md). Automation Studio has the higher ceiling
+and is genuinely Austin's, but it's realistically 4–12 weeks to a first paid audit. Annotation work
+pays rent while this ripens. Different clocks by design — a slow week here isn't failure.
+
 **Nothing has been sent or published.** Per the HQ operating model, all outreach copy is drafted
 for Austin's review; he sends it himself.
 

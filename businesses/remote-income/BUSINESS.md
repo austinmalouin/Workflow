@@ -90,6 +90,15 @@ feels like before spending his single shot.
   differentiated and the listings cost nothing to sit there. No more heavy investment, but the
   organic SEO work continues at low effort.
 
+## Documents in this folder
+
+| File | What it's for |
+|---|---|
+| **[inbox/START-HERE-TODAY.md](inbox/START-HERE-TODAY.md)** | **The action sheet.** 4 things, ~90 min, in order. This is the one Austin actually opens. |
+| [platforms/ai-training-platform-playbook.md](platforms/ai-training-platform-playbook.md) | Full platform research — who's legit, pay reality, scam rules, application order |
+| [platforms/dataannotation-assessment-prep.md](platforms/dataannotation-assessment-prep.md) | Prep for the one-shot assessment. Read before going near it. Includes a worked example of the answer depth required. |
+| [earnings-log.md](earnings-log.md) | Replaces estimated pay with Austin's real numbers. Also the tax set-aside tracker. |
+
 ## Working folders
 
 - `platforms/` — platform research, application status, assessment prep
