@@ -26,9 +26,10 @@ Finance/QuickBooks cloud automation needs QuickBooks connected as a claude.ai co
 
 | Business | Folder | Agent | Status |
 |---|---|---|---|
-| **Automation Studio** (AI consulting) | [businesses/automation-studio](businesses/automation-studio/BUSINESS.md) | `automation-agent` | **Onboarding — the cash engine; next step is 10 validation calls** |
-| Etsy shop (SteadyLedgerPrints) | [businesses/etsy-shop](businesses/etsy-shop/BUSINESS.md) | `etsy-agent` | Active — 10 listings, pre-revenue |
-| Shopify store (RIDGEWOOD) | [businesses/shopify-store](businesses/shopify-store/BUSINESS.md) | `shopify-agent` | Active — 31 listings, pre-revenue |
+| **Remote Income** (Austin's actual income) | [businesses/remote-income](businesses/remote-income/BUSINESS.md) | none (assistant works directly) | **PRIORITY — AI training/annotation for near-term cash; apply to Outlier/Alignerr/Mercor now** |
+| **Automation Studio** (AI consulting) | [businesses/automation-studio](businesses/automation-studio/BUSINESS.md) | `automation-agent` | **The build track — $100+/hr, needs 10 validation calls** |
+| Etsy shop (SteadyLedgerPrints) | [businesses/etsy-shop](businesses/etsy-shop/BUSINESS.md) | `etsy-agent` | Light-touch (downgraded 2026-08-01) — 0 Etsy-search visits/30d, not an income path |
+| Shopify store (RIDGEWOOD) | [businesses/shopify-store](businesses/shopify-store/BUSINESS.md) | `shopify-agent` | **SHUTTING DOWN (2026-08-01)** — Austin to cancel the subscription |
 | Shopify store (Flight Path Disc Co., disc golf — folder still named "solera") | [businesses/solera](businesses/solera/BUSINESS.md) | none yet (would reuse `shopify-agent`) | Build-out — niche + name decided, supplier outreach drafted (not sent), no products/store yet |
 | Trading desk | [businesses/trading-desk](businesses/trading-desk/BUSINESS.md) | `trading-agent` | Active — Robinhood Agentic connected |
 | Minecraft YouTube channel | [businesses/minecraft-channel](businesses/minecraft-channel/BUSINESS.md) | `minecraft-agent` | Onboarding — needs channel name |
@@ -36,10 +37,25 @@ Finance/QuickBooks cloud automation needs QuickBooks connected as a claude.ai co
 | **Acting & Modeling** (Austin as talent) | [businesses/acting-modeling](businesses/acting-modeling/BUSINESS.md) | `talent-agent`, `casting-scout-agent`, `talent-brand-agent` | **Founding — modeling-led; needs stats sheet + Flair Magazine images uploaded** |
 | Cross-business books | [businesses/](businesses/) (shared) | `finance-agent` | Blocked — QuickBooks not yet authorized |
 
+**Portfolio reset (2026-08-01)**: Austin asked directly whether Etsy would make him money and got a
+direct **no** — 0 Etsy-search visits in 30 days, most saturated category on the platform. Same
+verdict on RIDGEWOOD (14 sessions/month). After months of work **every venture here is still at $0**,
+and rent is the actual pressure. So the portfolio was cut down:
+
+- **RIDGEWOOD: killed.** Real subscription cost, no traffic, would need ad budget that doesn't exist.
+- **Etsy: downgraded to light-touch.** Kept only because the ADHD angle is genuinely differentiated
+  and listings cost nothing to sit there.
+- **Remote Income: created and made the priority.** AI training/annotation work — async, no
+  interview, no degree, ~$15–20/hr realistic, 2–4 weeks to first dollar. This is the rent money.
+- **Automation Studio: still the build track.** Highest ceiling ($100+/hr) and genuinely his, but it
+  needs sales conversations before it pays, so it runs alongside rather than instead of annotation.
+
+The older ventures remain as asset plays. They are no longer where attention goes.
+
 **Portfolio note (2026-07-26, updated 2026-07-28)**: six of the eight ventures are *asset plays* —
 they compound over months and every one sits at $0 today. Automation Studio was founded
 specifically because none of them produce income this month; it trades hours for money at $100+/hr
-to fund the rest. Treat it as the priority venture until it has a paying client.
+to fund the rest.
 
 Acting & Modeling (added 2026-07-28) is the only other venture with a near-term cash path — NC
 non-union background work pays ~$100–200/day and needs no portfolio — but its real value is the

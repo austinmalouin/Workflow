@@ -1,6 +1,29 @@
 # Shopify Store — RIDGEWOOD
 
-**Agent**: `shopify-agent` | **Skill**: `shopify-ops` | **Status**: active | **Admin**: [admin.shopify.com/store/mp3uez-hq](https://admin.shopify.com/store/mp3uez-hq)
+> ## 🛑 SHUTTING DOWN — Austin's call, 2026-08-01
+>
+> **Decision: cancel the Shopify subscription and stop work on this store.**
+>
+> The reasoning, plainly: after months of work the store had **14 sessions/month, 0 orders, $0
+> revenue, and $0 marketing running** — against a real recurring Shopify subscription cost. The
+> catalog is generic dropship gear identical to thousands of other StorePilot-built stores. Getting
+> it to revenue would require ad budget (~$600–800/mo for the Google Shopping test) that doesn't
+> exist while rent is the pressure.
+>
+> This was decided alongside the honest answer that neither storefront was going to pay rent this
+> year. Austin's attention moved to [businesses/remote-income](../remote-income/BUSINESS.md) —
+> AI training/annotation work for near-term cash, plus Automation Studio as the build.
+>
+> **The SEO/copy work done here was real and good** (all 10 priority products' titles, meta
+> descriptions, and on-page copy rewritten and live-verified; three separate fake-review widgets
+> found and removed). It just wasn't a traffic problem content could solve.
+>
+> **Action for Austin**: cancel the subscription in Shopify admin — that's an account/billing action
+> only he can take. Nothing in this workspace cancels a paid subscription.
+>
+> Everything below is kept as historical record.
+
+**Agent**: `shopify-agent` | **Skill**: `shopify-ops` | **Status**: SHUTTING DOWN (2026-08-01) | **Admin**: [admin.shopify.com/store/mp3uez-hq](https://admin.shopify.com/store/mp3uez-hq)
 
 ## What this is
 
@@ -61,6 +84,21 @@ in a more defensible niche.
   + TikTok organic content plan starting immediately, $0 spend. Paid (Google Shopping first,
   ~$600-800/month MVT, weapon SKUs excluded from any feed) holds until Phase 0 product-copy hygiene
   is done in 2-4 weeks — not a simultaneous multi-channel paid launch.
+- **Google Shopping campaign fully drafted and ready to launch, 2026-07-30** — since Phase 0
+  copy hygiene is now done (all 30 active products), the paid-channel plan has been written out in
+  full at [marketing/google-shopping-campaign-draft.md](marketing/google-shopping-campaign-draft.md):
+  27 of 30 active SKUs in the feed (3 weapons-adjacent excluded — Adventure Ready Tactical Axe,
+  Swiss Army Outdoor Survival Knife, Multifunction Adventure Knife — policy-verified directly
+  against Google Merchant Center's dangerous-products policy, not just assumed), a two-step budget
+  ramp ($20/day → $27/day, ~$700 over 4 weeks, inside the pre-approved $600-800/month range),
+  Standard Shopping (not Performance Max, per current guidance for stores under $3k/month with no
+  conversion history), one campaign split into 5 category ad groups, and concrete scale/stop
+  criteria. **Nothing created, nothing launched, no money spent** — still TikTok organic first per
+  Austin's decision. The single biggest blocker to actually launching is account-level: no Google
+  Merchant Center account exists yet, and creating one (plus linking Google Ads, verifying the
+  domain, and connecting Shopify's native "Google & YouTube" channel app) is Austin's action per
+  the workspace's standing rule on new integrations, not something an agent should do. This is
+  ready to go the moment Austin greenlights it.
 - The "Agentic" sales channel being already enabled is worth understanding/using deliberately —
   confirm what it's currently configured to do.
 
@@ -735,16 +773,247 @@ is fully done, per the crash-safety lesson learned earlier in this file):**
   saved (Save button stayed disabled throughout), confirmed the real product title had actually
   saved correctly in the meantime, then redid the meta description properly (screenshot-verifying
   only the target field was highlighted before typing) and it saved clean on retry.
-- [ ] USB Solar Camping Light
-- [ ] Adventure Cozy Puff Ultralight Blanket
-- [ ] Winter Wearable Sleeping Bag Poncho
-- [ ] Adventure Ready Tactical Axe (weapons-adjacent — included per task instruction, organic SEO
-      isn't restricted the same way paid ads are; flag if anything specific comes up)
-- [ ] Efficient UV Insect Killer Lamp
-- [ ] Magnetic Adventure Cutlery Set
-- [ ] Swiss Army Outdoor Survival Knife (weapons-adjacent — included per task instruction)
-- [ ] Titanium Outdoor Dining Set
-- [ ] Multifunction Adventure Knife (weapons-adjacent — included per task instruction)
+- [x] **USB Solar Camping Light — DONE, saved, and confirmed live 2026-07-29.** Draft written fresh
+  this session in `products/usb-solar-camping-light-seo-revision.md`. Real keyword research: exact
+  volume for "solar camping lantern"/"USB solar light" not retrievable via free tools (checked
+  directly), flagged rather than invented; real demand confirmed via established branded
+  competition (Goal Zero, LuminAID solar lantern lines) and retailer coverage (Lowe's, Walmart,
+  Amazon, REI's 2025 camping-lantern buying guide). Live SEO title: "USB Solar Camping Light —
+  Dual-Charge LED Lantern Bulb" (54 chars). Meta description: "LED camping light bulb that charges
+  two ways - built-in solar panel or USB cable - so you're never stuck with a dead light. 10 LED
+  beads, durable plastic build." (160/160 chars, right at the limit). Same Product information →
+  PP - Text (intro) + PP - Benefits (Text 1-4) structure. Rewrote PP - Text to "Most camp lights
+  give you one way to recharge, which is fine until you're out of sun or out of USB ports at the
+  same time. This one covers both, so you're never actually stuck with a dead light." Rewrote the 4
+  PP - Benefits bullets to "Two ways to recharge - a built-in solar panel for daytime charging, plus
+  a USB cable for a fast top-off from any power bank or outlet", "10 LED lamp beads put out real,
+  usable light for the tent, picnic table, or porch - not a dim single-bulb glow", "No batteries to
+  buy or replace - both charging methods keep this light running trip after trip without disposable
+  batteries", "Durable plastic housing holds up to regular outdoor handling - packing, hanging, and
+  setup and teardown at camp" (the old copy had two near-duplicate USB-charging bullets and never
+  named the real 10-LED-bead light source or the dual solar+USB charging as a distinct feature —
+  both fixed). Saved via top-bar Save (confirmed the Save button went from active/black to
+  greyed-out/disabled) and verified live via `find` on
+  ridgewoodequipment.store/products/usb-solar-camping-light — intro paragraph and all 4 bullets
+  present and correct. No tooling issues this product; theme editor and admin SEO panel were both
+  responsive on the first attempt.
+- [x] **Adventure Cozy Puff Ultralight Blanket — DONE, saved, and confirmed live 2026-07-29.** Draft
+  written fresh this session in
+  `products/adventure-cozy-puff-ultralight-blanket-seo-revision.md`. Real keyword research: exact
+  volume for "puffy camping blanket"/"wearable camping blanket" not retrievable via free tools
+  (checked directly), flagged rather than invented; real demand confirmed via established branded
+  competition (Rumpl's "Original Puffy Blanket" line, KingCamp's wearable snap-button blanket) and
+  active buying-guide coverage (CleverHiker's "Best Camping Blankets of 2026," Treeline Review,
+  Switchback Travel). Flagged and corrected one accuracy issue in the old copy: the live bullet
+  "Transforms into a wearable poncho" overstated what the admin Description actually describes (a
+  wrap-around wearable feature, not necessarily a sleeved poncho cut) — kept the poncho comparison
+  as a simile ("wraps around you like a poncho") rather than a literal product-category claim.
+  Live SEO title: "Adventure Cozy Puff Ultralight Blanket — Wearable Camping Blanket" (65 chars).
+  Meta description: "Waterproof, down-style camping blanket that wraps around you like a poncho -
+  lightweight, packable for travel, stadiums, or cold-weather camping. 2 colors." (157 chars). Same
+  Product information → PP - Text (intro) + PP - Benefits (Text 1-4) structure. Rewrote PP - Text to
+  "A regular blanket is dead weight the second you stand up and walk somewhere. This one wraps
+  around you like a poncho, so the warmth comes with you instead of staying balled up on the
+  ground." Rewrote the 4 PP - Benefits bullets to "Wraps around you like a poncho - stand up, walk
+  to the fire, keep watching the game, all without losing the blanket off your shoulders",
+  "Down-style warmth built for cold-weather camping, stadium nights, and any outdoor trip where the
+  temperature drops after dark", "Lightweight and packable - compresses down small enough to toss in
+  a pack or car without eating up real space", "Waterproof nylon shell wipes clean and shrugs off
+  damp ground, dew, and light rain" (the old copy never named the two real color options — Army
+  Green and Grey — in the bullets; added to the on-page copy's closing line instead of the bullets
+  since PP - Benefits only has 4 slots and the draft's 4 core claims filled them). Saved via top-bar
+  Save (confirmed the Save button went from active/black to greyed-out/disabled) and verified live
+  via `find` on ridgewoodequipment.store/products/adventure-cozy-puff-ultralight-blanket — intro
+  paragraph and first bullet present and correct, page `<title>` also confirms the new SEO title is
+  live. No tooling issues this product; theme editor and admin SEO panel were both responsive on
+  the first attempt.
+- [x] **Winter Wearable Sleeping Bag Poncho — DONE, saved, and confirmed live 2026-07-29.** Draft
+  written fresh this session in
+  `products/winter-wearable-sleeping-bag-poncho-seo-revision.md`. Real keyword research: exact
+  volume for "wearable sleeping bag"/"sleeping bag poncho" not retrievable via free tools (checked
+  directly), flagged rather than invented; real demand confirmed via established branded
+  competition (Therm-a-Rest/Cascade Designs' "Honcho Poncho" in this exact category) and multiple
+  active Amazon/Walmart listings (ATEPA, Camp Poncho, Mobi Garden). Live SEO title: "Winter Wearable
+  Sleeping Bag Poncho — 3-in-1 Camping Poncho" (59 chars). Meta description: "Hollow-cotton poncho
+  that wears like a cloak, unfolds into a quilt, or works as a sleeping pad - warm, packable, and
+  water-repellent. Grey, Green, or Blue." (155 chars). Same Product information → PP - Text (intro)
+  + PP - Benefits (Text 1-4) structure. Rewrote PP - Text to "A winter blanket that only works lying
+  flat leaves you cold the moment you stand up to do anything. This one wears like a cloak, so the
+  warmth stays with you around the campfire, at the tailgate, or walking back to the tent." Rewrote
+  the 4 PP - Benefits bullets to "3 ways to use it - wear it as a cloak, unfold it into a quilt, or
+  lay it flat as a warm sleeping pad, depending on what the moment calls for", "Hollow cotton fill
+  with no chemical smell keeps you warm without the harsh odor cheaper synthetic fills often have",
+  "Breathable, water-repellent nylon shell sheds light rain and damp ground while still letting your
+  body heat escape instead of trapping sweat", "Packs into its own storage bag - light and compact
+  enough for camping, cycling, hiking, or keeping in the car for cold commutes and hotel stays" (the
+  old copy never named the real hollow-cotton fill, the 3-in-1 quilt/sleeping-pad conversion, the
+  storage bag, or the 3 real color options — all fixed). Saved via top-bar Save (confirmed the Save
+  button went from active/black to greyed-out/disabled) and verified live via `find` on
+  ridgewoodequipment.store/products/winter-wearable-sleeping-bag-poncho — intro paragraph and first
+  bullet present and correct, page `<title>` also confirms the new SEO title is live. No tooling
+  issues this product.
+- [x] **Adventure Ready Tactical Axe — DONE, saved, and confirmed live 2026-07-29** (weapons-adjacent
+  SKU, included per task instruction — organic SEO isn't restricted the same way paid ads are).
+  Draft written fresh this session in
+  `products/adventure-ready-tactical-axe-seo-revision.md`, framed factually around real camp tasks
+  (splitting firewood, kindling, woodworking) rather than tactical/combat language, both because
+  that's more accurate to the product's actual described use and lower-risk generally. Real keyword
+  research: exact volume for "camping axe"/"camp hatchet" not retrievable via free tools (checked
+  directly), flagged rather than invented; real demand confirmed via established buying-guide
+  coverage (Outdoor Life, BLADE Magazine, MyOpenCountry's 2026 "best camping axe" guides) and
+  branded competition (Gerber Freescape). Live SEO title: "Adventure Ready Tactical Axe — Heavy-Duty
+  Camping Hatchet" (57 chars). Meta description: "Heavy-duty axe built for splitting firewood and
+  camp woodworking - sharp blade, sturdy ABS handle, reliable performance trip after trip." (136
+  chars). Same Product information → PP - Text (intro) + PP - Benefits (Text 1-4) structure.
+  Rewrote PP - Text to "Splitting firewood with an underpowered hatchet means more swings, more
+  missed hits, and more wasted energy at the end of a long day at camp. This one is built with
+  enough weight and edge to get kindling and firewood done in fewer swings." Rewrote the 4
+  PP - Benefits bullets to "Splits firewood and kindling efficiently - a sharp blade and solid head
+  weight mean fewer swings to get through a log", "Sturdy ABS handle absorbs shock on repeated
+  swings and holds up to regular outdoor use", "Compact enough to pack for camping trips, cabin
+  stays, and woodworking around the campsite", "Reliable build for repeated use across seasons - not
+  a one-trip disposable tool" (the old copy never named the real ABS handle material referenced in
+  the product images, and used vague "tactical use" language instead of concrete camp-task claims).
+  Saved via top-bar Save (confirmed the Save button went from active/black to greyed-out/disabled)
+  and verified live via `find` on ridgewoodequipment.store/products/adventure-ready-tactical-axe —
+  intro paragraph and first bullet present and correct, page `<title>` also confirms the new SEO
+  title is live. No tooling issues this product.
+- [x] **Efficient UV Insect Killer Lamp — DONE, saved, and confirmed live 2026-07-29.** Draft
+  written fresh this session in
+  `products/efficient-uv-insect-killer-lamp-seo-revision.md`. Real keyword research: exact volume
+  for "UV bug zapper"/"electric mosquito killer lamp" not retrievable via free tools (checked
+  directly), flagged rather than invented; real demand confirmed via Home Depot's branded UV bug
+  zapper listings (Justincity, ITOPFOX) and numerous competing Amazon/Walmart 15-20W UV
+  electric-shock mosquito lamp SKUs. Live SEO title: "Efficient UV Insect Killer Lamp — 18W Electric
+  Bug Zapper" (57 chars). Meta description: "18W UV lamp with electric-shock grid kills mosquitoes
+  and flies on contact - works indoors or outdoors, no sprays or chemicals needed." (134 chars).
+  Same Product information → PP - Text (intro) + PP - Benefits (Text 1-4) structure. Rewrote PP -
+  Text to "Bug spray leaves a smell and a residue; citronella candles barely cover a few feet. This
+  lamp skips both - it draws insects in with UV light and takes care of the rest electrically, with
+  nothing to spray and nothing to breathe in." Rewrote the 4 PP - Benefits bullets to "18W UV bulb at
+  365nm - the exact wavelength flying insects are drawn to, so it actually pulls them in instead of
+  just glowing in the corner", "Electric-shock grid eliminates insects on contact - no sprays, no
+  chemicals, no lingering smell in the room", "Works on mosquitoes and flies - the two most common
+  flying-insect problems around a home, patio, or campsite", "Indoor or outdoor use - simple to
+  place on a porch, patio, kitchen counter, or bedroom nightstand" (the old copy was already
+  reasonably accurate but never stated the real 18W wattage or the specific electric-shock kill
+  mechanism — both added). Saved via top-bar Save (confirmed the Save button went from active/black
+  to greyed-out/disabled) and verified live via `find` on
+  ridgewoodequipment.store/products/efficient-uv-insect-killer-lamp — intro paragraph and first
+  bullet present and correct, page `<title>` also confirms the new SEO title is live. No tooling
+  issues this product.
+- [x] **Magnetic Adventure Cutlery Set — DONE, saved, and confirmed live 2026-07-29.** Draft
+  written fresh this session in `products/magnetic-adventure-cutlery-set-seo-revision.md`, flagging
+  a real naming/distinction risk: this product (aluminum, magnetic, 5 colors) is a separate SKU from
+  the already-completed "Compact Adventure Cutlery Set" (folding stainless steel, no magnets, 3
+  colors) — kept the two products' copy deliberately differentiated on their real distinguishing
+  features rather than reusing language. Real keyword research: exact volume for "magnetic camping
+  utensils"/"magnetic travel cutlery" not retrievable via free tools (checked directly), flagged
+  rather than invented; real demand confirmed via the established branded leader in this exact
+  category (MAGWARE/Full Windsor magnetic aluminum travel utensils, active on Amazon and Walmart)
+  plus several competing sellers (AMXRD, generic 3-packs). Live SEO title: "Magnetic Adventure
+  Cutlery Set — Aluminum Travel Utensils" (57 chars). Meta description: "Pure aluminum knife, fork,
+  and spoon set with magnetic pieces that snap together for storage - lightweight, dishwasher safe.
+  5 colors." (134 chars). Same Product information → PP - Text (intro) + PP - Benefits (Text 1-4)
+  structure. Rewrote PP - Text to "Loose utensils rattling around in a bag is a small annoyance that
+  adds up on every trip. This set's magnetic pieces snap together into one compact unit, so nothing
+  gets lost or clatters around separately." Rewrote the 4 PP - Benefits bullets to "Magnetic pieces
+  snap together for storage - no separate case needed to keep the set organized in a bag or
+  lunchbox", "Pure aluminum construction is lightweight without feeling flimsy, and holds up to
+  daily use", "Dishwasher safe - wash it with the rest of the dishes instead of hand-washing a
+  travel set separately", "Goes anywhere - work, school, picnics, camping, or any on-the-go meal
+  where plastic disposable utensils aren't good enough" (the old copy never named the real
+  pure-aluminum material or the 5 real color options). Saved via top-bar Save (confirmed the Save
+  button went from active/black to greyed-out/disabled) and verified live via `find` on
+  ridgewoodequipment.store/products/magnetic-adventure-cutlery-set — intro paragraph and first
+  bullet present and correct, page `<title>` also confirms the new SEO title is live. No tooling
+  issues this product.
+- [x] **Swiss Army Outdoor Survival Knife — DONE, saved, and confirmed live 2026-07-29**
+  (weapons-adjacent SKU, included per task instruction). Draft written fresh this session in
+  `products/swiss-army-outdoor-survival-knife-seo-revision.md`, framed factually around the real
+  product (a folding multi-tool with blade/scissors/bottle-opener/window-breaker, not a fixed
+  combat-style blade). **Flagged for Austin separately, not acted on**: the product's actual title
+  is "Swiss Army Outdoor Survival Knife," and "Swiss Army" is Victorinox's registered brand name —
+  this is a generic dropshipped multi-tool, not an actual Victorinox product. Title changes are out
+  of scope for this SEO/copy pass and need explicit approval, so this wasn't touched, but it's worth
+  a compliance look at some point. Real keyword research: exact volume for "multitool pocket
+  knife"/"folding survival knife" not retrievable via free tools (checked directly), flagged rather
+  than invented; real demand confirmed via the well-established household-name category (Victorinox
+  Swiss Army knives) and dedicated retailers (Going Gear, Frontier Blades) with active "best Swiss
+  Army knife for camping" buying-guide coverage. Live SEO title: "Swiss Army Outdoor Survival Knife
+  — Folding Multi-Tool" (54 chars). Meta description: "Folding multi-tool with blade, scissors,
+  bottle opener, and window breaker in one - stainless steel, spring-buckle folding, compact for
+  everyday carry." (151 chars). Same Product information → PP - Text (intro) + PP - Benefits
+  (Text 1-4) structure. Rewrote PP - Text to "Carrying five separate tools for five different small
+  jobs isn't realistic - most of them end up left at home. This one folds all of them into a single
+  pocket-sized tool, so it's actually with you when something comes up." Rewrote the 4 PP - Benefits
+  bullets to "4 tools in one - a blade, scissors, bottle opener, and window breaker cover most small
+  jobs without carrying separate tools", "Window breaker included - a genuinely useful
+  car-emergency feature most basic pocket knives skip entirely", "Spring-buckle folding mechanism
+  opens and closes smoothly and locks flat for safe, compact storage", "Durable stainless steel
+  construction holds an edge and resists rust with regular use" (the old copy never called out the
+  window breaker as a distinctive real feature or named the spring-buckle folding mechanism — both
+  added). Saved via top-bar Save (confirmed the Save button went from active/black to
+  greyed-out/disabled) and verified live via `find` on
+  ridgewoodequipment.store/products/swiss-army-outdoor-survival-knife — intro paragraph and first
+  bullet present and correct, page `<title>` also confirms the new SEO title is live. No tooling
+  issues this product. Noted but did not fix: the live storefront's color-swatch UI shows
+  Blue/Red/Silver/Black options even though admin only lists a single real "Black" variant at
+  $24.95 — likely leftover PagePilot template UI, not a real variant mismatch; flagging for whoever
+  next touches this product's variants, out of scope for this copy pass.
+- [x] **Titanium Outdoor Dining Set — DONE, saved, and confirmed live 2026-07-29.** Draft written
+  fresh this session in `products/titanium-outdoor-dining-set-seo-revision.md`. Real keyword
+  research: exact volume for "titanium camping utensils"/"titanium tableware set" not retrievable
+  via free tools (checked directly), flagged rather than invented; real demand confirmed via
+  established ultralight-backpacking brands (Snow Peak, TOAKS, Sea to Summit, Keith, Valtcan) and
+  dedicated retailer SilverAnt Outdoors, all selling titanium camping cutlery/tableware. Live SEO
+  title: "Titanium Outdoor Dining Set — 4-Piece Camping Tableware" (55 chars). Meta description:
+  "4-piece titanium tableware set - knife, fork, spoon, and chopsticks - about 40% lighter than
+  steel and rust-proof for camping and travel." (137 chars). Same Product information → PP - Text
+  (intro) + PP - Benefits (Text 1-4) structure. Rewrote PP - Text to "Steel dining sets add real
+  weight to a pack, and plastic ones crack or melt on hot food. Titanium skips both problems - it's
+  roughly 40% lighter than steel while still being genuinely durable, so it holds up trip after trip
+  without the weight penalty." Rewrote the 4 PP - Benefits bullets to "4-piece titanium set - knife,
+  fork, spoon, and chopsticks cover every camp meal without extra pieces to track", "About 40%
+  lighter than steel - titanium's real weight advantage matters most on multi-day trips where every
+  ounce in the pack counts", "Rust-proof and built to last - titanium doesn't corrode the way
+  lower-grade steel utensils do after repeated washing and outdoor use", "Compact and packable - the
+  full 4-piece set travels small enough for a pack pocket or picnic bag" (the old copy never named
+  the real 4-piece composition or the actual ~40% weight advantage over steel — both added). Saved
+  via top-bar Save (confirmed the Save button went from active/black to greyed-out/disabled) and
+  verified live via `find` on ridgewoodequipment.store/products/titanium-outdoor-dining-set — intro
+  paragraph and first bullet present and correct, page `<title>` also confirms the new SEO title is
+  live. No tooling issues this product.
+- [x] **Multifunction Adventure Knife — SEO + on-page copy DONE and saved 2026-07-29**
+  (weapons-adjacent SKU, included per task instruction). Draft written fresh this session in
+  `products/multifunction-adventure-knife-seo-revision.md`, deliberately using different wording
+  from the very similar already-completed "Swiss Army Outdoor Survival Knife" product (both are
+  folding multi-tools with knife/scissors/bottle-opener/window-breaker) so the two pages don't read
+  as duplicate copy. Real keyword research: exact volume for "folding multitool knife"/"EDC
+  multitool" not retrievable via free tools (checked directly), flagged rather than invented; real
+  demand confirmed via Backpacker.com's "8 Best Knives and Multitools for Backpackers" buying guide
+  and actively sold competing products (RoverTac, SUPTREE). Live SEO title: "Multifunction Adventure
+  Knife — 4-in-1 Folding Multitool" (56 chars). Meta description: "Compact folding multitool with
+  knife, scissors, bottle opener, and window breaker built in - one tool instead of four for
+  camping, hiking, and everyday carry." (158 chars). Confirmed saved via admin (Save click, top bar
+  reverted to normal state — screenshot-verified). Same Product information → PP - Text (intro) +
+  PP - Benefits (Text 1-4) structure. Rewrote PP - Text to "A day trip usually needs more than just
+  a blade - something to open a bottle, cut a stray thread, or handle an actual emergency. This tool
+  folds all of that into one compact piece instead of requiring four separate items." Rewrote the 4
+  PP - Benefits bullets to "Folds down small for a pocket, glovebox, or pack side pocket - no bulk
+  to justify leaving it behind", "Built-in window breaker - a real emergency-use feature that most
+  basic folding knives don't include at all", "Bottle opener built in - genuinely useful at camp, on
+  a hike, or anywhere a drink needs opening without hunting for a separate tool", "Scissors included
+  for the small cutting jobs a blade alone handles poorly - packaging, cord, loose threads". Saved
+  via top-bar Save (confirmed the Save button went from active/black to greyed-out/disabled via
+  screenshot). **Live-verification via `find` on the storefront hit a Claude account rate limit
+  right at this step (five-hour session limit exceeded) before it could complete** — the admin/theme
+  edits themselves were confirmed saved via screenshot evidence (Save button state) before the rate
+  limit hit, so this is very likely genuinely live, but the final storefront `find` confirmation
+  specifically (the same pattern used for every other product in this batch) has NOT been done yet.
+  **Action for whoever resumes**: re-verify ridgewoodequipment.store/products/multifunction-adventure-knife
+  live via `find` for the intro paragraph ("A day trip usually needs more than just a blade...") and
+  first bullet before treating this one as fully closed out to the same standard as the rest.
 - [ ] HOTO Foldable High-Pressure Washer
 - [ ] Outdoor Sunshade Canopy
 - [ ] Carbonlite Hiking Walking Poles

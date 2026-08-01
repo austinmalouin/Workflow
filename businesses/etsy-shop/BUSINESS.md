@@ -1,6 +1,28 @@
 # Etsy Shop — SteadyLedgerPrints
 
-**Agent**: `etsy-agent` | **Skill**: `etsy-ops` | **Status**: active | **Shop**: [steadyledgerprints.etsy.com](https://steadyledgerprints.etsy.com)
+> ## 📉 DOWNGRADED TO LIGHT-TOUCH — Austin's call, 2026-08-01
+>
+> **Decision: keep the shop, keep working it *lightly*, stop treating it as an income path.**
+>
+> Austin asked directly whether Etsy was going to make him money. The honest answer was **no — not
+> at rent-paying speed, and probably not this year.** The number that decided it: **0 visits from
+> Etsy search in 30 days.** Not low — zero. The listings don't rank at all, in one of the most
+> saturated categories on the platform (printable planners). Even if everything went right,
+> realistic is $50–200/month around month six.
+>
+> **Why it's kept rather than killed**: the ADHD/neurodivergent angle is genuinely differentiated —
+> the one real hook in this workspace's e-commerce work — and the listings cost nothing to sit there.
+> The organic SEO groundwork continues at low effort. What stops is treating this as the thing that
+> pays rent.
+>
+> Rent money moved to [businesses/remote-income](../remote-income/BUSINESS.md). RIDGEWOOD (the
+> Shopify store) was killed outright the same day; this one was deliberately spared.
+>
+> **Ad spend note**: Etsy Ads is currently running at $3/day. Worth Austin deciding whether that
+> ~$90/month is still worth it given the above — it's his money and his call, not something to
+> change unilaterally.
+
+**Agent**: `etsy-agent` | **Skill**: `etsy-ops` | **Status**: light-touch (downgraded 2026-08-01) | **Shop**: [steadyledgerprints.etsy.com](https://steadyledgerprints.etsy.com)
 
 ## What this is
 
@@ -163,9 +185,72 @@ directly.
    current budget, scale it up now that Savings Goal Tracker has a proven signal, or turn it off
    until organic groundwork has more time to work." Not decided — Austin's call, flagged on the
    Bridge.
-3. Not yet done: a closer look at Monthly Bill Tracker's cover photo (the 123-views/0-clicks
-   listing) — deferred when Austin picked Pinterest + Ads research over this option, still worth
-   doing.
+3. **Monthly Bill Tracker diagnosed, 2026-07-29**: compared its live listing photo directly against
+   Savings Goal Tracker's (same price $2.10/$3.50, same brand template, both checked on the live
+   public listing pages, not just the editor). Price, template, and description all ruled out as the
+   problem. Real cause: **the cover photo doesn't survive being shrunk to ad-thumbnail size**.
+   Savings Goal Tracker's cover is a big 50-square checkbox grid — a bold graphic pattern that
+   still reads at thumbnail size. Monthly Bill Tracker's cover is a dense data table — fine at full
+   size, likely unreadable noise once shrunk. Full diagnosis + a redesign concept (keep the brand
+   header, simplify to a larger-scale visual instead of the full dense table) written up in
+   [listings/monthly-bill-tracker-thumbnail-diagnosis.md](listings/monthly-bill-tracker-thumbnail-diagnosis.md).
+   **Not yet built** — this is real Canva design work (same effort class as the ADHD Reset Routine
+   mockups), flagged for Austin to greenlight rather than started unprompted.
+
+**Etsy Ads budget change — resolved 2026-07-30.** After the $25/day option (needed to unlock
+per-listing strategy weighting) got walked back by Austin ("geez more like $1-$3 a day"), he set
+the final number explicitly: **$3/day**. Applied live in Shop Manager → Marketing → Etsy Ads →
+Settings; confirmed via Etsy's own "Your budget has been updated — advertising budget is now $3.00
+per day" dialog. Budget moved **$10/day → $3/day** (a decrease, not the scale-up originally
+floated — Austin's call after seeing the real numbers). Individual listing strategies remain
+locked (still below the $25/day minimum), so Etsy's built-in "efficient spending" continues
+choosing where impressions go — consistent with Savings Goal Tracker naturally getting most of
+them already.
+
+**Remaining 4-listing SEO revision — researched, drafted, and published live, 2026-07-30.** Austin
+chose "keep pushing organic groundwork" over "wait and see." The 07-22 audit revised 6 listings and
+skipped 4 (Annual Budget Overview, Monthly Bill Tracker, Debt Snowball Tracker, Weekly Budget
+Planner) as "already 13/13 tags, lower priority." Re-verified all 4 live (still generic tags,
+confirmed via listing-editor tag JSON, not guessed), then did real keyword research using Etsy's
+own search-bar autocomplete (same method that found "cash stuffing" originally) for each product's
+core term plus the ADHD angle specifically. **Strongest finding: "adhd debt tracker" and "adhd debt
+payoff" are both real, validated, currently-searched phrases** — more specific than the generic
+`adhd friendly` tag every listing already carries, and a natural fit for Debt Snowball Tracker
+specifically (same short-horizon/visual-progress appeal as the ADHD Debt Payoff Kit).
+
+Austin approved pushing all 4 live at once. Applied and verified (re-fetched each listing's tag
+JSON post-publish, not assumed):
+- **Annual Budget Overview** — new title adding "Yearly Budget Planner and Tracker"; tags swapped
+  `money planner`/`monthly budget`/`printable tracker` → `adhd budget planner` + `annual expense`
+  (kept `yearly budget plan` as-is).
+- **Monthly Bill Tracker** — new title adding "Printable"; tags swapped `money
+  management`/`printable planner` → `adhd budget tracker` + `bill organizer pdf`.
+- **Debt Snowball Tracker** — title unchanged (already an exact autocomplete match); tags swapped
+  `money management`/`printable tracker` → `adhd debt tracker` + `adhd debt payoff`.
+- **Weekly Budget Planner** — title unchanged; tags swapped `monthly budget`/`money tracker` →
+  `weekly budget log` + `adhd budget planner`.
+
+**One real constraint hit mid-execution**: several originally-drafted tags (`yearly budget
+planner`, `yearly budget tracker`, `adhd debt payoff tracker`, `weekly budget tracker`) turned out
+to exceed Etsy's hard 20-character tag limit and were rejected by the live form. Each was swapped
+for the closest-fitting validated alternative at the point of publishing rather than skipped —
+full detail and the corrected final tag sets in
+[listings/remaining-4-seo-revision.md](listings/remaining-4-seo-revision.md).
+
+**Monthly Bill Tracker cover photo — redesigned and built in Canva, 2026-07-30.** Per the diagnosis
+below, built the actual replacement (Austin: "Yes, build it in Canva now"). Design `DAHQ6JVjcNU`:
+kept the identical brand header (forest-green band, "STEADY LEDGER CO." in gold, bold black title,
+gold divider, "Undated · Never miss a due date again" subtitle) and replaced the dense 13-row data
+table with a **bold 2×5 grid of large bordered cards**, each showing a bill category name, a due
+date in muted gray, and an oversized black-outline checkbox — deliberately sized and spaced to
+read as a repeating graphic pattern at ad-thumbnail scale, the same way Savings Goal Tracker's
+50-square grid does. Bottom tagline: "12 bills. 12 checkboxes. Zero forgotten due dates." Exported
+at 1588×2246 PNG and saved to
+[listings/monthly-bill-tracker-assets/cover-redesign.png](listings/monthly-bill-tracker-assets/cover-redesign.png);
+also sent directly to Austin. **Not yet live** — this replaces listing photo 1 only (price,
+description, tags untouched, per the diagnosis); Austin drags it into the listing editor and swaps
+it in himself, then it's worth watching next week's Etsy Ads impression/click numbers on this one
+listing specifically to see if the click-through changes.
 
 ## Search-visibility work applied live — 2026-07-23
 
