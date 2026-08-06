@@ -145,7 +145,20 @@ permission given in chat.
 stop -6%, size 10% of equity (~$57.51). Austin already holds a separate legacy QQQ lot (0.38 shares
 @ $709.83 avg cost) from before this research — this signal is an independent position under the
 strategy's rules, not a management action on the existing lot; flagged to Austin as a fact about
-total exposure, not advice on averaging down. Recommendation only, not executed.
+total exposure, not advice on averaging down. Recommendation only, not executed. **Confirmed
+2026-08-06: it stayed unexecuted** — the QQQ position on file is still the identical pre-signal
+legacy lot (same quantity, same $709.83 avg cost), so this strategy has effectively produced zero
+real trades to date.
+
+**2026-08-06 check (`journal/2026-08-06-check.md`):** no signal — RSI(2) on all five symbols was
+nowhere near the <10 oversold trigger as of the 2026-08-05 close (SPY 85.1, QQQ 70.2, AAPL 49.6,
+MSFT 71.8, NVDA 97.5; MSFT/NVDA in fact deeply overbought). No file written, per the standing rule
+against inventing a signal. Also pulled real account P&L for the honest comparison Austin asked
+for: all-time realized -$75.72 (-15.66%), but every one of those four closed trades (SPCX, SOFI,
+SMCI, IONQ) is pre-existing/manual activity outside this strategy's 5-symbol universe — none of
+it is attributable to meanreversion-v1, and with the one signal produced so far never executed,
+"is it tracking the backtest" still isn't a real question yet — there's no live strategy trade on
+the books to check it against.
 
 ## Working folders
 
