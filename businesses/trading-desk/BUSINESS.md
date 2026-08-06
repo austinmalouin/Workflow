@@ -31,8 +31,9 @@ backtesting), not the *execution*.
 ## Current state
 
 Robinhood Agentic account connected (798207098, "Agentic"; total value $579.59, cash $59.28 as of
-2026-07-23). Four documented/backtested strategy versions on file across three distinct mechanics,
-all still short of the bar for live signals:
+2026-07-23; **total value $430.54, cash $0 / buying power $0 as of 2026-08-06** — see the
+2026-08-06 update below for why). Four documented/backtested strategy versions on file across
+three distinct mechanics, all still short of the bar for live signals:
 
 - `strategies/momentum-v1.md` / `backtests/momentum-v1-backtest.md` — daily breakout-chasing, 100
   trades, 38% win rate, ~1.2%/yr compounded, no slippage/earnings/cap modeling. Verdict:
@@ -158,7 +159,19 @@ for: all-time realized -$75.72 (-15.66%), but every one of those four closed tra
 SMCI, IONQ) is pre-existing/manual activity outside this strategy's 5-symbol universe — none of
 it is attributable to meanreversion-v1, and with the one signal produced so far never executed,
 "is it tracking the backtest" still isn't a real question yet — there's no live strategy trade on
-the books to check it against.
+the books to check it against. **Same-day post-close recheck** (routine fired twice today; see
+journal addendum) reconfirmed no signal — the indicator feed still hadn't posted a finalized
+2026-08-06 daily bar as of ~90 minutes after close, so RSI/SMA readings were identical to the
+morning check — and surfaced a new, more urgent fact: **account buying power is now $0** (cash
+$0, unsettled funds $0, confirmed via `get_accounts`/`get_portfolio`), down from the $59.28 free
+cash this whole live-signal plan was scoped around on 2026-07-23. Total account value is $430.54
+(down from $579.59), driven by the same four pre-existing manual trades noted above realizing
+-$75.72, not by anything this strategy did. **Practical implication: even on a day the entry rule
+fires, there is currently no cash to size a position with under the 10%-of-equity rule.** This is
+a capital-availability problem, not a strategy problem, and is worth a direct conversation with
+Austin about whether to add cash, pause signal generation until cash is available, or keep
+generating recommendations regardless (since they cost nothing to write and he may add funds
+before acting on one).
 
 ## Working folders
 
