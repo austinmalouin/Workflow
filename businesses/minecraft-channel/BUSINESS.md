@@ -92,6 +92,18 @@ gear. Recommended budget stack, real and current as of 2026-07-23:
 targeted against the server launch date) in `content-calendar/launch-arc-schedule.md` — the
 folder was an empty stub before this.
 
+**Episode -1 teaser drafted 2026-08-10** (weekly proactive pass, no live account access this
+session): added a pre-launch hype short, "Five Houses, One Empty Throne," ahead of Episode 0 in
+`content-calendar/launch-arc-schedule.md` — full script at `scripts/teaser-five-houses.md`, upload
+package at `inbox/teaser-five-houses-upload-package.md`. Reasoning: the channel has zero public
+content and Episodes 0-4 all depend on server footage/population that doesn't exist yet, so this
+teaser was scoped to need only concept art/sigils (no real player footage) to give the channel
+something publishable now. It reuses the five proposed House names from
+`../crafthaven/marketing/house-naming-proposal.md`, which that doc marks as **unconfirmed** — this
+episode is explicitly blocked on Austin approving those names (or supplying his own) before
+filming; nothing here was invented as if approved. No channel/subscriber/view numbers exist to
+report — none invented.
+
 ## How the agent works today
 
 No YouTube upload/analytics connector is available yet (checked 2026-07-22). Until one exists,

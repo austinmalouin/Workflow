@@ -130,6 +130,20 @@ PvP/factions listing, a crafthaven.net SMP listing currently showing 0 players o
 enough to proceed. Throne-mechanic name and 5 starter House names/sigils still open in
 `marketing/house-naming-proposal.md`, not yet used anywhere live.
 
+**Content/cross-promotion pass 2026-08-10** (weekly proactive work, no live account access this
+session): server and Discord are still not stood up, so this pass focused on prep content rather
+than anything live.
+- `content-calendar/week-of-2026-08-10.md` — a week of draft Discord discussion prompts and
+  in-server event ideas, ready to post once Discord/server exist. One prompt ties to a real, timely
+  hook: House of the Dragon Season 3's finale aired 2026-08-09, so the ASOIAF/GoT fan base is
+  unusually engaged this specific week with no new episodes to wait for.
+- `marketing/cross-promotion-targets.md` — real communities researched (r/MCServers,
+  r/MinecraftServer, r/Admincraft as server-promo-friendly; r/ASOIAF, "The Free Cities," "Dunk'n
+  Scones" as discussion-first ASOIAF/GoT communities where direct ads likely aren't welcome without
+  checking rules first). Flagged as a target list only — nothing has been posted anywhere, and each
+  community's actual current rules still need a direct read before the first post.
+- No server population, Discord membership, or growth numbers exist to report — none invented.
+
 ## How the agent works today
 
 No Minecraft server-hosting or Discord bot connector is available yet (checked 2026-07-22). Until

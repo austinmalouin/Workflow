@@ -6,6 +6,7 @@ Drafted 2026-07-23. First concrete content calendar for the channel — fills th
 
 | # | Episode | Target upload | Status | Notes |
 |---|---|---|---|---|
+| -1 | "Five Houses, One Empty Throne" (teaser) | ~1 week before Episode 0 | Script + upload package drafted 2026-08-10 (`scripts/teaser-five-houses.md`, `inbox/teaser-five-houses-upload-package.md`) | Cheap pre-launch hype short — needs only concept art/sigils, no real player footage. **Blocked on Austin confirming the 5 proposed House names** before filming |
 | 0 | "A Throne With No King" (announcement) | Server launch day | Script drafted (`scripts/server-launch-announcement.md`) | Needs finished spawn/build footage or concept-art fallback before filming |
 | 1 | "First Banners" — first Houses founded | Launch day + 3 | Not started | Recap the first players to found Houses in the opening 72 hours; who claimed what land and why |
 | 2 | "Neighbors" — early alliances & land disputes | Launch day + 10 | Not started | First trade deals, first border disputes; introduce the map's contested middle territory |
@@ -28,10 +29,11 @@ Drafted 2026-07-23. First concrete content calendar for the channel — fills th
 
 ## Immediate next step
 
-None of episodes 1-4 have outlines yet — Episode 0's script is the only one written. Once the
-server has real early-player activity to film (see `crafthaven/BUSINESS.md` for launch
-status), the next concrete piece of work is drafting Episode 1's outline using whatever actually
-happened in the first 72 hours, not a generic template.
+Episodes 1-4 still have no outlines and can't get one until the server has real early-player
+activity to film (see `crafthaven/BUSINESS.md` for launch status) — the next concrete work there is
+drafting Episode 1's outline from whatever actually happened in the first 72 hours, not a generic
+template. Episode -1 (added 2026-08-10) doesn't have that dependency and is blocked only on House
+naming approval — that's the more immediately actionable item right now.
 
 ---
 **Status**: Draft calendar — dates are targets to plan around, not commitments; shift with the
