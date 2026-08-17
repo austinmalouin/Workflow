@@ -151,6 +151,17 @@ total exposure, not advice on averaging down. Recommendation only, not executed.
 legacy lot (same quantity, same $709.83 avg cost), so this strategy has effectively produced zero
 real trades to date.
 
+**Update 2026-08-17 — both signals to date have actually resolved, by rule, on paper:** a
+2026-08-17 check caught that neither prior signal's outcome had ever been tracked to completion.
+QQQ (7/28) hit its target one trading day after entry (7/30 close $683.55 > SMA5 $677.42; exit at
+the 7/31 open ≈$690.73, **+2.25%**) — this happened back on 7/31 and no journal entry ever recorded
+it. AAPL (8/13) hit its target on 8/14 (close $305.93 > SMA5 $305.32, a thin margin; exit at the
+8/17 open, roughly **+0.3%** after slippage). Neither was ever executed in the real account — both
+remain paper-only, and the position cap has been at 0/3 real positions the whole time regardless.
+**2 signals generated, 2 resolved, 2 wins** — directionally consistent with the backtest's 67.5%
+win rate but far too small a sample to mean anything on its own. See
+`journal/2026-08-17-check.md` for the full math on both.
+
 **2026-08-06 check (`journal/2026-08-06-check.md`):** no signal — RSI(2) on all five symbols was
 nowhere near the <10 oversold trigger as of the 2026-08-05 close (SPY 85.1, QQQ 70.2, AAPL 49.6,
 MSFT 71.8, NVDA 97.5; MSFT/NVDA in fact deeply overbought). No file written, per the standing rule
