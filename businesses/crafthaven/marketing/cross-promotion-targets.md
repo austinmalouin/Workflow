@@ -52,6 +52,22 @@ CraftHaven or the channel has anything ready to post by the time cross-promotion
 this kind of post-finale lull is a genuinely good moment to catch people looking for "something to
 fill the gap" — worth remembering even though nothing is ready to post yet as of this update.
 
+## Update 2026-08-17 — new leads, not yet vetted
+
+Spotted during this week's content-calendar research, flagged here only as leads worth a closer look
+later — none of these have been checked against actual posting rules, so treat as a to-investigate
+list, not a ready target:
+
+- **"Game of Thrones: Conquest" mobile 4X strategy game community** — currently running a "Song of
+  Ice & Fire" PvE event (18-20 Aug 2026). Real audience overlap (GoT fans who also play strategy
+  games), but a mobile-game fanbase and a Minecraft-server audience aren't guaranteed to convert —
+  worth a look at where that game's community actually congregates (its own subreddit/Discord) before
+  assuming it's a fit.
+- **"Game of Thrones: The Mad King" (RSC stage play, running through 5 Sept 2026) fan discussion** —
+  theatre-fan and ASOIAF-fan audiences discussing it will overlap with the existing r/ASOIAF-adjacent
+  target list already above; no separate community identified yet, just a current topical hook to use
+  *within* existing targets (see content-calendar prompt 1) rather than a new place to post.
+
 ## What's still needed before any of this is actionable
 
 1. Server actually live (hosting is decided per `../BUSINESS.md` but not yet stood up).

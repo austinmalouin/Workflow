@@ -144,6 +144,20 @@ than anything live.
   community's actual current rules still need a direct read before the first post.
 - No server population, Discord membership, or growth numbers exist to report — none invented.
 
+**Content/cross-promotion pass 2026-08-17** (weekly proactive work, no live account access this
+session): server and Discord are still not stood up, so this pass again focused on prep content.
+- `content-calendar/week-of-2026-08-17.md` — a fresh week of draft Discord discussion prompts, timed
+  to real current ASOIAF/GoT hooks researched this session: the "Game of Thrones: The Mad King" RSC
+  stage play (opened 8 Aug, running through 5 Sept — a Robert's Rebellion/Harrenhal-tourney prequel),
+  GRRM's 3 Aug blog post breaking a 6-month silence (no Winds of Winter news, but a personal update
+  worth handling with empathy, not memes), and the upcoming LAcon V Worldcon (27-31 Aug, GRRM
+  scheduled to appear) as a countdown hook.
+- `marketing/cross-promotion-targets.md` — added an "Update 2026-08-17" section flagging two new,
+  not-yet-vetted leads (the "Game of Thrones: Conquest" mobile game's active fan event, and the Mad
+  King play's fan discussion as a topical hook within existing targets) — explicitly marked
+  to-investigate, not ready to post to.
+- No server population, Discord membership, or growth numbers exist to report — none invented.
+
 ## How the agent works today
 
 No Minecraft server-hosting or Discord bot connector is available yet (checked 2026-07-22). Until

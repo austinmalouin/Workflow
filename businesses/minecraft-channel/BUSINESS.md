@@ -104,6 +104,19 @@ episode is explicitly blocked on Austin approving those names (or supplying his 
 filming; nothing here was invented as if approved. No channel/subscriber/view numbers exist to
 report — none invented.
 
+**Devlog #1 drafted 2026-08-17** (weekly proactive pass, no live account access this session): added
+a behind-the-scenes devlog, "Building a Kingdom From Nothing," to `scripts/devlog-1-building-from-nothing.md`
+with upload package at `inbox/devlog-1-upload-package.md`, and a new "dev" row in
+`content-calendar/launch-arc-schedule.md`. Reasoning: Episode -1 is still blocked on House-naming
+approval and Episodes 0-4 need real server/player footage that doesn't exist yet, so this session
+looked for content that needs neither — a devlog narrating decisions already locked in
+`../crafthaven/BUSINESS.md` (Apex Hosting tier/pricing, EULA-compliant monetization rules, the
+naming/trademark reasoning) over screen capture, with no new approvals or footage required. Grounded
+in 2026-08-17 WebSearch confirming devlog/server-building content and serialized lore/storytelling
+formats are a current, validated trend on Minecraft YouTube (not assumed). This is now the single
+most immediately filmable item in the whole content calendar. No channel/subscriber/view numbers
+exist to report — none invented.
+
 ## How the agent works today
 
 No YouTube upload/analytics connector is available yet (checked 2026-07-22). Until one exists,

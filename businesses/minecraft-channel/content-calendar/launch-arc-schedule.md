@@ -6,6 +6,7 @@ Drafted 2026-07-23. First concrete content calendar for the channel — fills th
 
 | # | Episode | Target upload | Status | Notes |
 |---|---|---|---|---|
+| dev | "Building a Kingdom From Nothing" (devlog #1) | Before or alongside Episode -1 | Script + upload package drafted 2026-08-17 (`scripts/devlog-1-building-from-nothing.md`, `inbox/devlog-1-upload-package.md`) | **No blockers** — screen-capture devlog over decisions already locked in `crafthaven/BUSINESS.md` (hosting, naming, monetization); needs no House-naming approval or player footage. Most immediately filmable item in the whole calendar |
 | -1 | "Five Houses, One Empty Throne" (teaser) | ~1 week before Episode 0 | Script + upload package drafted 2026-08-10 (`scripts/teaser-five-houses.md`, `inbox/teaser-five-houses-upload-package.md`) | Cheap pre-launch hype short — needs only concept art/sigils, no real player footage. **Blocked on Austin confirming the 5 proposed House names** before filming |
 | 0 | "A Throne With No King" (announcement) | Server launch day | Script drafted (`scripts/server-launch-announcement.md`) | Needs finished spawn/build footage or concept-art fallback before filming |
 | 1 | "First Banners" — first Houses founded | Launch day + 3 | Not started | Recap the first players to found Houses in the opening 72 hours; who claimed what land and why |
@@ -32,8 +33,9 @@ Drafted 2026-07-23. First concrete content calendar for the channel — fills th
 Episodes 1-4 still have no outlines and can't get one until the server has real early-player
 activity to film (see `crafthaven/BUSINESS.md` for launch status) — the next concrete work there is
 drafting Episode 1's outline from whatever actually happened in the first 72 hours, not a generic
-template. Episode -1 (added 2026-08-10) doesn't have that dependency and is blocked only on House
-naming approval — that's the more immediately actionable item right now.
+template. Episode -1 (added 2026-08-10) is blocked only on House naming approval. The devlog (added
+2026-08-17) has **no blockers at all** — it's the single most actionable item in this calendar right
+now and the recommended first upload.
 
 ---
 **Status**: Draft calendar — dates are targets to plan around, not commitments; shift with the
