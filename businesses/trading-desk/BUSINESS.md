@@ -162,6 +162,16 @@ remain paper-only, and the position cap has been at 0/3 real positions the whole
 win rate but far too small a sample to mean anything on its own. See
 `journal/2026-08-17-check.md` for the full math on both.
 
+**First entry-rule fire since 7/28 (2026-08-18, `signals/2026-08-18-MSFT.md`):** MSFT's RSI(2) hit
+7.73 (deep oversold) on a sharp pullback from its 8/10 post-earnings high, while still well above
+its SMA200 — a clean, unambiguous fire of the entry rule, clear of the earnings blackout (next
+report 2026-10-28, 71 days out). Signal written per the standing rule. **But it can't actually be
+acted on today:** cash and buying power are still $0 (see the 2026-08-06 note below — now 12
+sessions unchanged), so even though the strategy produced a real signal on a real qualifying
+symbol for the first time, there's nothing to size a position with. Worth raising directly with
+Austin: is a cash deposit worth making now that the strategy has actually fired, or does this stay
+a paper-only research line until/unless that changes?
+
 **2026-08-06 check (`journal/2026-08-06-check.md`):** no signal — RSI(2) on all five symbols was
 nowhere near the <10 oversold trigger as of the 2026-08-05 close (SPY 85.1, QQQ 70.2, AAPL 49.6,
 MSFT 71.8, NVDA 97.5; MSFT/NVDA in fact deeply overbought). No file written, per the standing rule
