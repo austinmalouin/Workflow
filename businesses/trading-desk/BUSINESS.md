@@ -31,8 +31,9 @@ backtesting), not the *execution*.
 ## Current state
 
 Robinhood Agentic account connected (798207098, "Agentic"; total value $579.59, cash $59.28 as of
-2026-07-23; **total value $430.54, cash $0 / buying power $0 as of 2026-08-06** — see the
-2026-08-06 update below for why). Four documented/backtested strategy versions on file across
+2026-07-23; **total value $430.54, cash $0 / buying power $0 as of 2026-08-06**, total value
+$435.58 as of 2026-08-19, cash/buying power still $0 — see the 2026-08-06 update below for why).
+Four documented/backtested strategy versions on file across
 three distinct mechanics, all still short of the bar for live signals:
 
 - `strategies/momentum-v1.md` / `backtests/momentum-v1-backtest.md` — daily breakout-chasing, 100
@@ -171,6 +172,16 @@ sessions unchanged), so even though the strategy produced a real signal on a rea
 symbol for the first time, there's nothing to size a position with. Worth raising directly with
 Austin: is a cash deposit worth making now that the strategy has actually fired, or does this stay
 a paper-only research line until/unless that changes?
+
+**Second signal, MSFT still open (2026-08-19, `signals/2026-08-19-QQQ.md`):** QQQ's RSI(2) hit 9.94
+(just inside the <10 threshold) on the 8/18 close after a sharp one-day drop (729.87→717.51,
+-1.69%), still well above its SMA200 (651.51) — QQQ is ETF-exempt from the earnings blackout. SPY
+(10.17) and NVDA (10.25) both sat just above the cutoff — no signal on either, this was close.
+Checked the 8/18 MSFT signal for resolution: still open, no stop breach (low $477.15 vs. stop
+≈$452.65), target not yet hit (close $481.63 still below SMA5 $489.34), time stop nowhere close (1
+session elapsed of 10). **Two open paper signals now (MSFT 8/18, QQQ 8/19), occupying 2 of 3
+strategy slots by convention — neither funded.** Cash/buying power still $0 (13 sessions unchanged;
+see below). Full detail in `journal/2026-08-19-check.md`.
 
 **2026-08-06 check (`journal/2026-08-06-check.md`):** no signal — RSI(2) on all five symbols was
 nowhere near the <10 oversold trigger as of the 2026-08-05 close (SPY 85.1, QQQ 70.2, AAPL 49.6,
