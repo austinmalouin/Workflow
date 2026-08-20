@@ -32,7 +32,8 @@ backtesting), not the *execution*.
 
 Robinhood Agentic account connected (798207098, "Agentic"; total value $579.59, cash $59.28 as of
 2026-07-23; **total value $430.54, cash $0 / buying power $0 as of 2026-08-06**, total value
-$435.58 as of 2026-08-19, cash/buying power still $0 — see the 2026-08-06 update below for why).
+$435.58 as of 2026-08-19, total value $432.50 as of 2026-08-20, cash/buying power still $0 — see
+the 2026-08-06 update below for why).
 Four documented/backtested strategy versions on file across
 three distinct mechanics, all still short of the bar for live signals:
 
@@ -182,6 +183,22 @@ Checked the 8/18 MSFT signal for resolution: still open, no stop breach (low $47
 session elapsed of 10). **Two open paper signals now (MSFT 8/18, QQQ 8/19), occupying 2 of 3
 strategy slots by convention — neither funded.** Cash/buying power still $0 (13 sessions unchanged;
 see below). Full detail in `journal/2026-08-19-check.md`.
+
+**Third signal, all 3 slots now filled on paper (2026-08-20, `signals/2026-08-20-NVDA.md`):**
+NVDA's RSI(2) hit 5.98 on the 8/19 close — the deepest, cleanest oversold read this desk has
+produced (deeper than MSFT's 7.73 or QQQ's 8.33/9.94), on a two-day drop (225.01→219.74→217.56)
+while still well above its SMA200 (195.18). QQQ's RSI(2) also refired (8.33) but was skipped —
+it already has an unresolved open signal from 8/19 and the strategy doesn't stack same-symbol
+entries. **Earnings-blackout call worth flagging:** NVDA reports 2026-08-26 (pm, verified); entry
+(8/20) is 6 calendar days out, just outside the 5-day blackout window — clears the rule, but close
+enough that the position could still be open heading into the print. Checked both prior signals for
+resolution: MSFT (8/18) still open, no stop breach (lows $477.15/$479.36 vs. stop ≈$452.65), target
+not yet hit (SMA5 still above close both sessions); QQQ (8/19) still open, no stop breach (low
+$712.61 vs. stop ≈$677.17), target not yet hit, only 1 session elapsed. **All 3 strategy slots are
+now occupied on paper (MSFT, QQQ, NVDA) — 0 of 3 are actually funded.** Cash/buying power still $0
+(14 sessions unchanged). The strategy has now fired on 3 straight trading days — signal generation
+is clearly not the bottleneck anymore; cash is. Worth raising directly with Austin. Full detail in
+`journal/2026-08-20-check.md`.
 
 **2026-08-06 check (`journal/2026-08-06-check.md`):** no signal — RSI(2) on all five symbols was
 nowhere near the <10 oversold trigger as of the 2026-08-05 close (SPY 85.1, QQQ 70.2, AAPL 49.6,
