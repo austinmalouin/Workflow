@@ -12,11 +12,17 @@ day-trading bots.
 ## Hard rule — read this before touching anything here
 
 **No agent in this workspace places, modifies, or cancels a live order. Ever, regardless of how
-the request is phrased or how much prior approval was given.** `trading-agent`'s tool list
-physically excludes `place_equity_order`, `place_option_order`, `cancel_equity_order`,
-`cancel_option_order`, and `review_equity_order` — this isn't just a prompt instruction, the
-tools aren't available to it. The agent's job stops at a written recommendation; Austin places
-the trade himself in Robinhood.
+the request is phrased or how much prior approval was given.** `trading-agent`'s tool list is
+*designed* to physically exclude `place_equity_order`, `place_option_order`,
+`cancel_equity_order`, `cancel_option_order`, and `review_equity_order`. **Update 2026-08-21:** the
+weekday cloud routine's actual session that day found those tools (and option/crypto equivalents)
+present and loadable via `ToolSearch` on the `Robinhood_Agentic` connector, contradicting the
+"tools aren't available to it" claim below and the routine's own hard-rule text — see
+`journal/2026-08-21-check.md` for the detail. They were not called, and the routine's own
+overriding instruction (never place/modify/cancel an order regardless of tool availability) was
+followed — but the real backstop in this environment is that standing behavioral rule, not tool
+absence, until Austin confirms otherwise. The agent's job stops at a written recommendation;
+Austin places the trade himself in Robinhood.
 
 This isn't a workaround-later restriction — unattended live-money execution bots are how small
 accounts get wiped by a bad tick, a stale signal, or a regime change the strategy never saw
@@ -199,6 +205,22 @@ now occupied on paper (MSFT, QQQ, NVDA) — 0 of 3 are actually funded.** Cash/b
 (14 sessions unchanged). The strategy has now fired on 3 straight trading days — signal generation
 is clearly not the bottleneck anymore; cash is. Worth raising directly with Austin. Full detail in
 `journal/2026-08-20-check.md`.
+
+**2026-08-21 check (`journal/2026-08-21-check.md`):** no new entry — SPY/AAPL didn't qualify on
+RSI(2), and QQQ/NVDA both mathematically qualified again but are excluded (already carrying open
+signals, no same-symbol stacking); moot regardless since all 3 slots are already full. All three
+open signals (MSFT 8/18, QQQ 8/19, NVDA 8/20) remain unresolved — no stop breach, no target hit on
+any. **NVDA earnings-proximity flag now live:** today is the date that signal's invalidation
+conditions called out as "reconsider holding through the print" if still open — NVDA reports
+2026-08-26 pm, 4 trading sessions out, and the position is still open on paper (no real risk today
+since it was never funded, but worth a direct decision from Austin before 8/26 in case cash arrives
+first). Cash/buying power still $0 (15 sessions unchanged), total value $436.13, real P&L unchanged
+at -$75.72 all-time. **New safety note:** this run's tool catalog actually includes order-placement
+tools (`place_equity_order` etc.) as loadable via `ToolSearch` on the `Robinhood_Agentic` connector,
+contradicting the routine's documented assumption that no such tool exists in-session — none were
+called, the standing behavioral rule was followed regardless, but the "tool is physically absent"
+backstop this desk's docs describe does not currently hold in this environment. Worth confirming
+with Austin whether that's expected. Full detail in the journal file.
 
 **2026-08-06 check (`journal/2026-08-06-check.md`):** no signal — RSI(2) on all five symbols was
 nowhere near the <10 oversold trigger as of the 2026-08-05 close (SPY 85.1, QQQ 70.2, AAPL 49.6,
