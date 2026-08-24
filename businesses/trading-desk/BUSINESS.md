@@ -206,6 +206,21 @@ now occupied on paper (MSFT, QQQ, NVDA) — 0 of 3 are actually funded.** Cash/b
 is clearly not the bottleneck anymore; cash is. Worth raising directly with Austin. Full detail in
 `journal/2026-08-20-check.md`.
 
+**2026-08-24 check (`journal/2026-08-24-check.md`):** no new entry — SPY/AAPL/QQQ/MSFT didn't
+qualify on RSI(2), and NVDA mathematically re-qualified with its deepest oversold read yet
+(RSI(2) 2.06) but is excluded (already carrying an open signal, no same-symbol stacking); moot
+regardless since the 3-slot cap was already full. **MSFT (8/18) resolved on paper — target hit:**
+8/21 close ($483.24) closed back above its 5-day SMA ($482.14), the standard mean-reversion exit
+condition, with no stop breach beforehand. Exit executes at today's open (0.2% worse); provisional
+paper return using the pre-market reference ≈+0.15% (will confirm exact figure once today's open
+settles). QQQ (8/19) and NVDA (8/20) remain open, both still within their stops, neither target hit.
+**Paper record now 3 signals resolved, 3 winners** (QQQ 7/28 +2.25%, AAPL 8/13 +0.3%, MSFT 8/18
+≈+0.15%) — directionally consistent with the 67.5% backtest win rate, still too small to mean
+anything. **NVDA earnings flag escalating:** report is 2026-08-26 pm, now only 2 trading sessions
+away, and the open NVDA signal is still unresolved — worth a direct decision from Austin before
+8/26. Cash/buying power still $0 (16 sessions unchanged), total value $436.12, real P&L unchanged at
+-$75.72 all-time; no new real trades. Full detail in the journal file.
+
 **2026-08-21 check (`journal/2026-08-21-check.md`):** no new entry — SPY/AAPL didn't qualify on
 RSI(2), and QQQ/NVDA both mathematically qualified again but are excluded (already carrying open
 signals, no same-symbol stacking); moot regardless since all 3 slots are already full. All three
