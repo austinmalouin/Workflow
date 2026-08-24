@@ -68,6 +68,30 @@ list, not a ready target:
   target list already above; no separate community identified yet, just a current topical hook to use
   *within* existing targets (see content-calendar prompt 1) rather than a new place to post.
 
+## Update 2026-08-24 — new leads, not yet vetted
+
+Spotted during this week's content-calendar research, flagged here only as leads worth a closer look
+later — none of these have been checked against actual posting rules, so treat as a to-investigate
+list, not a ready target:
+
+- **"Game of Thrones: Legends" mobile strategy game** — launched a new crossover expansion, "Assault
+  on Rook's Rest," on 20 August 2026 (House of the Dragon Season 2-inspired characters: Criston Cole,
+  Rhaenyra Targaryen). Same caveat as last week's "Game of Thrones: Conquest" lead: this is a
+  *different* mobile game with its own separate community — real audience overlap on paper (GoT fans
+  who also play mobile strategy games), but no evidence yet that it converts to a Minecraft-server
+  audience. Worth locating this game's actual subreddit/Discord before assuming it's a fit, not
+  worth acting on yet.
+- **"A Knight of the Seven Kingdoms" Emmy-nomination fan discussion (9 nominations, incl. Best
+  Drama; ceremony 14 September 2026)** — a positive, celebratory news cycle distinct from the
+  TWOW-wait conversation; likely to generate its own wave of fan posts/threads in existing ASOIAF
+  spaces (r/ASOIAF, "The Free Cities," "Dunk'n Scones" — all already-listed targets above) around the
+  ceremony date. Not a new community, just a timing note: mid-September could be a second good window
+  for organic participation in those existing targets, same caution about reading current rules first.
+- **"Game of Thrones: The Mad King" (RSC stage play) closes 5 September 2026** — its fan discussion
+  overlaps the same existing ASOIAF-adjacent targets flagged last week; noted here only because the
+  window to use this as a topical hook is closing within the next two weeks, after which it becomes a
+  "did you catch it" retrospective rather than a live "it's currently running" angle.
+
 ## What's still needed before any of this is actionable
 
 1. Server actually live (hosting is decided per `../BUSINESS.md` but not yet stood up).

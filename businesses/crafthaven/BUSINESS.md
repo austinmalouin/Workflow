@@ -158,6 +158,24 @@ session): server and Discord are still not stood up, so this pass again focused 
   to-investigate, not ready to post to.
 - No server population, Discord membership, or growth numbers exist to report — none invented.
 
+**Content/cross-promotion pass 2026-08-24** (weekly proactive work, no live account access this
+session): server and Discord are still not stood up, so this pass again focused on prep content.
+- `content-calendar/week-of-2026-08-24.md` — a fresh week of draft Discord discussion prompts, timed
+  to real current ASOIAF/GoT hooks researched this session: LAcon V/Worldcon 84 now only 3 days out
+  (27-31 Aug, GRRM confirmed as a guest), a new detail from GRRM's 3 Aug blog post (*A Knight of the
+  Seven Kingdoms* landed 9 Emmy nominations including Best Drama, ceremony 14 Sept), a newly-reported
+  "massively depressing" milestone (the wait since *A Dance with Dragons* has now exceeded the entire
+  publication span of the first five books combined), the "Game of Thrones: Legends" mobile game's new
+  "Assault on Rook's Rest" crossover expansion (launched 20 Aug), the "Mad King" RSC play entering its
+  final ~11 days (closes 5 Sept), and HBO's confirmation that House of the Dragon Season 4 will be the
+  show's final season (no premiere date yet, reporting points to 2028). One prompt is an explicit
+  continuation of last week's file, which had planned a "3 days out" Worldcon repost for this week.
+- `marketing/cross-promotion-targets.md` — added an "Update 2026-08-24" section flagging three new,
+  not-yet-vetted leads (the "Game of Thrones: Legends" mobile game's new expansion, the Emmy-nomination
+  news cycle as a mid-September timing note for existing ASOIAF-space targets, and the Mad King play's
+  closing-window note) — explicitly marked to-investigate, not ready to post to.
+- No server population, Discord membership, or growth numbers exist to report — none invented.
+
 ## How the agent works today
 
 No Minecraft server-hosting or Discord bot connector is available yet (checked 2026-07-22). Until

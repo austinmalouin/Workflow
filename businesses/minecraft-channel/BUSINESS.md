@@ -117,6 +117,27 @@ formats are a current, validated trend on Minecraft YouTube (not assumed). This 
 most immediately filmable item in the whole content calendar. No channel/subscriber/view numbers
 exist to report — none invented.
 
+**Explainer #1 drafted 2026-08-24** (weekly proactive pass, no live account access this session): added
+a genre/market explainer, "Why Kingdom-Faction Servers Are Taking Over Minecraft YouTube," to
+`scripts/explainer-1-why-kingdom-servers.md` with upload package at
+`inbox/explainer-1-upload-package.md`, and a new "explainer" row in
+`content-calendar/launch-arc-schedule.md`. Reasoning: Episode -1 is still blocked on House-naming
+approval and Episodes 0-4 still need real server/player footage that doesn't exist yet, so — like the
+devlog — this session looked for content needing neither. Unlike the devlog (which narrates decisions
+already locked in `../crafthaven/BUSINESS.md`), this is a video-essay-style breakdown of the
+kingdom-faction SMP genre itself, using reference b-roll of other public servers (credited) plus a
+Canva diagram, closing with a soft, name-free tease of CraftHaven. Re-checked research fresh for
+2026-08-24 rather than reusing 2026-07-22 findings: PlayStation Universe's "Why SMP Servers Still
+Dominate Minecraft Multiplayer in 2026" (confirms the broader SMP genre is currently dominant, not
+fading), ArkOfRulers confirmed actively running in 2026 (site content dated April 2026) as a live,
+current example of the kingdom-faction sub-genre rather than leaning on older research, and 2026
+creator-growth sources (FluxNote's "Is Minecraft a Good YouTube Niche in 2026," useedison's "Is
+Gaming Too Saturated on YouTube in 2026") converging on video essays/explainers ("packaging the game,
+not just playing it") as what's actually breaking new channels from zero right now, versus raw
+Let's Plays which those sources describe as dead for new channels. This has one small open task
+(pulling and rights-checking a handful of external reference screenshots/clips) but no naming or
+footage blocker. No channel/subscriber/view numbers exist to report — none invented.
+
 ## How the agent works today
 
 No YouTube upload/analytics connector is available yet (checked 2026-07-22). Until one exists,
