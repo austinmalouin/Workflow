@@ -38,8 +38,9 @@ backtesting), not the *execution*.
 
 Robinhood Agentic account connected (798207098, "Agentic"; total value $579.59, cash $59.28 as of
 2026-07-23; **total value $430.54, cash $0 / buying power $0 as of 2026-08-06**, total value
-$435.58 as of 2026-08-19, total value $432.50 as of 2026-08-20, cash/buying power still $0 — see
-the 2026-08-06 update below for why).
+$435.58 as of 2026-08-19, total value $432.50 as of 2026-08-20, total value $435.96, cash/buying
+power $0.11 as of 2026-08-25 (first non-zero reading since 2026-08-06, but not a functionally
+different number) — see the 2026-08-06 update below for why).
 Four documented/backtested strategy versions on file across
 three distinct mechanics, all still short of the bar for live signals:
 
@@ -205,6 +206,22 @@ now occupied on paper (MSFT, QQQ, NVDA) — 0 of 3 are actually funded.** Cash/b
 (14 sessions unchanged). The strategy has now fired on 3 straight trading days — signal generation
 is clearly not the bottleneck anymore; cash is. Worth raising directly with Austin. Full detail in
 `journal/2026-08-20-check.md`.
+
+**2026-08-25 check (`journal/2026-08-25-check.md`):** no new entry — SPY/AAPL/MSFT/QQQ didn't
+qualify on RSI(2), and NVDA hit its deepest oversold read yet (RSI(2) **0.48**, beating its own
+8/21 record of 2.06) but is excluded, already carrying an open signal with no same-symbol stacking;
+moot regardless since 2 of 3 slots are occupied. **MSFT (8/18) resolution confirmed final:** the
+8/24 official open settled at $483.205, exit fill ≈$482.24 after slippage, entry $481.54 — **+0.15%
+confirmed**, matching the prior provisional estimate almost exactly. QQQ (8/19) and NVDA (8/20)
+remain open, both still within their stops — but **NVDA's stop buffer has narrowed to $1.86**, the
+tightest of any open signal here, and **NVDA earnings are now only 1 trading session away** (reports
+2026-08-26 pm, tomorrow evening) with the position still open. This is the sharpest version yet of
+the standing "hold through the print or not" question flagged on 8/21 and 8/24 — worth a direct
+decision from Austin before the report, even though no real capital is at risk (still unfunded).
+Paper record now 3 signals resolved, 3 winners (QQQ 7/28 +2.25%, AAPL 8/13 +0.3%, MSFT 8/18 +0.15%
+confirmed). Cash/buying power effectively still $0 ($0.11, first movement in 17 sessions but not
+functionally different), total value $435.96, real P&L unchanged at -$75.72 all-time; no new real
+trades. Full detail in the journal file.
 
 **2026-08-24 check (`journal/2026-08-24-check.md`):** no new entry — SPY/AAPL/QQQ/MSFT didn't
 qualify on RSI(2), and NVDA mathematically re-qualified with its deepest oversold read yet
