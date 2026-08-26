@@ -276,6 +276,33 @@ Austin about whether to add cash, pause signal generation until cash is availabl
 generating recommendations regardless (since they cost nothing to write and he may add funds
 before acting on one).
 
+**2026-08-26 check (`journal/2026-08-26-check.md`) — infra bug found and fixed mid-run:** a first
+pass at today's check, dispatched to the `trading-agent` subagent, hit **zero Robinhood tools of any
+kind**. Root cause (not a connector outage): `.claude/agents/trading-agent.md`'s tool allowlist
+hardcoded an old MCP server ID (`mcp__dd574d32-44ea-4e84-a974-7914e3e5aa62__*`); this session's
+actual connector is namespaced `mcp__Robinhood_Agentic__*`, so none of the subagent's declared tools
+ever matched a real tool. Fixed the agent file's tool list to the current namespace (see that file's
+note) and completed today's check directly with verified data instead. **Clean, verified "no" on the
+entry rule** — RSI(2) as of the 8/25 close: SPY 60.69, QQQ 51.86, AAPL 39.70, MSFT 91.51 (deeply
+overbought), NVDA 53.13 — none within reach of the <10 threshold, so no new signal, independent of
+the position cap or same-symbol stacking. **QQQ (8/19) and NVDA (8/20) both verified open, neither
+at stop or target:** QQQ stop ≈$677.17 vs. lows down to $702.70 since entry (no breach), SMA5 $711.50
+vs. 8/25 close $710.72 (target not yet hit, closest either signal has been to its exit); NVDA stop
+≈$205.39 vs. lows down to $207.25 (buffer $1.86 on 8/24, verified widened to $4.72 by 8/25), SMA5
+$214.13 vs. 8/25 close $213.05 (target not yet hit). MSFT (8/18) remains fully resolved
+(+0.15% confirmed 8/24-25), not re-opened. **NVDA earnings confirmed via `get_earnings_results`:
+2026-08-26, timing "pm", verified — tonight**, with the open 8/20 signal riding into the print by the
+strategy's own rules (no open-position earnings override exists, only a new-entry blackout); no real
+capital at risk since it was never funded. Account state (verified via `get_portfolio`): total value
+**$435.84**, cash/buying power **$0.11** (18+ sessions effectively zero). Real P&L (verified via
+`get_pnl_trade_history`/`get_realized_pnl`): all-time -$75.72 (-15.66%), all four closed trades
+pre-existing/manual (SPCX, SOFI, SMCI, IONQ), none attributable to meanreversion-v1 — still zero
+real trades under this strategy. **Two things worth raising with Austin directly: the NVDA-earnings-
+tonight situation (informational only, nothing to decide since it's unfunded), and confirming the
+tool-ID fix holds for future dispatched runs of this check** — this is the second tool-availability
+surprise on this desk in a week (2026-08-21's was tools unexpectedly present; today's was a stale ID
+making them unexpectedly absent), worth a standing check rather than assuming it's resolved for good.
+
 ## Working folders
 
 - `strategies/` — written-out strategy rules (entry/exit criteria, position sizing, risk limits)
