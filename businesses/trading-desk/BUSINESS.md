@@ -303,6 +303,26 @@ tool-ID fix holds for future dispatched runs of this check** — this is the sec
 surprise on this desk in a week (2026-08-21's was tools unexpectedly present; today's was a stale ID
 making them unexpectedly absent), worth a standing check rather than assuming it's resolved for good.
 
+**2026-08-27 check (`journal/2026-08-27-check.md`) — first paper loss pending, NVDA earnings
+resolved favorably:** no new entry — RSI(2) as of the 8/26 close: SPY 62.98, QQQ 57.50, AAPL 83.33,
+MSFT 96.12 (deeply overbought), NVDA 29.77 — none within reach of the <10 threshold, independent of
+the position cap. **QQQ (8/19) target condition triggered on the 8/26 close** (close $711.37 >
+SMA5 $710.56, no stop breach at any point, unrealized return at trigger only -1.25% so the standard
+non-trailing exit applies) — exit at today's (8/27) open; provisional using the pre-market
+reference (~$715.59 net of slippage vs. $720.39 entry) works out to **≈-0.67%, the strategy's first
+paper loss** after three straight wins, pending confirmation once the official open settles next
+check. Worth being plain about this: a "target hit" here is a reversion-to-average event, not a
+profit guarantee — QQQ never closed back above its own entry price before its (falling) SMA5 caught
+up to it. **NVDA (8/20) still open, no stop breach, target not yet hit at the 8/26 close** (close
+$209.66 vs. SMA5 $212.55), but **NVDA reported earnings 2026-08-26 pm as scheduled and pre-market
+action this morning is sharply positive** (+6.2% gap, $209.66 to $222.62) — correcting the
+"hold-through-the-print" risk flagged repeatedly since 8/21: the outcome looks favorable, not
+adverse, though it was never funded either way. MSFT (8/18) remains fully resolved (+0.15%).
+**Paper record still 3 resolved/3 winners pending the QQQ open confirmation.** Cash/buying power
+still $0.11 (19+ sessions effectively zero), total value $438.69, real P&L unchanged at -$75.72
+all-time (verified via `get_pnl_trade_history`/`get_realized_pnl`, still zero real trades under
+this strategy). Full detail in the journal file.
+
 ## Working folders
 
 - `strategies/` — written-out strategy rules (entry/exit criteria, position sizing, risk limits)
