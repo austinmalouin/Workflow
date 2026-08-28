@@ -323,6 +323,25 @@ still $0.11 (19+ sessions effectively zero), total value $438.69, real P&L uncha
 all-time (verified via `get_pnl_trade_history`/`get_realized_pnl`, still zero real trades under
 this strategy). Full detail in the journal file.
 
+**2026-08-28 check (`journal/2026-08-28-check.md`) — QQQ's first paper loss confirmed, NVDA
+target-triggered:** no new entry — the whole universe went from oversold to deeply overbought
+overnight on the post-NVDA-earnings rally: RSI(2) as of the 8/27 close ranged 87.79 (NVDA) to
+98.72 (MSFT), the opposite end of the scale from the entry trigger, so this is a clean "no"
+regardless of the position cap. **QQQ (8/19) exit confirmed:** the 8/26-close target trigger
+flagged provisionally on 8/27 is now confirmed against the actual 8/27 open ($716.93) — exit fill
+≈$715.50 after slippage, return vs. the $720.39 entry ≈**-0.68%, the strategy's first paper loss**
+after three straight wins. **NVDA (8/20) target-triggered on the 8/27 close** (close $227.98 >
+SMA5 $214.78, no stop breach — low $220.90 vs. stop ≈$205.39); hybrid-exit check puts unrealized
+return at confirmation at ≈+4.34%, under the +5% trailing threshold, so the standard exit applies:
+exit at today's (8/28) open, provisional pending the official settled price on the next check.
+MSFT (8/18) remains fully resolved (+0.15%). **All three original signals are now resolved or
+resolving — 0 of 3 strategy slots occupied going forward**, none ever funded. Paper record: 4
+resolved (5 pending NVDA confirmation), 3 wins, 1 loss — still far too small a sample to mean
+anything, but the QQQ loss is the first real data point showing the strategy's downside, not just
+its upside. Cash/buying power still $0.11 (20+ sessions effectively zero), total value $441.19,
+real P&L unchanged at -$75.72 all-time (verified via `get_pnl_trade_history`/`get_realized_pnl`,
+still zero real trades under this strategy). Full detail in the journal file.
+
 ## Working folders
 
 - `strategies/` — written-out strategy rules (entry/exit criteria, position sizing, risk limits)
