@@ -138,6 +138,26 @@ Let's Plays which those sources describe as dead for new channels. This has one 
 (pulling and rights-checking a handful of external reference screenshots/clips) but no naming or
 footage blocker. No channel/subscriber/view numbers exist to report — none invented.
 
+**Devlog #2 drafted 2026-08-31** (weekly proactive pass, no live account access this session): added
+a second devlog, "The Plugin Stack: What It Actually Takes to Build a Kingdom Server," to
+`scripts/devlog-2-the-plugin-stack.md` with upload package at `inbox/devlog-2-upload-package.md`, and
+a new "dev2" row in `content-calendar/launch-arc-schedule.md`. Both channel blockers were re-checked
+fresh this session, not assumed: `../crafthaven/BUSINESS.md`'s current-state section still says the
+server and Discord are not stood up, and `../crafthaven/marketing/house-naming-proposal.md` still
+marks the Throne-mechanic name and House names/sigils as an unconfirmed proposal. So this session again
+looked for content needing neither — this time a technical/logistics angle instead of another
+business-decision recap (Devlog #1) or genre/market explainer (Explainer #1): it narrates CraftHaven's
+still-open "choose a core plugin stack" decision (Towny vs Factions vs Kingdoms/KingdomsX, per the
+open item already listed in `../crafthaven/BUSINESS.md`) over public plugin-page screen capture,
+explicitly framed as "leading plan, not locked" so it doesn't require the decision to actually be
+finalized before filming, and shows no House names or server/player footage. Grounded in fresh
+2026-08-31 WebSearch: multiple 2026-dated "best Minecraft server plugins" videos confirm plugin-
+comparison content is a live, recurring category on Minecraft YouTube right now (not assumed), and
+real current plugin research (Towny's structured towns/nations/diplomacy vs Factions' raid-first
+takeover model vs Kingdoms/KingdomsX's built-in invasion/turret/structure mechanics) grounds the
+comparison itself in real feature sets rather than invented ones. No channel/subscriber/view numbers
+exist to report — none invented in this or any prior pass.
+
 ## How the agent works today
 
 No YouTube upload/analytics connector is available yet (checked 2026-07-22). Until one exists,
