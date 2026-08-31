@@ -342,6 +342,21 @@ its upside. Cash/buying power still $0.11 (20+ sessions effectively zero), total
 real P&L unchanged at -$75.72 all-time (verified via `get_pnl_trade_history`/`get_realized_pnl`,
 still zero real trades under this strategy). Full detail in the journal file.
 
+**2026-08-31 check (`journal/2026-08-31-check.md`) — NVDA exit confirmed, all slots empty, clean
+no-entry day:** no new entry — RSI(2) as of the 8/28 close (last completed session; markets closed
+8/29-30): SPY 59.51, QQQ 51.82, AAPL 97.04, MSFT 99.44 (deeply overbought), NVDA 45.24 — all five
+names still comfortably above SMA200 but nowhere near the <10 oversold trigger, independent of the
+position cap. **NVDA (8/20) exit confirmed:** the 8/27-close target trigger flagged provisionally
+on 8/28 is now confirmed against the actual 8/28 open ($227.36) — exit fill ≈$226.91 after
+slippage, return vs. the $218.50 entry ≈**+3.85%**, no stop breach at any point. **Paper record now
+5 resolved, 4 wins, 1 loss** (QQQ 7/28 +2.25%, AAPL 8/13 +0.3%, MSFT 8/18 +0.15%, QQQ 8/19 -0.68%,
+NVDA 8/20 +3.85%) — an 80% win rate on 5 trades, running a bit ahead of the 67.5% backtest rate but
+still far too small a sample to mean anything. **All three original signals are now fully resolved
+— 0 of 3 strategy slots occupied.** Cash/buying power still $0.11 (20+ sessions effectively zero),
+total value $436.72, real P&L unchanged at -$75.72 all-time (verified via
+`get_pnl_trade_history`/`get_realized_pnl`, still zero real trades under this strategy). Full
+detail in the journal file.
+
 ## Working folders
 
 - `strategies/` — written-out strategy rules (entry/exit criteria, position sizing, risk limits)
