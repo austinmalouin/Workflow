@@ -92,9 +92,51 @@ list, not a ready target:
   window to use this as a topical hook is closing within the next two weeks, after which it becomes a
   "did you catch it" retrospective rather than a live "it's currently running" angle.
 
+## Update 2026-08-31 — resolving old leads, one new lead, one process finding
+
+Per the standing instruction to actually resolve prior "to-investigate" items rather than only
+adding new ones, this pass tried to directly vet several previously-flagged leads and check the
+subreddit rules flagged as unread since 2026-08-10:
+
+- **Reddit itself is not reachable via WebFetch from this environment** — confirmed this session:
+  direct attempts to read `reddit.com`/`old.reddit.com` (including r/ASOIAF's rules page) were
+  blocked by the network egress proxy, and general WebSearch queries for "r/ASOIAF self-promotion
+  rules" and "r/MCServers rules" only surface third-party summary/guide sites, not the subreddit's
+  actual live sidebar or rules wiki. **Practical conclusion: the "direct read of current rules"
+  step for r/MCServers, r/MinecraftServer, r/Admincraft, and r/ASOIAF cannot be completed by this
+  agent in any session with this same tool access — it needs Austin's own logged-in browser/Reddit
+  account, not repeated WebSearch attempts.** Flagging this plainly so future passes don't keep
+  reopening the same unresolved item without noting why it stays unresolved.
+- **"Game of Thrones: Conquest" mobile game (flagged 2026-08-17) — partially resolved.** Its
+  community hub is now located: an official Discord with a public invite
+  (`discord.com/invite/gotconquest`), listed by a third-party Discord directory at roughly 82,000
+  members (that member count is from an aggregator listing, not a live check of the server itself,
+  so treat it as approximate/unverified, not a number to repeat as fact). This moves the item from
+  "location unknown" to "location known, self-promo rules still unread" — still not something to
+  post into, but a concrete next step exists now instead of a vague lead.
+- **"Game of Thrones: Legends" mobile game (flagged 2026-08-24) — partially resolved.** Confirmed
+  it's a real, currently-live Zynga title (a puzzle-RPG tied to the GoT/HotD/AKotSK IP, not a
+  fly-by-night app), which raises confidence it's worth eventually locating a community for — but
+  no dedicated subreddit or Discord turned up in this session's search. Still not actionable.
+- **"Game of Thrones: The Mad King" closing-window lead (flagged 2026-08-24) — resolved by time**:
+  the play now closes 5 September 2026, inside the current content week (see
+  `content-calendar/week-of-2026-08-31.md` prompt 3). No separate community to add; this was always
+  a timing note against existing ASOIAF-adjacent targets, and that window is now closing for real.
+
+New lead, not yet vetted:
+
+- **"Game of Thrones: War for Westeros" (PC real-time-strategy game, developer PlaySide)** — was
+  slated for a 2026 release, now delayed to early 2027. A different audience segment again (GoT fans
+  who play PC RTS rather than mobile 4X/puzzle games) with its own Steam community/wishlist base.
+  Noted for awareness only; no community identified or vetted yet, and with a 2027 release window
+  there's no urgency to chase this lead soon.
+
 ## What's still needed before any of this is actionable
 
 1. Server actually live (hosting is decided per `../BUSINESS.md` but not yet stood up).
 2. Discord actually exists.
 3. Direct read of each target subreddit/Discord's current rules (this research used general/summary
    sources, not each community's live sidebar/rules channel — confirm before the first post).
+   **Update 2026-08-31: confirmed this step is not completable by this agent** — Reddit is unreachable
+   via this session's WebFetch tool (blocked by the network egress proxy), so this specifically needs
+   Austin's own browser/logged-in Reddit account, not another agent research pass.

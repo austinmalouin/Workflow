@@ -176,6 +176,36 @@ session): server and Discord are still not stood up, so this pass again focused 
   closing-window note) — explicitly marked to-investigate, not ready to post to.
 - No server population, Discord membership, or growth numbers exist to report — none invented.
 
+**Content/cross-promotion pass 2026-08-31** (weekly proactive work, no live account access this
+session): server and Discord are still not stood up, so this pass again focused on prep content.
+- `content-calendar/week-of-2026-08-31.md` — a fresh week of draft Discord discussion prompts, timed
+  to real current ASOIAF/GoT hooks researched this session, several of which are direct follow-through
+  on threads prior passes flagged as pending: GRRM's LAcon V/Worldcon 84 appearance (flagged "3 days
+  out" last week) actually happened on 28 Aug 2026 — a one-hour autograph session only, no panel/Q&A
+  and no Winds of Winter news, notable mainly because outlets framed it as a low-key "triumphant
+  return" almost exactly one year after an August 2025 Seattle Worldcon panel where a fan publicly told
+  him to hand the unfinished books to Brandon Sanderson; *A Knight of the Seven Kingdoms* Season 2
+  wrapped filming this month (Egg's actor done 3 Aug, Dunk's actor done 13 Aug, after flooding-driven
+  location moves in Gran Canaria), with the showrunner now confirming a first-half-2027 premiere — a
+  genuinely new, positive hook found this session, not carried from a prior week; the "Mad King" RSC
+  play is now in its actual final week (closes 5 Sept, inside this content week, vs. last week's "~11
+  days out" framing); and the Emmy timeline has a new detail — the Creative Arts Emmys land 5-6 Sept
+  (this content week), ahead of the main 14 Sept ceremony where *A Knight of the Seven Kingdoms*
+  competes for Best Drama.
+- `marketing/cross-promotion-targets.md` — added an "Update 2026-08-31" section that, per this week's
+  explicit instruction to resolve old leads rather than only add new ones, tried to directly vet
+  several previously-flagged items: confirmed Reddit itself is unreachable via this session's WebFetch
+  tool (blocked by the network egress proxy) — a genuine process finding, now logged, that the
+  "read each subreddit's live rules" step needs Austin's own browser/account, not another agent
+  research pass; partially resolved the "Game of Thrones: Conquest" mobile-game lead (located its
+  official Discord and public invite link, though a ~82,000-member count found is from a third-party
+  directory listing, not a verified live check, so treated as approximate) and the "Game of Thrones:
+  Legends" lead (confirmed it's a real, currently-live Zynga title, though still no dedicated
+  community found); closed out the Mad King closing-window note now that the window has actually
+  arrived; and flagged one new, not-yet-vetted lead ("Game of Thrones: War for Westeros," a PC RTS
+  game delayed to early 2027 — noted for awareness only, no urgency).
+- No server population, Discord membership, or growth numbers exist to report — none invented.
+
 ## How the agent works today
 
 No Minecraft server-hosting or Discord bot connector is available yet (checked 2026-07-22). Until
