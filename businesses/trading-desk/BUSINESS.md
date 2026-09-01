@@ -357,6 +357,20 @@ total value $436.72, real P&L unchanged at -$75.72 all-time (verified via
 `get_pnl_trade_history`/`get_realized_pnl`, still zero real trades under this strategy). Full
 detail in the journal file.
 
+**2026-09-01 check (`journal/2026-09-01-check.md`) — clean no-entry day, RSI(2) methodology
+verified:** no new entry — Wilder-smoothed RSI(2) as of the 8/31 close: SPY 30.97, QQQ 54.56, AAPL
+53.18, MSFT 54.22, NVDA 57.88, none within reach of the <10 threshold, independent of the position
+cap (0/3 occupied). **Worth flagging:** SPY's naive "simple average of the last 2 daily changes"
+RSI(2) reads as 0.00 (two straight down closes into 8/31) and QQQ's naive version reads 6.59 — both
+would have falsely fired the entry rule. The strategy's documented indicator is Wilder-smoothed
+RSI(2) (seeded from the first 2 daily deltas, smoothed forward), a materially different, slower
+number once converged (verified stable across a 272-session and a 64-session seed window); computed
+correctly this run, neither symbol qualifies. No open signals to resolve — all three prior signals
+(MSFT 8/18, QQQ 8/19, NVDA 8/20) were already fully resolved as of 8/31. Cash/buying power still
+$0.11, total value $430.08 (down from $436.72, mark-to-market on legacy lots only, no new trade),
+real P&L unchanged at -$75.72 all-time, still zero real trades under this strategy. Full detail in
+the journal file.
+
 ## Working folders
 
 - `strategies/` — written-out strategy rules (entry/exit criteria, position sizing, risk limits)
