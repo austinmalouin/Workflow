@@ -40,7 +40,8 @@ Robinhood Agentic account connected (798207098, "Agentic"; total value $579.59, 
 2026-07-23; **total value $430.54, cash $0 / buying power $0 as of 2026-08-06**, total value
 $435.58 as of 2026-08-19, total value $432.50 as of 2026-08-20, total value $435.96, cash/buying
 power $0.11 as of 2026-08-25 (first non-zero reading since 2026-08-06, but not a functionally
-different number) — see the 2026-08-06 update below for why).
+different number), total value $434.51, cash/buying power $0.11 as of 2026-09-03 — see the
+2026-08-06 update below for why).
 Four documented/backtested strategy versions on file across
 three distinct mechanics, all still short of the bar for live signals:
 
@@ -370,6 +371,18 @@ correctly this run, neither symbol qualifies. No open signals to resolve — all
 $0.11, total value $430.08 (down from $436.72, mark-to-market on legacy lots only, no new trade),
 real P&L unchanged at -$75.72 all-time, still zero real trades under this strategy. Full detail in
 the journal file.
+
+**2026-09-03 check (`journal/2026-09-03-check.md`) — clean no-entry day:** no new entry —
+Wilder-smoothed RSI(2) as of the 9/2 close: SPY 52.00, QQQ 31.42, AAPL 84.57, MSFT 17.28, NVDA
+74.10, none within reach of the <10 threshold (MSFT closest, still nearly double it); all five
+names remain above SMA200, so this isn't an uptrend-filter block either. Verified stable across a
+full ~273-session and a 64-session Wilder seed window. No open signals to resolve — all five prior
+signals (QQQ 7/28, AAPL 8/13, MSFT 8/18, QQQ 8/19, NVDA 8/20) were already fully resolved as of
+8/31, and `get_equity_positions` confirms only the same three untouched legacy lots (GLDM, QQQ
+0.383235 sh, MSFT 0.125056 sh) — **0/3 strategy slots occupied.** Cash/buying power still $0.11,
+total value $434.51, real P&L unchanged at -$75.72 all-time (verified via `get_realized_pnl`,
+still zero real trades under this strategy). No `business-hq-trading-research` commit landed
+2026-09-02; this check picks up from 2026-09-01. Full detail in the journal file.
 
 ## Working folders
 
