@@ -384,6 +384,17 @@ total value $434.51, real P&L unchanged at -$75.72 all-time (verified via `get_r
 still zero real trades under this strategy). No `business-hq-trading-research` commit landed
 2026-09-02; this check picks up from 2026-09-01. Full detail in the journal file.
 
+**2026-09-04 check (`journal/2026-09-04-check.md`) — clean no-entry day, not a close call:** no new
+entry — RSI(2) as of the 9/3 close: SPY 85.10, QQQ 78.67, AAPL 92.67, MSFT 76.17, NVDA 84.45 — every
+name deeply overbought (76-93), the opposite end of the scale from the <10 entry trigger, all five
+still comfortably above SMA200. Clean "no" independent of the position cap (0/3 occupied). Next
+earnings dates confirmed (AAPL 10/29, MSFT 10/28, NVDA 11/17), all well outside the 5-day blackout
+window regardless. No open signals to resolve — all five prior signals (QQQ 7/28, AAPL 8/13, MSFT
+8/18, QQQ 8/19, NVDA 8/20) were already fully resolved as of 8/31, and `get_equity_positions`
+confirms only the same three untouched legacy lots (GLDM, QQQ 0.383235 sh, MSFT 0.125056 sh). Cash
+still $0.11, total value $436.99, real P&L unchanged at -$75.72 all-time (verified via
+`get_realized_pnl`, still zero real trades under this strategy). Full detail in the journal file.
+
 ## Working folders
 
 - `strategies/` — written-out strategy rules (entry/exit criteria, position sizing, risk limits)
