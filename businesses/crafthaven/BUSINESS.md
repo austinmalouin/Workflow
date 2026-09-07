@@ -206,6 +206,38 @@ session): server and Discord are still not stood up, so this pass again focused 
   game delayed to early 2027 — noted for awareness only, no urgency).
 - No server population, Discord membership, or growth numbers exist to report — none invented.
 
+**Content/cross-promotion pass 2026-09-07** (weekly proactive work, no live account access this
+session): server and Discord are still not stood up, so this pass again focused on prep content.
+- `content-calendar/week-of-2026-09-07.md` — a fresh week of draft Discord discussion prompts, timed
+  to real current ASOIAF/GoT hooks researched this session, several resolving threads prior passes
+  left open: the Creative Arts Emmys (5-6 Sept, flagged as upcoming last week) actually happened, and
+  *A Knight of the Seven Kingdoms* won its first-ever Emmy — Outstanding Stunt Performance, for the
+  episode 5 seven-on-seven melee (Duncan vs. Prince Aerion Targaryen), continuing the GoT franchise's
+  streak of every installment winning at least one Emmy; the main 78th Primetime ceremony (14 Sept,
+  NBC/Peacock, hosted by Mariska Hargitay) has explicitly **not** happened yet as of this pass, and
+  AKotSK is not the predicted favorite for Best Drama against *The Pitt*, *Widow's Bay*, and
+  *Pluribus* — framed as a countdown/predictions prompt, no result claimed; no new GRRM blog post was
+  found this session (his last remains the 3 Aug entry already covered 2026-08-17); and a new,
+  real, dated hook was added — the Game of Thrones Studio Tour's ticketed "Behind the Bloodlines"
+  actor Q&A event in Banbridge, Northern Ireland on 11 Sept 2026. Per last week's explicit note to
+  decide keep/retire/refresh on the four-week-running "if you were founding a House" prompt: House
+  naming is still unlocked (confirmed via `marketing/house-naming-proposal.md` — Throne-mechanic name
+  and the five starter House names/sigils remain a proposal, unchanged since 2026-07-23), so the
+  prompt's underlying research goal still holds, but it was refreshed this week to name the five
+  actual candidate Houses (Ashwood, Draven, Marrow, Thorne, Vell) instead of repeating the same
+  open-ended wording a fifth week.
+- `marketing/cross-promotion-targets.md` — added an "Update 2026-09-07" section that resolved one
+  previously-flagged lead (located the "Game of Thrones: Legends" mobile game's official Discord,
+  confirmed via the game's own site — closes the "no dedicated community found" gap from
+  2026-08-24/08-31) and added two new categories of lead: Discord server-listing directories
+  (DISBOARD, Discord Me — self-service, no gatekeeping, a "day one" task once Discord exists) and two
+  real same-tier medieval/faction Minecraft servers (Mvndicraft: Lords at War, Vis Regnorum) as
+  potential collab partners once CraftHaven itself is live, consistent with the existing "same-tier
+  creators, not big names" cross-promotion pattern. Reddit's unreachability via this session's
+  WebFetch tool (established 2026-08-31) was not re-tested, since nothing has changed to warrant
+  re-checking it weekly.
+- No server population, Discord membership, or growth numbers exist to report — none invented.
+
 ## How the agent works today
 
 No Minecraft server-hosting or Discord bot connector is available yet (checked 2026-07-22). Until

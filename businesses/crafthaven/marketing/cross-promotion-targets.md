@@ -131,6 +131,45 @@ New lead, not yet vetted:
   Noted for awareness only; no community identified or vetted yet, and with a 2027 release window
   there's no urgency to chase this lead soon.
 
+## Update 2026-09-07 — resolving one old lead, two new categories of lead
+
+Per the standing instruction to resolve previously-flagged items where possible rather than only
+adding new ones:
+
+- **"Game of Thrones: Legends" mobile game (flagged 2026-08-24, partially resolved 2026-08-31) —
+  now resolved.** An official Discord server exists and has been live since it was announced via the
+  game's official X/Twitter account; the game's own site
+  (`gameofthroneslegends.com/news/game-of-thrones-legends-discord`) confirms it as the official
+  community hub. This closes the "no dedicated community found" gap flagged last week. Same caveat
+  as the "Conquest" lead below applies before treating it as an actionable target: no self-promotion
+  rules for that Discord have been read yet, and a mobile puzzle-RPG audience converting to a
+  Minecraft-server audience is still unproven, not assumed. Separately, note for timing only (not a
+  new community): that game is currently running a House of the Dragon-themed crossover quest event,
+  9-14 September 2026, so if this lead is ever acted on, that week would be a moment of unusually high
+  activity there — not something to post into this week either way.
+- **New lead: Discord server-listing directories (DISBOARD, Discord Me) — a category of target not
+  previously identified, distinct from subreddits or fan communities.** These are self-service
+  directories where any server owner lists their own Discord under relevant tags — found live tag
+  pages for `medieval` and `factions` on DISBOARD, and similar tag browsing on Discord Me. This is
+  structurally the lowest-friction cross-promotion channel found to date: no gatekeeping, no rules to
+  interpret or a mod to ask, just a self-listing once CraftHaven's Discord exists — closer in kind to
+  r/MCServers than to the discussion-first ASOIAF communities above. Not actionable yet (no Discord to
+  list), but worth remembering as a "day one" task once Discord launches, ahead of anything requiring
+  relationship-building.
+- **New lead: same-tier medieval/faction Minecraft servers as potential collab partners, not just
+  competitors** — spotted two live examples this session: **Mvndicraft: Lords at War** (a
+  non-modded medieval server built around siege weapons and realistic combat, running on 1.21.11) and
+  **Vis Regnorum** (a modded medieval-themed factions server with an alternate-history Rome setting).
+  Both are real, currently-active servers in the same genre and rough size tier as CraftHaven's
+  planned position — consistent with the "same-tier creators, not big names" cross-promotion pattern
+  already flagged for ASOIAF-Minecraft-roleplay Discords in the original 2026-08-10 pass. Neither has
+  been contacted or vetted for any partnership norms; flagged as awareness only, and only relevant
+  once CraftHaven itself is live and has something to reciprocally offer.
+
+No subreddit rules were re-attempted this session (Reddit remains unreachable via this session's
+WebFetch tool per the 2026-08-31 finding below — nothing has changed on that front, so it isn't being
+re-tested weekly without reason).
+
 ## What's still needed before any of this is actionable
 
 1. Server actually live (hosting is decided per `../BUSINESS.md` but not yet stood up).

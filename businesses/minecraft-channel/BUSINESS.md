@@ -158,6 +158,30 @@ takeover model vs Kingdoms/KingdomsX's built-in invasion/turret/structure mechan
 comparison itself in real feature sets rather than invented ones. No channel/subscriber/view numbers
 exist to report — none invented in this or any prior pass.
 
+**Devlog #3 drafted 2026-09-07** (weekly proactive pass, no live account access this session): added a
+third devlog, "What Minecraft's New Update Means for a Kingdom Server (Wilderness Bound Reaction)," to
+`scripts/devlog-3-wilderness-bound-update.md` with upload package at `inbox/devlog-3-upload-package.md`,
+and a new "dev3" row in `content-calendar/launch-arc-schedule.md`. Both channel blockers were re-checked
+fresh this session against `../crafthaven/BUSINESS.md`'s current-state section directly, not assumed:
+server and Discord are still not stood up, and House naming (plus the Throne-mechanic name) is still
+listed there as an unconfirmed proposal in `../crafthaven/marketing/house-naming-proposal.md`. So this
+session again looked for content needing neither. Unlike the first two devlogs (a business-decision recap
+and an open plugin-stack decision), this one is a fast reaction to real, dated external Minecraft news
+rather than a CraftHaven-internal topic: fresh 2026-09-07 WebSearch confirmed Mojang named its next game
+drop **Wilderness Bound** (Java Edition 26.3 / Bedrock 26.50) on 6 September 2026 at the MC Championship:
+Fall Stars event — one day before this session — with public snapshots already testable; confirmed feature
+set includes a dappled forest biome, poplar trees with three natural leaf colors, straw beds, cushions,
+abandoned camps, and wool/concrete stairs and slabs in all 16 colors; exact full release date is not yet
+locked by Mojang (estimated mid-September 2026 per current reporting, explicitly flagged in the script as
+estimated, not confirmed). The video maps these new building blocks onto generic "what this means for a
+kingdom server's build style" commentary, using only Austin's own single-player creative test-world
+footage of the public snapshot — no House names shown, no live server or player footage needed, same
+"no blockers" status as the other two devlogs. The one real difference: this is the calendar's first
+genuinely time-sensitive piece — its search-discovery value is tied to the update's release window and
+drops once Wilderness Bound fully ships, so the calendar and script both flag it as the strongest
+candidate to film first if only one slot is available soon. No channel/subscriber/view numbers exist to
+report — none invented.
+
 ## How the agent works today
 
 No YouTube upload/analytics connector is available yet (checked 2026-07-22). Until one exists,
