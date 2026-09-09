@@ -417,6 +417,18 @@ MSFT 0.125056 sh) — **0/3 strategy slots occupied.** Cash/buying power still $
 $436.07, real P&L unchanged at -$75.72 all-time (verified via `get_realized_pnl`, still zero real
 trades under this strategy). Full detail in the journal file.
 
+**2026-09-09 check (`journal/2026-09-09-check.md`) — clean no-entry day, first new session since
+9/4:** no new entry — RSI(2) as of the 9/8 close (first new completed session since 9/4 — weekend +
+Labor Day): SPY 28.66, QQQ 70.90, AAPL 15.23, MSFT 22.76, NVDA 38.08, none within reach of the <10
+threshold (AAPL closest, 1.5x it); all five names remain above SMA200, so this isn't an
+uptrend-filter block either. Verified stable across a full ~277-session and a 64-session Wilder
+seed window. No open signals to resolve — all five prior signals (QQQ 7/28, AAPL 8/13, MSFT 8/18,
+QQQ 8/19, NVDA 8/20) remain fully resolved as of 8/31, and `get_equity_positions` confirms only the
+same three untouched legacy lots (GLDM, QQQ 0.383235 sh, MSFT 0.125056 sh) — **0/3 strategy slots
+occupied.** Cash/buying power still $0.11, total value $434.49, real P&L unchanged at -$75.72
+all-time (verified via `get_realized_pnl`, still zero real trades under this strategy). Full detail
+in the journal file.
+
 ## Working folders
 
 - `strategies/` — written-out strategy rules (entry/exit criteria, position sizing, risk limits)
