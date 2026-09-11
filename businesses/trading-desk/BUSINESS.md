@@ -440,6 +440,25 @@ occupied.** Cash/buying power still $0.11, total value $428.77, real P&L unchang
 all-time (verified via `get_realized_pnl` and `get_pnl_trade_history`, still zero real trades under
 this strategy). Full detail in the journal file.
 
+**2026-09-11 check (`journal/2026-09-11-check.md`) — three new entries, first multi-symbol fire:**
+SPY, QQQ, and NVDA all cleared RSI(2) < 10 as of the 9/10 close (SPY 7.26, QQQ 7.85, NVDA 9.23),
+all three comfortably above their SMA200s; AAPL (82.63) and MSFT (28.72) didn't qualify. This is the
+first time the entry rule has fired on more than one name in the same session — reads as a broad
+market pullback (all three sold off together over the same 3-4 sessions, sharpest drops on 9/10)
+rather than three independent setups, the same correlated-fire pattern the widened-universe backtest
+flagged as this mechanic's weakness. Signals written for all three: `signals/2026-09-11-SPY.md`,
+`signals/2026-09-11-QQQ.md`, `signals/2026-09-11-NVDA.md`. No same-symbol stacking conflicts (QQQ's
+and NVDA's prior signals are both fully resolved), so all three qualify and, by convention, fill all
+3 strategy slots on paper — real occupied slots were 0/3 going into today, still 0/3 actually
+funded. NVDA earnings reconfirmed clear (next report >31 days out per a fresh calendar scan, last
+confirmed 2026-11-17); SPY/QQQ exempt as index ETFs. Cash/buying power still $0.11 (~5 weeks
+unchanged), total value $433.81, 10% sizing ≈$43.38/position — none of today's signals can actually
+be funded. Real P&L unchanged at -$75.72 all-time, still zero real trades under this strategy; paper
+record remains 5 resolved/4 wins/1 loss (nothing resolved today, no prior signal was open). Worth
+raising directly with Austin: sizing all three signals at once (if cash ever arrives) would be one
+concentrated bet on a single market move reverting, not three independent edges. Full detail in the
+journal file.
+
 ## Working folders
 
 - `strategies/` — written-out strategy rules (entry/exit criteria, position sizing, risk limits)
