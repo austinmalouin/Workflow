@@ -477,6 +477,23 @@ $426.96, real P&L unchanged at -$75.72 all-time (verified via `get_realized_pnl`
 4 wins, 1 loss — SPY's exit not yet confirmed. Worth a heads-up to Austin: the SPY same-day trigger
 is a new, thinner pattern than any prior exit on this desk — worth watching for recurrence.
 
+**2026-09-15 check (`journal/2026-09-15-check.md`) — SPY's 9/11 signal confirmed as the strategy's
+second paper loss:** no new entry — RSI(2) as of the 9/14 close: SPY 38.61, QQQ 29.27, AAPL 91.50,
+MSFT 91.88, NVDA 2.04 — NVDA re-qualifies (deeply oversold, near its 8/25 record of 0.48) but is
+excluded, already carrying the open 9/11 signal, no same-symbol stacking; moot regardless since the
+cap was at 2/3 on paper going into today. **SPY (9/11) exit confirmed:** the same-day target trigger
+flagged provisionally on 9/14 (9/11 close $764.29 > SMA5 $764.13) resolved at the 9/14 open
+($759.00, 0.2% slippage → $757.48 fill) — return vs. the $764.72 entry **-0.95%, the strategy's
+second paper loss** (after QQQ 8/19's -0.68%), and the first time a same-day trigger has actually
+resolved to a fill: SPY never traded meaningfully above entry before its falling SMA5 caught down
+to it. QQQ (9/11) and NVDA (9/11) remain open, both within their stops but **NVDA's buffer has
+narrowed to $0.97**, the tightest on this desk to date, while its RSI(2) simultaneously re-qualifies
+near a record oversold level — worth watching closely. **Position cap now 2/3 paper slots
+occupied (QQQ, NVDA), still 0/3 funded.** Cash/buying power still $0.11 (~5.5 weeks unchanged),
+total value $429.90, real P&L unchanged at -$75.72 all-time (verified via `get_realized_pnl`/
+`get_pnl_trade_history`, still zero real trades under this strategy). **Paper record now 6
+resolved, 4 wins, 2 losses** (66.7% win rate, now tracking almost exactly the 67.5% backtest rate).
+
 ## Working folders
 
 - `strategies/` — written-out strategy rules (entry/exit criteria, position sizing, risk limits)
