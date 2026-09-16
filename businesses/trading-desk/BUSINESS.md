@@ -494,6 +494,21 @@ total value $429.90, real P&L unchanged at -$75.72 all-time (verified via `get_r
 `get_pnl_trade_history`, still zero real trades under this strategy). **Paper record now 6
 resolved, 4 wins, 2 losses** (66.7% win rate, now tracking almost exactly the 67.5% backtest rate).
 
+**2026-09-16 check (`journal/2026-09-16-check.md`) — clean no-entry day, NVDA's stop buffer
+recovers:** no new entry — RSI(2) as of the 9/15 close: SPY 21.49, QQQ 16.02, AAPL 61.59, MSFT
+40.10, NVDA 22.00 — all five snapped away from oversold after the pullback (NVDA's 2.04 on 9/14 is
+now 22.00), none within reach of the <10 threshold; all five remain above SMA200, so this isn't an
+uptrend-filter block either. Moot regardless since the cap is at 2/3 on paper. **QQQ (9/11) and
+NVDA (9/11) both still open, neither at stop or target:** QQQ stop ≈$672.74 vs. 9/15 low $703.635
+(buffer $30.90, essentially flat vs. 9/14), close $704.54 vs. SMA5 $710.72 (target not yet hit);
+NVDA stop ≈$207.96 vs. 9/15 low $211.16 — **buffer widened back to $3.20** from 9/14's $0.97
+near-miss, close $212.17 vs. SMA5 $216.69 (target not yet hit). 3 sessions elapsed of 10 for both.
+**Position cap unchanged at 2/3 paper slots (QQQ, NVDA), still 0/3 funded.** Earnings reconfirmed
+clear for AAPL/MSFT/NVDA (no report within 31 days of 9/16). Cash/buying power still $0.11
+(unchanged since 2026-08-06, ~6 weeks), total value $429.98, real P&L unchanged at -$75.72
+all-time (verified via `get_realized_pnl`/`get_pnl_trade_history`, still zero real trades under
+this strategy). Paper record unchanged at 6 resolved, 4 wins, 2 losses — nothing resolved today.
+
 ## Working folders
 
 - `strategies/` — written-out strategy rules (entry/exit criteria, position sizing, risk limits)
