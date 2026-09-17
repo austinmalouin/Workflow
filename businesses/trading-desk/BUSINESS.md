@@ -509,6 +509,18 @@ clear for AAPL/MSFT/NVDA (no report within 31 days of 9/16). Cash/buying power s
 all-time (verified via `get_realized_pnl`/`get_pnl_trade_history`, still zero real trades under
 this strategy). Paper record unchanged at 6 resolved, 4 wins, 2 losses — nothing resolved today.
 
+**2026-09-17 check (`journal/2026-09-17-check.md`) — run blocked, Robinhood_Agentic connector
+unauthenticated:** today's check could not execute — every `mcp__Robinhood_Agentic__*` tool this
+routine needs came back unavailable via `ToolSearch`, and the session flagged the connector as
+requiring reauthorization before its tools can be used. Unlike the two prior tool-availability
+surprises on this desk (8/21 tools unexpectedly present; 8/26 a stale MCP server ID in
+`trading-agent.md` making them unexpectedly absent), this is a genuine connector-auth gap, not a
+config bug — nothing to fix in the agent file. No fresh bars pulled, no RSI(2)/SMA200 check run,
+no signal written, per the standing rule against inventing one. Prior state carried over
+unverified: QQQ (9/11) and NVDA (9/11) still open per the 9/16 check, position cap 2/3 paper slots,
+cash/buying power last verified $0.11 on 9/16. **Needs Austin to reauthorize Robinhood_Agentic via
+his claude.ai connector settings** before the next scheduled run can resume.
+
 ## Working folders
 
 - `strategies/` — written-out strategy rules (entry/exit criteria, position sizing, risk limits)
