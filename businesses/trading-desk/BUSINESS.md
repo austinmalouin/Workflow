@@ -521,6 +521,15 @@ unverified: QQQ (9/11) and NVDA (9/11) still open per the 9/16 check, position c
 cash/buying power last verified $0.11 on 9/16. **Needs Austin to reauthorize Robinhood_Agentic via
 his claude.ai connector settings** before the next scheduled run can resume.
 
+**2026-09-18 check (`journal/2026-09-18-check.md`) — run blocked again, second consecutive day:**
+Robinhood_Agentic remains unauthenticated — identical failure mode to 9/17, no
+`mcp__Robinhood_Agentic__*` tools available via `ToolSearch`. No fresh bars, no entry-rule check,
+no signal written. QQQ (9/11) and NVDA (9/11) carried over as still open per the 9/16 check
+(last verified data), position cap 2/3 paper slots, cash/buying power last verified $0.11 on 9/16
+— none of this re-verified for two days running. NVDA's stop buffer was down to $0.97 as recently
+as 9/14 before recovering to $3.20 on 9/16; this desk has had zero live visibility into it since.
+**Still needs Austin to reauthorize Robinhood_Agentic via his claude.ai connector settings.**
+
 ## Working folders
 
 - `strategies/` — written-out strategy rules (entry/exit criteria, position sizing, risk limits)
