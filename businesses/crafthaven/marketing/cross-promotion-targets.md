@@ -170,6 +170,25 @@ No subreddit rules were re-attempted this session (Reddit remains unreachable vi
 WebFetch tool per the 2026-08-31 finding below — nothing has changed on that front, so it isn't being
 re-tested weekly without reason).
 
+## Update 2026-09-21 — no new community leads, two timing notes only
+
+Researched 2026-09-21. Unlike prior updates, this pass didn't surface a genuinely new community or
+directory to add — the GoT-adjacent gaming news this week is more event/patch activity within
+communities already on this list than new places to look:
+
+- **"Game of Thrones: Conquest"'s "War For the Throne" PvP event (25-27 Sept 2026)** — a timing
+  note on the already-listed Conquest Discord lead (flagged 2026-08-17, community located
+  2026-08-31): this event window would be unusually high-activity there, same caveat as before that
+  self-promotion rules for that Discord still haven't been read and a mobile-4X audience converting
+  to a Minecraft-server audience is unproven either way.
+- **"Game of Thrones: Legends" adding Dunk and Egg to its "Scattered Banners" faction (30 Sept
+  2026)** — a timing note on the already-listed Legends Discord lead (resolved 2026-09-07): this is
+  a positive, on-brand tie-in (the *A Knight of the Seven Kingdoms* characters specifically) that
+  could make a 30 Sept+ window worth a second look, but same unread-rules caveat applies.
+
+No subreddit rules were re-attempted this session (Reddit remains unreachable via this session's
+WebFetch tool per the 2026-08-31 finding — nothing has changed on that front).
+
 ## What's still needed before any of this is actionable
 
 1. Server actually live (hosting is decided per `../BUSINESS.md` but not yet stood up).

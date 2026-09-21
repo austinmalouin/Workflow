@@ -182,6 +182,25 @@ drops once Wilderness Bound fully ships, so the calendar and script both flag it
 candidate to film first if only one slot is available soon. No channel/subscriber/view numbers exist to
 report — none invented.
 
+**Devlog #4 drafted 2026-09-21** (weekly proactive pass, no live account access this session): added a
+fourth devlog, "Wilderness Bound Is Live: The First Kingdom-Style Build With the Real Update," to
+`scripts/devlog-4-wilderness-bound-live.md` with upload package at `inbox/devlog-4-upload-package.md`,
+and a new "dev4" row in `content-calendar/launch-arc-schedule.md` (also updated the dev3 row's status
+since it's now superseded). Note: the prior weekly pass was 2026-09-07 — no pass ran the week of
+2026-09-14, so this one picks up from 09-07. Both channel blockers were re-checked fresh against
+`../crafthaven/BUSINESS.md`'s current-state section directly, not assumed: server and Discord are still
+not stood up, and House naming (plus the Throne-mechanic name) is still an unconfirmed proposal in
+`../crafthaven/marketing/house-naming-proposal.md`. Grounded in 2026-09-21 WebSearch confirming
+Wilderness Bound actually released 15 September 2026 (Java 26.3/Bedrock 26.50) — resolving the
+"estimated mid-September, not locked" uncertainty Devlog #3 flagged two weeks earlier — with the
+confirmed feature set (dappled forest biome, poplar trees, abandoned camps, straw beds, cushions,
+wool/concrete stairs and slabs in all 16 colors) matching what the pre-release snapshot showed, nothing
+cut between snapshot and release. Unlike Devlog #3 (a fast reaction filmed on a raw, un-built test
+world), this is a small complete build showcase — a single, deliberately House-neutral gatehouse wall
+section demonstrating the new blocks in an actual structure, closing the loop Devlog #3 opened without
+needing House names or any live server/player footage. No channel/subscriber/view numbers exist to
+report — none invented.
+
 ## How the agent works today
 
 No YouTube upload/analytics connector is available yet (checked 2026-07-22). Until one exists,

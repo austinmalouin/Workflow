@@ -238,6 +238,30 @@ session): server and Discord are still not stood up, so this pass again focused 
   re-checking it weekly.
 - No server population, Discord membership, or growth numbers exist to report — none invented.
 
+**Content/cross-promotion pass 2026-09-21** (weekly proactive work, no live account access this
+session): server and Discord are still not stood up, so this pass again focused on prep content.
+Note: the prior weekly pass was 2026-09-07 — no pass ran the week of 2026-09-14, so this one picks
+up from 09-07 rather than backfilling a week nothing was actually researched for.
+- `content-calendar/week-of-2026-09-21.md` — a fresh week of draft Discord discussion prompts,
+  timed to real current ASOIAF/GoT hooks researched this session: the 78th Primetime Emmy Awards
+  (14 Sept 2026) resolved the multi-week Emmy thread with an honest result — *The Pitt* won Best
+  Drama again, *A Knight of the Seven Kingdoms* did not win despite its historic first-ever Best
+  Drama nomination, keeping only its earlier Creative Arts Emmy (Outstanding Stunt Performance);
+  *Game of Thrones: Conquest*'s "War For the Throne" PvP event (25-27 Sept 2026) and *Game of
+  Thrones: Legends* adding Dunk and Egg to its "Scattered Banners" faction (30 Sept 2026) are both
+  real, dated in-universe-adjacent gaming hooks; the Mad King RSC play announced (4 Sept 2026) it's
+  transferring to London in 2027 after its Stratford run closed; and a recirculating, unconfirmed
+  rumor about The Winds of Winter being finished with a "fall 2026" release being "eyed" by its
+  publisher was found and deliberately *not* used as a discussion hook — flagged in the file as an
+  unverified rumor, not news, consistent with this file's standing rule not to overstate TWOW
+  status. The House-naming prompt continues (still unlocked per `marketing/house-naming-proposal.md`,
+  unchanged since 2026-07-23) but rotated to a rivalry framing instead of repeating prior wording.
+- `marketing/cross-promotion-targets.md` — added an "Update 2026-09-21" section; unlike prior
+  updates this pass found no genuinely new community/directory lead, only two timing notes on
+  already-listed leads (the Conquest PvP event window, the Legends Dunk-and-Egg tie-in) — noted
+  honestly as "nothing new" rather than manufacturing a lead to report.
+- No server population, Discord membership, or growth numbers exist to report — none invented.
+
 ## How the agent works today
 
 No Minecraft server-hosting or Discord bot connector is available yet (checked 2026-07-22). Until
