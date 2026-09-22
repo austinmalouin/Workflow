@@ -41,7 +41,8 @@ Robinhood Agentic account connected (798207098, "Agentic"; total value $579.59, 
 $435.58 as of 2026-08-19, total value $432.50 as of 2026-08-20, total value $435.96, cash/buying
 power $0.11 as of 2026-08-25 (first non-zero reading since 2026-08-06, but not a functionally
 different number), total value $434.51, cash/buying power $0.11 as of 2026-09-03 — see the
-2026-08-06 update below for why).
+2026-08-06 update below for why). **Connector unauthenticated since 2026-09-17, unresolved as of
+2026-09-22 (fourth consecutive blocked weekday run) — all figures below last verified 2026-09-16.**
 Four documented/backtested strategy versions on file across
 three distinct mechanics, all still short of the bar for live signals:
 
@@ -540,6 +541,17 @@ buffer was down to $0.97 as recently as 9/14 before recovering to $3.20 on 9/16;
 zero live visibility into it since. **Outage has now persisted through three straight scheduled
 runs — worth a direct nudge to Austin rather than assuming it'll self-resolve.** Still needs Austin
 to reauthorize Robinhood_Agentic via his claude.ai connector settings.
+
+**2026-09-22 check (`journal/2026-09-22-check.md`) — run blocked again, fourth consecutive weekday:**
+Robinhood_Agentic remains unauthenticated — identical failure mode to 9/17, 9/18, and 9/21, no
+`mcp__Robinhood_Agentic__*` tools available via `ToolSearch`. No fresh bars, no entry-rule check,
+no signal written. QQQ (9/11) and NVDA (9/11) carried over as still open per the 9/16 check (last
+verified data), position cap 2/3 paper slots, cash/buying power last verified $0.11 on 9/16 —
+none of this re-verified in six calendar days / four scheduled weekday runs now. NVDA's stop
+buffer was down to $0.97 as recently as 9/14 before recovering to $3.20 on 9/16; this desk has had
+zero live visibility into it since. **Outage now spans a full week of scheduled runs — this is a
+standing blocker, not a transient hiccup, until Austin reauthorizes Robinhood_Agentic via his
+claude.ai connector settings.**
 
 ## Working folders
 
