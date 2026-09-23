@@ -585,12 +585,12 @@
        {role:"Backtester",tag:"Specialist",key:"backtests with real cost modeling"},
        {role:"Signal Writer",tag:"Specialist",key:"trade-idea write-ups (recommendation only)"},
        {role:"Risk Reviewer",tag:"Specialist",key:"position sizing, drawdown, sanity checks"}],
-     log:[["crit","2026-09-17→21: Robinhood_Agentic connector unauthenticated — three straight scheduled weekday runs blocked (9/17, 9/18, 9/21), zero live data pulled since the 9/16 check. No signals invented; needs Austin to reauthorize via claude.ai connector settings before the next run can resume."],
+     log:[["crit","2026-09-17→23: Robinhood_Agentic connector unauthenticated — five straight scheduled weekday runs blocked (9/17, 9/18, 9/21, 9/22, 9/23), a full week, zero live data pulled since the 9/16 check. No signals invented; needs Austin to reauthorize via claude.ai connector settings before the next run can resume."],
        ["warn","2026-09-15: SPY's 9/11 signal confirmed as the strategy's second paper loss (-0.95%). Paper record now 6 resolved, 4 wins, 2 losses (66.7%) — tracking close to the 67.5% backtest rate."],
        ["ok","2026-09-11: first multi-symbol fire — SPY, QQQ, and NVDA all cleared the entry rule the same session (a broad market pullback, not 3 independent setups), filling all 3 paper slots at once. Still $0.11 cash, none fundable."],
        ["crit","Cash/buying power has been effectively $0 since 2026-08-06 (was $59.28 on 7-23) — now ~7 weeks running. Signal generation clearly isn't the bottleneck anymore; cash is."],
        ["ok","Mean-reversion v1, combined variant, is the validated live strategy: 67.5% win rate, ~2.09%/yr CAGR, 203 trades over a 5.5yr/5-symbol backtest."]],
-     auth:[["The Robinhood_Agentic connector needs reauthorizing (claude.ai connector settings) — that's the only thing blocking this desk right now, three scheduled runs running. Separately still open once it's back: cash/buying power has been ~$0.11 for 7+ weeks with signals firing regularly (8 written to date, QQQ 9/11 and NVDA 9/11 still open on paper) — add cash, or keep this a paper-only research line?"]],
+     auth:[["The Robinhood_Agentic connector needs reauthorizing (claude.ai connector settings) — that's the only thing blocking this desk right now, a full week of scheduled runs blocked back to back (five weekday runs, 9/17-9/23). Separately still open once it's back: cash/buying power has been ~$0.11 for 7+ weeks with signals firing regularly (8 written to date, QQQ 9/11 and NVDA 9/11 still open on paper) — add cash, or keep this a paper-only research line?"]],
      warn:"This desk never places, modifies, or cancels an order. Ever, no matter what permission is given in chat. It stops at a written recommendation — you place the trade yourself in Robinhood.",
      qa:["Walk me through the two open paper signals (QQQ/NVDA from 9/11)",
        "Review current positions and realized P&L",
@@ -746,7 +746,7 @@
        ["ok","Automation Studio stays as the build track alongside it — highest ceiling and genuinely yours, but it needs sales before it pays, so it runs beside annotation rather than instead of it"],
        ["warn","Both chosen tracks are VARIABLE income. If the yacht club paycheck stopped, there's no floor under this plan and the steady remote job is worth reopening."],
        ["crit","2026-08-06: Solera account pivoted to a 14-day money sprint — turned out it already had a live wellness/gadget store (21 products) sitting forgotten since May. Using that instead of building disc golf from zero; Chain Music Co. paused, not cancelled. Payments setup is the real blocker now."],
-       ["crit","Trading: Robinhood_Agentic connector unauthenticated for 3 straight scheduled runs (9-17, 9-18, 9-21) — the automated desk is flying blind (2 open paper signals, cash figure unverified since 9-16) until reauthorized via claude.ai connector settings"]],
+       ["crit","Trading: Robinhood_Agentic connector unauthenticated for 5 straight scheduled runs (9-17, 9-18, 9-21, 9-22, 9-23), a full week — the automated desk is flying blind (2 open paper signals, cash figure unverified since 9-16) until reauthorized via claude.ai connector settings"]],
      auth:[["Remote Income is now the priority — it's the only track aimed at rent. Fastest thing you can do today: apply to Outlier, Alignerr, and Mercor (about an hour total). Second: cancel the Shopify subscription, since that's real money going out against $0 coming in."]],
      qa:["What's the single #1 priority across all businesses this week?",
        "Where should my time and budget go next?",
@@ -878,7 +878,7 @@
       {ic:"crit",t:"Build the 20-business list, then run 10 validation calls — the only step that turns this into income",b:"Automation · start here",id:"automation"},
       {ic:"warn",t:"Two free things still blocking every agency submission: shoot your digitals, and send the Flair Magazine shots",b:"Talent · start here",id:"talent"},
       {ic:"crit",t:"Cancel Etsy Plus — $10/mo since July against a shop that has never made a sale",b:"Etsy · 30 seconds, saves $10/mo",id:"etsy"},
-      {ic:"crit",t:"Trading desk connector (Robinhood_Agentic) needs reauthorizing — 3 straight scheduled runs blocked",b:"Trading · reauthorize",id:"trading"},
+      {ic:"crit",t:"Trading desk connector (Robinhood_Agentic) needs reauthorizing — 5 straight scheduled runs blocked, a full week",b:"Trading · reauthorize",id:"trading"},
       {ic:"warn",t:"RIDGEWOOD copy overhaul is done — pick next: TikTok organic push, or start the Google Shopping test?",b:"Shopify · decision",id:"shopify"}
     ];
     $("#prioList").innerHTML=prios.map(p=>`<div class="prio" data-id="${p.id}">
