@@ -578,6 +578,20 @@ zero live visibility into it since. **Outage now spans more than a full week of 
 still needs Austin to reauthorize Robinhood_Agentic via his claude.ai connector settings; nothing
 else on this desk can proceed until that happens.**
 
+**2026-09-25 check (`journal/2026-09-25-check.md`) — run blocked again, seventh consecutive
+weekday:** Robinhood_Agentic remains unauthenticated — identical failure mode to 9/17, 9/18, 9/21,
+9/22, 9/23, and 9/24, no `mcp__Robinhood_Agentic__*` tools available via `ToolSearch`. No fresh
+bars, no entry-rule check, no signal written. QQQ (9/11) and NVDA (9/11) carried over as still open
+per the 9/16 check (last verified data), position cap 2/3 paper slots, cash/buying power last
+verified $0.11 on 9/16 — none of this re-verified in nine calendar days / seven scheduled weekday
+runs now. NVDA's stop buffer was down to $0.97 as recently as 9/14 before recovering to $3.20 on
+9/16; this desk has had zero live visibility into it since. Also found and fixed, unrelated to the
+outage: the prior session's 9/24 commits had landed only on a detached `HEAD` and never
+fast-forwarded onto local `main` — fast-forwarded it (origin already had the commits, so no data
+was at risk). **Outage now spans a full week and a half of scheduled runs — still needs Austin to
+reauthorize Robinhood_Agentic via his claude.ai connector settings; nothing else on this desk can
+proceed until that happens.**
+
 ## Working folders
 
 - `strategies/` — written-out strategy rules (entry/exit criteria, position sizing, risk limits)
